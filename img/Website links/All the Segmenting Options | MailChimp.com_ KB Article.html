@@ -1,0 +1,2203 @@
+<!doctype html>
+<html role="document">
+	<!-- hstref=main -->
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/css/kb.css?v=2.0.4" />
+
+
+    <link href="/images/favicon.ico" rel='shortcut icon' />
+    <link href="/images/favicon.ico" rel='icon' type='image/vnd.microsoft.icon' />
+
+
+
+    <link href='/content/gallery/mailchimpkb/common/apple-touch-icon-precomposed.png'           rel='apple-touch-icon-precomposed' />
+    <link href='/content/gallery/mailchimpkb/common/apple-touch-icon-ipad-precomposed.png'      rel='apple-touch-icon-precomposed' sizes='72x72' />
+    <link href='/content/gallery/mailchimpkb/common/apple-touch-icon-iphone-retina-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114' />
+    <link href='/content/gallery/mailchimpkb/common/apple-touch-icon-ipad-retina-precomposed.png'   rel='apple-touch-icon-precomposed' sizes='144x144' />
+    
+    <meta content='#52BAD5'  name='msapplication-TileColor' />
+    <meta content='/content/gallery/mailchimpkb/common/favicon.png'    name='msapplication-TileImage' />
+
+
+    <meta name='fb:admins' content='4302132' />
+
+
+    <meta charset='utf-8' />
+    <meta name="format" content="text/html" />
+    <meta name='language' content='en' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+    
+    <meta name="google-translate-customization" content="54d0001b06f04db3-aa24674c7631b6a3-g797768744b09212a-14"></meta>
+    
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript">
+
+        /**
+         * @global
+         * @type {object} */
+        window.Paths = {};
+        /**
+         * @global
+         * @type {string} */
+        window.Paths.SHARED_IMAGES_PATH = '/content/gallery/mailchimpkb/common';
+        /**
+         * @global
+         * @type {string} */
+        window.Paths.SHARED_SCRIPTS_PATH = '/scripts';
+        /**
+         * Note that this URI path segment *includes* a trailing slash.
+         *
+         * @global
+         * @type {string} */
+        
+        /**
+         * The javascript boolean TRUE if the rendering page is inside a frame
+         * on the Hippo CMS channel manager (preview mode). In such cases,
+         * the rendering base path may be /site/_cmsinternal. Use the global
+         * window.Paths.SITE_ROOT_PATH to get a consistent path to WAR-included
+         * resources, such as certain CSS files, SWFs, etc.
+         *
+         * @global
+         * @type {boolean} */
+        window.Paths.IS_CMS_SITE_PREVIEW = false;
+
+
+        window.Page = {
+            slug: (function() {
+                var uri = window.location.pathname;
+                uri = uri.replace(window.Paths.SITE_ROOT_PATH, "/");
+                return uri;
+            })(),
+            url: window.location.href,
+            title: $('meta[name=title]').text()
+        };
+
+        // Google Analytics global tracking/action queue
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        // setup analytics
+        ga('create', 'UA-329148-81', 'auto', {
+          'allowLinker': true
+        });
+
+        // pass analytics data to subdomain links (blog, etc)
+        ga('require', 'linker');
+        ga('linker:autoLink', [/(.*\.)?mailchimp(app)?\.com$/], false, true);
+		
+		// add Enchanced Link Attribution
+		ga('require', 'linkid', 'linkid.js');
+
+        // track this pageview
+        ga('send', 'pageview');
+
+        // MailChimp custom goal tracking
+        var $mcGoal = {
+            'settings': {
+                'uuid':'f7b9ee22124ff6454424dc10c',
+                'dc':'us1'
+            }
+        };
+
+    </script>
+
+    <script type="text/javascript" src="/scripts/init.js"></script>
+    
+    
+    <script type="text/javascript">
+        var lpTag = lpTag || {}; lpTag.vars = lpTag.vars  || []; lpTag.dbs = lpTag.dbs || [];
+        lpTag.section = 'default';
+
+        // ======================= VARIABLES ===================================
+        // A LivePerson variable can be defined in one of three different scopes:
+        // 'page' - exists on the current page only
+        // 'session' - exists for the current visitor session
+        // 'visitor' - persists between browser sessions
+
+        // ----------------- 1: Sending when the page loads --------------------
+        // Variables are JavaScript objects that are passed in an array
+        // Each object must contain: scope, name, value
+        // Values should be strings
+
+        
+                var userUnit = 'service-free';
+            
+
+        var userPage = 'page';
+        
+
+        var arrLPvars = [
+          // 'unit' is required in most deployments
+          {
+            scope:'page',
+            name:'unit',
+            value: userUnit
+          },
+          // 'language' is required in deployments that do, or may in the future, need multi-lingual support
+          {
+            scope:'session',
+            name:'language',
+            value:'english'
+          },
+          {
+            scope:'page',
+            name:'pagename',
+            value: userPage
+          } // Variable value should be "article", "search", "results", etc.
+        ];
+        lpTag.vars.push(arrLPvars);
+    </script>
+    <script type="text/javascript" src="/scripts/le_mtagconfig.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $(".feedback-block a[href^='https://login.mailchimp.com'], #site-header a[href^='https://login.mailchimp.com']")
+            .attr({ href: "https://login.mailchimp.com/?referrer=" + document.URL })
+      });
+    </script>
+    
+<title>All the Segmenting Options | MailChimp.com: KB Article</title>
+
+<link rel="canonical" href="/segments/all-the-segmenting-options" />
+<meta name="description" content="With MailChimp, you can use list data to create segments of similar subscribers. Learn all the criteria you can use to create new segments." />
+<meta name="keywords" content='all the segmenting options
+activity
+groups
+segmenting
+signup source
+targeted campaigns
+view signup source' />
+
+<meta
+    content='All the Segmenting Options'
+    property='og:title'>
+<meta
+    content='http//127.0.0.1/site/segments/all-the-segmenting-options'
+    property='og:url'>
+    
+    <script type="text/javascript"
+                src="/scripts/mailchimp_goal.js"></script>
+
+        <script charset="utf-8"
+                type="text/javascript"
+                async="async" defer="defer"
+                src="/scripts/liveperson_servicemap_and_taglets.js"></script>
+    <script type='text/javascript'
+            async="async"
+            src='//www.google.com/jsapi'></script>
+
+    <script type="text/javascript"
+            charset="ISO-8859-1"
+            src="//fast.wistia.com/assets/external/E-v1.js"></script>
+
+    <script type="text/javascript"
+            src="/scripts/support.js"></script>
+
+    <script type='text/javascript'>
+        
+            detect_lang();
+        </script>
+</head>
+
+<body class="no-eb no-cb">
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5H97DK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5H97DK');</script>
+    <header class="main-navigation" id="site-header">
+  <div class="float-left pad-lv2">
+    <a href="/">
+        <img role="presentation" src="/images/freddie.svg" height="36">
+    </a>
+
+    <p class="header-text inline pad-lv2 pad-r0 pad-tb0">
+    <a href="/">Knowledge Base</a></p>
+        </div>
+
+<div class="float-right hide-print">
+        <div class="language-select inline-block pad-lv3 cursor-pointer fwb small-meta">
+            English<span class="freddicon menu-down"></span>
+        </div>
+        <a class="login-button hide-phone button p0 no-transform" data-redirect="true" href="https://login.mailchimp.com/">Log In</a>
+        </div>
+    
+    <div class="language-popover bg-white rounded6 hide hide-print" > 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<ul class="language-list">
+    
+        
+            
+            
+
+            
+                
+                
+                    
+                        
+
+                        
+                            
+                                
+                                    
+                                        <li><a href="/es/segments/all-the-segmenting-options" class="pad-lv2 block language-option" data-language-set="es">Espa&ntilde;ol</a></li>
+                                    
+                                
+                            
+                            
+                        
+                    
+                        
+
+                        
+                            
+                            
+                                
+                                    
+                                
+                            
+                        
+                    
+                
+
+                
+            
+        
+
+        
+    
+</ul></div>
+</header><div class="secondary-navigation hide-print">
+        <div class="mc-content line">
+            
+            <div class="lastUnit size3of8 float-right nofloat-small">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<form action='/search' class="kb-search" method="post"id="" role="search" enctype="application/x-www-form-urlencoded">
+    <input alt="Text Input for MailChimp Site Search" class="search-field nomargin" name="query" placeholder="How can we help?" type="search">
+    <span class="hide">Search</span>
+    <!-- SEARCH CONTROLS -->
+    <span class="search-controls"> 
+        <button type="submit" class="button freddicon solidsearch nomargin"></button> 
+    </span>
+  </button>
+  <input
+      type="hidden"
+      name="pageNumber" />
+</form></div>
+                    <div class="breadcrumb unit size5of8">
+                        <nav class="fwb">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                    <li><a href="/segments">Segments</a></li>
+                                        </ul>
+                        </nav>
+                    </div>
+                </div>
+    </div>
+    
+    <div class="mc-content">
+
+        <div class="line">
+    <div class="group size3of4 mid-size1of1">
+        
+        <script type="text/javascript">
+		window.ZC_SWF_PATH = '/binaries/content/assets/mailchimpkb/zeroclipboard.swf';
+	</script>
+    <script type="text/javascript" src="/scripts/ZeroClipboard-1.3.5.js"></script>
+	<script type="text/javascript" src="/scripts/support_eepurl_clipboard.js"></script>
+
+<nav class="fixed-side-nav hide-phone">
+        <p class="small-meta fwb dim-el">In this article:</p>
+        <ul class="regular">
+            <li><a href='#Subscriber-Profile-Data'>Subscriber Profile Data</a></li>
+	            <li><a href='#Merge-Fields'>Merge Fields</a></li>
+	            <li><a href='#E-commerce'>E-commerce</a></li>
+	            <li><a href='#Integrations'>Integrations</a></li>
+	            <li><a href='#Operator-Glossary'>Operator Glossary</a></li>
+	            </ul>
+    </nav>
+<div class="unit hide-phone size1of3 mid-size1of4">
+
+	
+			&nbsp;
+
+		</div>
+
+<article class="lastUnit size2of3 mid-size3of4 below36 float-right nofloat-small">
+
+	<header class="below30 selfclear">
+		<h1 class="no-transform">All the Segmenting Options</h1>
+
+		<ul class="linear-list dots no-disc small-meta hide-phone">
+	            
+				<li class="nomargin">Updated: 10/05/2015</li>
+
+				<li class="nomargin hide-print">
+						<div class="eep-url">
+							<a id="copy-button" data-clipboard-text='All the Segmenting Options: http://eepurl.com/bub_71' title="Copy URL to clipboard." href='http://eepurl.com/bub_71' >
+									Copy <span class="hide-phone">article </span>URL
+							</a>
+
+							<div class="float-right">
+								<div class="eep-url-alert badge success" style="opacity: 0;">
+									</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			
+		</header>
+
+	<div class="local-nav-container">
+			<p class="mobile-top-nav nomargin full-width fwb">
+				<a href="#">In this article:</a>
+			</p>
+
+			<ul class="local-nav">
+				<li><a href='#Subscriber-Profile-Data'>Subscriber Profile Data</a></li>
+		            <li><a href='#Merge-Fields'>Merge Fields</a></li>
+		            <li><a href='#E-commerce'>E-commerce</a></li>
+		            <li><a href='#Integrations'>Integrations</a></li>
+		            <li><a href='#Operator-Glossary'>Operator Glossary</a></li>
+		            </ul>
+		</div>
+	<div class="callout">
+		    	<p>This feature requires Manager user level or higher.</p>
+		    				</div>
+		<div class="document-intro sub-section">
+			<p>With MailChimp, you can use list and subscriber information to target and filter subscribers into segments. Our segmentation options are extensive, so you can choose a single condition or combine up to five conditions with positive and negative relationships to target the right subscribers for each campaign.</p> 
+<p>In this article, you&#39;ll find all the segmentation criteria available to you. For more information about segments, check out our 
+<a href="/segments/getting-started-with-segments">segmentation overview</a> and 
+<a href="/segments/common-segmentation-combinations">recipes</a> articles, too.</p></div>
+	<div class="sub-section">
+    		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        <div class="videoWrapper">
+            <iframe src="//fast.wistia.net/embed/iframe/poeaieygwc" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="600" height="400"></iframe>
+        </div>
+    
+
+</div>
+	<section class="sub-section">
+			<div class="feedback-block base">
+					<div class="pad-lv3 pad-tb0">
+						<strong>Note</strong>
+						<p>
+							<ul> 
+<li>When you 
+<a href="/segments/how-to-use-saved-segments" rel="noreferrer">create a static segment</a> in MailChimp, you can target specific subscribers in your list and save them in a segment to reuse later. Since the segments are static, they can&#39;t be edited, updated, or added to as subscribers change their subscription preferences, edit their profile information, or as new subscribers sign up for your list.</li> 
+<li>The availability of segmenting options depends on the data for your list. For example, you won&#39;t have the option to segment by e-commerce data if you don&#39;t have e-commerce data associated with your list.</li> 
+<li>MailChimp allows you to create segments based on scheduled and draft campaign activity. However, these future segments only work properly after the scheduled or draft campaign is sent and MailChimp generates its report.</li> 
+<li>You can create and save a campaign to be sent to a future segment&nbsp;in advance. You&#39;ll be able to schedule or send the campaign after the segmenting campaign is sent.</li> </ul></p>
+					</div>
+
+				</div>
+			</section>
+	<section class="sub-section" id='Subscriber-Profile-Data'>
+						<h2>
+							Subscriber Profile Data</h2>
+				<p>
+						<p>For each segmentation condition we show here, you&#39;ll find a short description of what it controls, and a table that displays all of the options in the drop-down menus. In most cases, there are only three choices to make, but for some condition types, a fourth drop-down menu will appear.&nbsp;</p> 
+<p>In almost all cases, you won&#39;t see all of the options that appear on this page in the drop-down menu in your account. The drop-down menus that appear in your account are limited to what data is available in the list you&#39;re working with.&nbsp;</p> 
+<h3><a name="automation-activity"></a>Automation Activity</h3> 
+<p>Automation report data is available in segmenting options, so you can pull segments of subscribers based on whether they&#39;ve started or completed a certain Automation workflow.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>started workflow</li> 
+<li>completed workflow</li> 
+<li>not started workflow</li> 
+<li>not completed workflow</li> </ul> </td> 
+<td><em>Choose workflow from list</em></td> </tr> </tbody> </table> 
+<h3><a name="campaign-activity"></a></h3> 
+<h3>Campaign Activity</h3> 
+<p>Create segments based on how subscribers have interacted with your campaigns. For example, use a combination of segmenting critera to target subscribers who were sent recent campaigns, but did not open campaigns.&nbsp;Sent campaigns and draft campaigns are available. 
+<em>All Recent Campaigns</em> pulls data from the 500 most recent campaigns sent to your list.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>opened</li> 
+<li>clicked</li> 
+<li>was sent</li> 
+<li>did not open</li> 
+<li>did not click</li> 
+<li>was not sent</li> </ul> </td> 
+<td> 
+<ul> 
+<li>All of the Last 5 Campaigns</li> 
+<li>Any/All Recent Campaigns</li> 
+<li>Any of the Last 5 Campaigns</li> 
+<li>Paused Campaigns list</li> 
+<li>Sent Campaigns list</li> 
+<li>Scheduled Campaigns list</li> 
+<li>Draft Campaigns list</li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="conversations-activity"></a>Conversations Activity</h3> 
+<p>MailChimp&#39;s 
+<a href="/lists/managing-subscribers/set-up-and-use-conversations">Conversations</a> feature tracks email replies from your subscribers. Use this condition to segment for subscribers who have responded to&nbsp;campaigns via email. Sent campaigns and draft campaigns are available. 
+<em>All Recent Campaigns</em> pulls data from the 500 most recent campaigns sent to your list.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>has replied</li> 
+<li>has not replied</li> </ul> </td> 
+<td> 
+<ul> 
+<li>All of the Last 5 Campaigns</li> 
+<li>Any of the Last 5 Campaigns</li> 
+<li>Any Recent Campaigns</li> 
+<li>Paused Campaigns list</li> 
+<li>Sent Campaigns list</li> 
+<li>Scheduled Campaigns list</li> 
+<li>Draft Campaigns list</li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="date-added"></a>Date Added</h3> 
+<p>Use the 
+<em>Date Added</em> condition to create a segment based on the date a subscriber signs&nbsp;up or is imported to your list.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is before</li> 
+<li>is after</li> </ul> </td> 
+<td> 
+<ul> 
+<li>the last campaign was sent</li> 
+<li>a specific campaign was sent</li> 
+<li>a specific date</li> </ul> </td> 
+<td><em>Choose campaign from list, or choose date</em></td> </tr> </tbody> </table> 
+<h3><a name="email-client"></a>Email Client</h3> 
+<p>If you have different campaign&nbsp;designs&nbsp;for&nbsp;people who use different mailbox applications, you can segment based on 
+<em>Email Client</em>. Only one client can be selected per condition, but up to five conditions can be selected for any segment.&nbsp;</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> </ul> </td> 
+<td> 
+<ul> 
+<li>desktop</li> 
+<li>mobile</li> 
+<li>webmail</li> 
+<li>Lotus Notes</li> 
+<li>Outlook 2007</li> 
+<li>Outlook 2010</li> 
+<li>PocoMail</li> 
+<li>Postbox</li> 
+<li>Shredder</li> 
+<li>Spicebird</li> 
+<li>The Bat!</li> 
+<li>Thunderbird</li> 
+<li>Windows Live Mail</li> 
+<li>Android</li> 
+<li>BlackBerry</li> 
+<li>iPhone</li> 
+<li>AOL</li> 
+<li>Gmail</li> 
+<li>Hotmail</li> 
+<li>Yahoo!</li> 
+<li>Yahoo! Classic</li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="info-changed"></a>Info Changed</h3> 
+<p>Each time a subscriber updates his or her profile with MailChimp, we&#39;ll make a note. Use the 
+<em>Info Changed</em> condition to create a segment based on when your subscriber&#39;s profile was last updated.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is before</li> 
+<li>is after</li> </ul> </td> 
+<td> 
+<ul> 
+<li>the last campaign was sent</li> 
+<li>a specific campaign was sent</li> 
+<li>a specific date</li> </ul> </td> 
+<td><em>Choose campaign from list, or choose date</em></td> </tr> </tbody> </table> 
+<h3><a name="language"></a>Language</h3> 
+<p>MailChimp tries to detect your subscriber&#39;s language when they sign up or click links in your campaign.&nbsp;</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> </ul> </td> 
+<td>English, Arabic, Afrikaans, Belarusian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, Estonian, Farsi, Finnish, French (France), French (Canada), German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Irish, Italian, Japanese, Khmer, Korean, Latvian, Lithuanian, Maltese, Malay, Macedonian, Norwegian, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Serbian, Slovak, Spanish (Mexico), Spanish (Spain), Swahili, Swedish, Tamil, Thai, Turkish, Ukrainian, Vietnamese, Custom</td> </tr> </tbody> </table> 
+<h3><a name="location"></a>Location</h3> 
+<p>You can use three types of subscriber location data to create segments: geolocation data, 
+<a href="http://kb.mailchimp.com/segments/all-the-segmenting-options#location-fields">address field data from your list</a>, or 
+<a href="http://kb.mailchimp.com/segments/all-the-segmenting-options#zip">ZIP code field data from your list.</a>&nbsp;</p> 
+<p><strong>Geolocation Data</strong></p> 
+<p>Location segments use 
+<a href="http://kb.mailchimp.com/lists/managing-subscribers/how-we-determine-locations-and-time-zones#IP-Address-and-Geolocation" style="text-decoration:none;"><u>geolocation</u></a> data, which we automatically detect from subscribers who sign up with a MailChimp form or engage with your campaigns. Location segments don&#39;t include data from list fields like
+<em> </em><a href="http://kb.mailchimp.com/segments/all-the-segmenting-options#location-fields"><em>Address</em> or 
+<em>ZIP code</em></a>.</p> 
+<table class="mc-table table_data" style="height:602px; width:569px"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> </tr> 
+<tr> 
+<td>is within</td> 
+<td>Choose distance and type city, state, and country in field. Click 
+<em>Validate Location. </em></td> </tr> 
+<tr> 
+<td>is not within</td> 
+<td>Choose distance and type city, state, and country in field. Click 
+<em>Validate Location. </em></td> </tr> 
+<tr> 
+<td>is in country</td> 
+<td>Choose country.</td> </tr> 
+<tr> 
+<td>is not in country</td> 
+<td>Choose country.</td> </tr> 
+<tr> 
+<td>is in US state</td> 
+<td>Choose state.</td> </tr> 
+<tr> 
+<td>is not in US state</td> 
+<td>Choose state.</td> </tr> 
+<tr> 
+<td>is in ZIP (US-only)</td> 
+<td> 
+<p>Type five-digit ZIP code in field.</p> </td> </tr> 
+<tr> 
+<td>is not in ZIP (US-only)</td> 
+<td> 
+<p>Type five-digit ZIP code in field.</p> </td> </tr> 
+<tr> 
+<td>is unknown</td> 
+<td>&nbsp;</td> </tr> </thead> </table> 
+<h3><a name="member-rating"></a>Member Rating</h3> 
+<p>Use the 
+<em>Member Rating</em> condition to create a segment of your most or least engaged subscribers.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>is greater than</li> 
+<li>is less than</li> </ul> </td> 
+<td><em>Hover and click </em>over star rating.</td> </tr> </tbody> </table></p>
+			</section>
+	<section class="sub-section">
+			<p>
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        <div class="videoWrapper">
+            <iframe src="//fast.wistia.net/embed/iframe/uyo9t9ps0y" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="600" height="400"></iframe>
+        </div>
+    
+
+</p>
+			</section>
+	<section class="sub-section">
+			<p>
+					<h3><a name="survey_poll"></a>Poll/Survey Activity</h3> 
+<p>Use the 
+<em>Poll/Survey Activity </em>condition if you have campaigns that use our 
+<a href="/campaigns/design/send-a-simple-poll-or-survey-to-subscribers" rel="noreferrer">poll or survey merge tags</a>. You can segment by which subscribers did or did not respond. Surveys allow you to segment on votes for specific responses.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th style="width:132px">Operators Available</th> 
+<th style="width:187px">Parameters</th> 
+<th>Actions</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td style="width:132px"> 
+<ul> 
+<li>responded</li> 
+<li>did not respond</li> </ul> </td> 
+<td> 
+<ul> 
+<li>name of poll</li> 
+<li>name of campaign containing the survey</li> </ul> </td> 
+<td> 
+<ul> 
+<li>Choose 
+<em>Any response</em></li> 
+<li>Choose from one of the survey responses</li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="signup-source"></a>Signup Source</h3> 
+<p>Choose 
+<em> Signup Source&nbsp;</em>to segment your subscribers by how they&nbsp;were added to your list. You&#39;ll only see the sources you used to create your list, so&nbsp;if you&#39;ve never imported a list or you haven&#39;t used an integration, you won&#39;t see those options.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>source was</li> 
+<li>source was not</li> </ul> </td> 
+<td> 
+<ul> 
+<li>Unknown</li> 
+<li>Pre-existing</li> 
+<li>Admin Add</li> 
+<li>List Import</li> 
+<li>Hosted Signup Form</li> 
+<li>Facebook Signup Form</li> 
+<li>Embed Form</li> 
+<li>Ecomm360 - Generic</li> 
+<li>Ecomm360 - Paypal</li> 
+<li>Ecomm360 - Dpd</li> 
+<li>Ecomm360 - E-Junkie</li> 
+<li>API - Generic</li> 
+<li>API - MC Wordpress Plugin</li> 
+<li>API - Joomailer</li> 
+<li>API - Magento MageMonkey</li> 
+<li>API - Chimpadeedoo</li> 
+<li>Squarespace</li> </ul> </td> </tr> </tbody> </table></p>
+			</section>
+	<section class="sub-section" id='Merge-Fields'>
+						<h2>
+							Merge Fields</h2>
+				<p>
+						<p>If your imported list contains extra information about each subscriber, you can use it to target your campaigns. Under the 
+<em>Merge Fields</em> section of the drop-down menu, you&#39;ll see the column labels you imported with your list.&nbsp;</p> 
+<p>These fields are based on the column labels in your list and vary for each user and list. Below, you&#39;ll see some common examples.</p> 
+<h3><a name="text-fields"></a>Text Fields</h3> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Parameters</th> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>First Name</li> 
+<li>Last Name</li> 
+<li>Email Address</li> 
+<li>Favorite Color</li> 
+<li>Preferred Store Location</li> </ul> </td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>contains</li> 
+<li>does not contain</li> 
+<li>starts with</li> 
+<li>ends with</li> 
+<li>is greater than</li> 
+<li>is less than</li> 
+<li>is blank</li> 
+<li>is not blank</li> </ul> </td> 
+<td> 
+<ul> 
+<li><em>Type</em> into text field</li> </ul> </td> </tr> 
+<tr> 
+<td> 
+<ul> 
+<li>Birthday</li> 
+<li>Other Date Fields</li> </ul> </td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>is after</li> 
+<li>is before</li> 
+<li>month is</li> 
+<li>day is</li> 
+<li>is (mm/dd)</li> 
+<li>is blank</li> 
+<li>is not blank</li> </ul> </td> 
+<td><em>Choose date</em> using date picker, or 
+<em>type</em> the month/day</td> </tr> </tbody> </table> 
+<h3><a id="location-fields" name="location-fields"></a>Address Fields</h3> 
+<p>Address segments use address field data that was added or imported to your list. Address segments do not include data from ZIP code list fields, or geolocation data.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Parameters</th> 
+<th>Operators Available</th> 
+<th>Actions</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>Address</li> </ul> </td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>is within distance (US-only)</li> 
+<li>does contain</li> 
+<li>does not contain</li> 
+<li>is blank</li> 
+<li>is not blank</li> </ul> </td> 
+<td> 
+<ul> 
+<li><em>Type</em> into text field</li> 
+<li><em>Type</em> into text field</li> 
+<li><em>Type</em> distance and zip code</li> </ul> </td> </tr> </tbody> </table> 
+<p>&nbsp;</p> 
+<h3><a id="zip" name="zip"></a>ZIP Fields</h3> 
+<p>ZIP code segments use 
+<em>ZIP code</em> field data that was added or imported to your list. This segment type only works with five-digit United States ZIP codes. ZIP code segments do not include data from 
+<em>Address</em> list fields, or geolocation data.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Parameters</th> 
+<th>Operators Available</th> 
+<th>Actions</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>Zip Code</li> </ul> </td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>is within distance (US-only)</li> 
+<li>is blank</li> 
+<li>is not blank</li> </ul> </td> 
+<td> 
+<ul> 
+<li><em>Type</em> into text field</li> 
+<li><em>Type</em> into text field</li> 
+<li><em>Type</em> distance and zip code</li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="groups"></a>Groups</h3> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Parameter</th> 
+<th>Operators Available</th> 
+<th>Actions</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td>Group: &quot;Group Title...&quot;</td> 
+<td> 
+<ul> 
+<li>one of</li> 
+<li>none of</li> 
+<li>all of</li> </ul> </td> 
+<td><em>Click labels in list</em>; use CTRL or CMD to select multiple</td> </tr> </tbody> </table></p>
+			</section>
+	<section class="sub-section" id='E-commerce'>
+						<h2>
+							E-commerce</h2>
+				<p>
+						<p>When you integrate your e-commerce platform with MailChimp, we&rsquo;ll track your subscribers&rsquo; purchase activity so you can target campaigns to specific buyers. You can segment based on specific items, categories, amount spent, and more.&nbsp;Check out all our 
+<a href="/segments/segment-a-list-by-purchase-activity" rel="noreferrer">e-commerce options</a>.</p></p>
+			</section>
+	<section class="sub-section" id='Integrations'>
+						<h2>
+							Integrations</h2>
+				<p>
+						<p>Available options will vary by what integrations are connected in your MailChimp account.</p> 
+<h3><a name="vips-golden-monkeys-app"></a>VIPs</h3> 
+<p>If you&#39;ve marked a subscriber as a VIP in MailChimp, you can segment for those subscribers under the 
+<em>Integrations</em> section.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is a member of</li> 
+<li>is not a member of</li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="mandrill-activity"></a>Mandrill Activity</h3> 
+<p>Mandrill users can pass back Mandrill data to segment their lists in MailChimp based on sends, opens, and clicks for emails marked with specific tags.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>was sent emails tagged with</li> 
+<li>was not sent emails tagged with</li> 
+<li>opened emails tagged with</li> 
+<li>did not open emails tagged with</li> 
+<li>clicked emails tagged with</li> 
+<li>did not click emails tagged with</li> </ul> </td> 
+<td><em>Choose tag from list</em>. Use CTRL/CMD to select multiple.</td> </tr> </tbody> </table> 
+<h3><a name="goal-activity"></a>Goal Activity</h3> 
+<p>After setting up the Goal integration, you can send targeted campaigns to subscribers based on their Goal activity. Type in the URL, domain, or other URL-string into the 
+<em>Goal Activity</em> field provided.</p> 
+<p>To use this segmentation condition, you need to have&nbsp;embedded the 
+<a href="/integrations/other-integrations/integrate-goal-with-mailchimp" rel="noreferrer">Goal tracking code</a> in your webpages.&nbsp;</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>contains</li> 
+<li>does not contain</li> 
+<li>starts with</li> 
+<li>ends with</li> </ul> </td> 
+<td><em>Type</em> URL-string into field</td> </tr> </tbody> </table> 
+<h3><a name="goal-last-visited"></a>Goal Last Visited</h3> 
+<p>The 
+<em>Goal Last Visited</em> option lets you use Goal activity to target subscribers based on when they last visited a webpage with the Goal tracking script installed.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Parameters</th> 
+<th>Actions</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>is after</li> 
+<li>is before</li> 
+<li>is</li> </ul> </td> 
+<td> 
+<ul> 
+<li>the last campaign was sent</li> 
+<li>a specific campaign was sent</li> 
+<li>a specific date</li> </ul> </td> 
+<td> 
+<ul> 
+<li><em>Choose</em> from list</li> 
+<li><em>Use date picker</em></li> </ul> </td> </tr> </tbody> </table> 
+<h3><a name="surveymonkey-activity"></a>SurveyMonkey Activity</h3> 
+<p>After you create a campaign using our SurveyMonkey integration, you can build segments based on whether your recipients have interacted with your survey.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td> 
+<ul> 
+<li>started survey</li> 
+<li>completed survey</li> 
+<li>not started survey</li> 
+<li>not completed survey</li> </ul> </td> 
+<td>Choose survey from list</td> </tr> </tbody> </table> 
+<h3><a name="social"></a>Social</h3> 
+<p>If you&#39;ve activated Social Profiles for your list, you can create segments based on your subscribers&#39; social data: Age, Following/Fan, Gender, Influence Rating, and Social Network.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Type of Data</th> 
+<th>Operators</th> 
+<th>Parameters</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td>Age</td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> </ul> </td> 
+<td> 
+<ul> 
+<li>18-24</li> 
+<li>25-34</li> 
+<li>35-54</li> 
+<li>55+</li> </ul> </td> </tr> 
+<tr> 
+<td>Following/Fan</td> 
+<td> 
+<ul> 
+<li>is following you on</li> 
+<li>is not following you on</li> </ul> </td> 
+<td> 
+<ul> 
+<li>Twitter</li> 
+<li>Facebook</li> </ul> </td> </tr> 
+<tr> 
+<td>Gender</td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> </ul> </td> 
+<td> 
+<ul> 
+<li>Male</li> 
+<li>Female</li> </ul> </td> </tr> 
+<tr> 
+<td>Social Network</td> 
+<td> 
+<ul> 
+<li>is a member of</li> 
+<li>is not a member of</li> </ul> </td> 
+<td> 
+<ul> 
+<li>Twitter</li> 
+<li>Facebook</li> 
+<li>LinkedIn</li> 
+<li>About.me</li> 
+<li>Flickr</li> 
+<li>Foursquare</li> 
+<li>Last.fm</li> 
+<li>MySpace</li> 
+<li>Quora</li> 
+<li>Vimeo</li> 
+<li>Yelp</li> 
+<li>YouTube</li> </ul> </td> </tr> </tbody> </table> 
+<p>&nbsp;</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Type of Data</th> 
+<th>Operators Available</th> 
+<th>Action</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td>Influence Rating</td> 
+<td> 
+<ul> 
+<li>is</li> 
+<li>is not</li> 
+<li>is greater than</li> 
+<li>is less than</li> </ul> </td> 
+<td><em>Hover and click</em> over star rating.</td> </tr> </tbody> </table> 
+<p>You can combine up to five Social Profiles conditions to build a segment. If you&rsquo;re looking over your Social Profiles stats in the 
+<em>Lists</em> section of MailChimp, you can click the 
+<em>Send to Segment </em>button next to any statistic to open the Campaign Builder and create a campaign to send to that segment.</p></p>
+			</section>
+	<section class="sub-section" id='Operator-Glossary'>
+						<h2>
+							Operator Glossary</h2>
+				<p>
+						<p>When you create&nbsp;a segment, you choose an &quot;operator,&quot; which is usually the second choice and something like &quot;is&quot; or &quot;is not.&quot; Different conditions display different operators. Here&#39;s a list of the ones you might see.</p> 
+<table class="mc-table table_data"> 
+<thead> 
+<tr> 
+<th>Operator</th> 
+<th>Description</th> </tr> </thead> 
+<tbody> 
+<tr> 
+<td>is</td> 
+<td>Form field data exactly matches the text you input.</td> </tr> 
+<tr> 
+<td>is not</td> 
+<td>Form field data does not match exactly the text you input.</td> </tr> 
+<tr> 
+<td>contains</td> 
+<td>Form field data contains the text you input.</td> </tr> 
+<tr> 
+<td>does not contain</td> 
+<td>Form field data does not contain the text you input.</td> </tr> 
+<tr> 
+<td>is greater than</td> 
+<td>Form field data is larger than the number you input.</td> </tr> 
+<tr> 
+<td>is less than</td> 
+<td>Form field data is smaller than the number you input.</td> </tr> 
+<tr> 
+<td>is before</td> 
+<td>Form field date comes before the date you select.</td> </tr> 
+<tr> 
+<td>is after</td> 
+<td>Form field date comes after the date you select.</td> </tr> 
+<tr> 
+<td>opened</td> 
+<td>Report data shows subscriber opened a campaign.</td> </tr> 
+<tr> 
+<td>did not open</td> 
+<td>Report data shows subscriber did not open a campaign.</td> </tr> 
+<tr> 
+<td>clicked</td> 
+<td>Report data shows subscriber clicked any link in a campaign.</td> </tr> 
+<tr> 
+<td>did not click</td> 
+<td>Report data shows subscriber didn&#39;t click any links in a campaign.</td> </tr> 
+<tr> 
+<td>was sent</td> 
+<td>Report data shows subscriber was sent a campaign. This only tracks whether a message was sent from MailChimp, it doesn&#39;t account for campaigns that aren&#39;t received for any reason.</td> </tr> 
+<tr> 
+<td>was not sent</td> 
+<td>Report data shows subscriber wasn&#39;t sent a campaign. This only tracks whether a message was sent from MailChimp, it doesn&#39;t account for campaigns that aren&#39;t received for any reason.</td> </tr> 
+<tr> 
+<td>source was</td> 
+<td>Subscriber signed up from the source you select.</td> </tr> 
+<tr> 
+<td>source was not</td> 
+<td>Subscriber signed up from a source other than what you select.</td> </tr> 
+<tr> 
+<td>has replied</td> 
+<td>Conversations activity shows that subscriber has replied to a campaign.</td> </tr> 
+<tr> 
+<td>has not replied</td> 
+<td>Conversations activity shows that subscriber hasn&#39;t replied to a campaign.</td> </tr> 
+<tr> 
+<td>is within</td> 
+<td>The geolocation of the subscriber is inside the distance radius you select.</td> </tr> 
+<tr> 
+<td>is not within</td> 
+<td>The geolocation of the subscriber is beyond or outside of the distance radius you select.</td> </tr> 
+<tr> 
+<td>is in country/U.S. state/zip</td> 
+<td>The geolocation of the subscriber is inside the country, state, or zip code you select.</td> </tr> 
+<tr> 
+<td>is not in country/U.S. state/zip</td> 
+<td>The geolocation of the subscriber is not inside the country, state, or zip code you select.</td> </tr> 
+<tr> 
+<td>is unknown</td> 
+<td>Geolocation data for these subscribers is unavailable. As subscribers engage with your campaigns, MailChimp pinpoints their location, so this field will populate and change over time.</td> </tr> 
+<tr> 
+<td>starts with</td> 
+<td>Form field data starts with the text you input.</td> </tr> 
+<tr> 
+<td>ends with</td> 
+<td>Form field data ends with the text you input</td> </tr> 
+<tr> 
+<td>is blank</td> 
+<td>Form field is empty.</td> </tr> 
+<tr> 
+<td>is not blank</td> 
+<td>Form field contains any value.</td> </tr> 
+<tr> 
+<td>one of</td> 
+<td>Subscriber is a member of, or interested in, any of the interest groups you select.</td> </tr> 
+<tr> 
+<td>none of</td> 
+<td>Subscriber is a member of, or interested in, none of the interest groups you select.</td> </tr> 
+<tr> 
+<td>all of</td> 
+<td>Subscriber is a member of, or interested in, all of the interest groups you select.</td> </tr> 
+<tr> 
+<td>is a member of</td> 
+<td>Subscriber profile shows they&#39;re a VIP or member of Golden Monkeys. This operator is also used with Social Profiles, when subscribers have profiles on certain social networks.</td> </tr> 
+<tr> 
+<td>is not a member of</td> 
+<td>Subscriber profile shows they are not VIP or member of Golden Monkeys. This operator is also used with Social Profiles, when subscribers don&#39;t have profiles on certain social networks.</td> </tr> 
+<tr> 
+<td>is following you on</td> 
+<td>Subscriber is following you on the social network selected.(Requires Social Profiles.)</td> </tr> 
+<tr> 
+<td>is not following you on</td> 
+<td>Subscriber isn&#39;t following you on the social network selected. (Requires Social Profiles.)</td> </tr> 
+<tr> 
+<td>has started</td> 
+<td> 
+<ul> 
+<li><strong>When used with Automation:&nbsp;</strong>Subscriber has triggered an Automation workflow and received at least one email. This includes subscribers who have started and completed the workflow.</li> 
+<li><strong>When used with SurveyMonkey:&nbsp;</strong>Subscriber has started the SurveyMonkey survey you select. This includes subscribers who have started and completed the survey.</li> </ul> </td> </tr> 
+<tr> 
+<td>has not started</td> 
+<td> 
+<ul> 
+<li><strong>When Used with Automation:</strong>&nbsp;Subscriber hasn&#39;t triggered an Automation workflow yet.</li> 
+<li><strong>When used with SurveyMonkey: </strong>Subscriber has not started the SurveyMonkey survey you select.</li> </ul> </td> </tr> 
+<tr> 
+<td>has completed</td> 
+<td> 
+<ul> 
+<li><strong>When used with Automation:</strong>&nbsp;Subscriber has been sent all the emails in an Automation workflow.</li> 
+<li><strong>When used with SurveyMonkey:</strong>&nbsp;Subscriber has completed the SurveyMonkey survey you select.</li> </ul> </td> </tr> 
+<tr> 
+<td>has not completed</td> 
+<td> 
+<ul> 
+<li><strong>When used with Automation:</strong>&nbsp;Subscriber has triggered an Automation workflow and received at least one campaign. This will include any subscriber who triggered a workflow, even if they were later segmented out of future automated emails.</li> 
+<li><strong>When used with SurveyMonkey:</strong>&nbsp;Subscriber has not completed the SurveyMonkey survey you select. This includes subscribers who have not started the survey at all.</li> </ul> </td> </tr> </tbody> </table></p>
+			</section>
+	<div class="hide-print">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+  <div id="article-survey-form" class="border-top pad-lv6 pad-b0 pad-lr0">
+    <table>
+      <tr>
+        <td class="fwb">Was this article helpful?</td>
+      </tr>
+      <tr>
+        <td>
+          <div class='float-left pad-lv2 pad-tb0 pad-l0'>
+            <input type="radio" class="article_helpful_overall" id="rahyes" value="yes" onclick="toggleFeedbackRadios(this.id)" />
+            <label for="rahyes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" class="article_helpful_overall" id="rahno" value="no" onclick="toggleFeedbackRadios(this.id)" />
+            <label for="rahno">No</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="fwb">
+          What can we do to improve articles like this?
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea class="form-area nomargin" id="comment"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button class="button p0 btn submit" onclick="submitArticleSurvey(this);">
+            Submit Feedback
+          </button>
+        </td>
+      </tr>
+    </table>
+    <div class='feedback-block success msg-success result-msg' id="survey-success">
+      <div class="pad-lv3 pad-tb0">
+        <h3 class="no-transform">Thanks for submitting your feedback!</h3>
+        At this time, we are unable to reply to any responses,
+        but we'll use this information to keep the site up-to-date.
+      </div>
+    </div>
+    <div class='feedback-block error msg-error result-msg' id='survey-error'>
+      <div class="pad-lv3 pad-tb0">
+        Sorry, we were unable to submit your feedback. Please try again later.
+        Thank you for your patience.
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+  
+  function submitArticleSurvey(btnElement) {
+
+    var $clickedBtn = $(btnElement);
+    var $articleSurvey = $clickedBtn.parents('#article-survey-form');
+    
+    /** 
+     * Render a success message for the survey result.
+     * @param {string} msg [optional] - Message to display on success
+     */ 
+    var success = function(msg) {
+      $(".result-msg").hide();
+      
+      var $successArea = $("#survey-success");
+      if (typeof msg === "string" && msg.length) {
+        $successArea.text(msg);
+      }
+      $articleSurvey.find("textarea").hide();
+      $successArea.show();
+      return false;
+    };
+
+    /**
+     * Render a failure message for the survey result.
+     * @param {string} msg [optional] - Message to display on failure
+     */
+    var fail = function(msg) {
+      $(".result-msg").hide();
+      
+      var $failArea = $("#survey-error");
+      if (typeof msg === "string" && msg.length) {
+        $failArea.text(msg);
+      }
+      $articleSurvey.find("textarea").hide();
+      $failArea.show();
+      return false;
+    };
+
+    var hideResultTextBoxes = function() {
+      $('.result-msg').hide();
+    };
+
+    var hideSurveyForm = function() {
+      $('#article-survey-form table').hide();
+    };
+    
+    
+    if (!$articleSurvey.length) {
+      return fail("The survey is missing.");
+    }
+      
+    var articleHelpful = "unknown";
+    var sectionNames = [];
+    var comment = "";
+
+    var articleHelpfulFormValue = $articleSurvey
+      .find("input[type=radio].article_helpful_overall:checked").val();
+    if (articleHelpfulFormValue) {
+      articleHelpful = articleHelpfulFormValue;
+    }
+
+    var $sectionsElem = $articleSurvey.find(".sections");
+    if ($sectionsElem.length) {
+      var $sectionCheckboxes = $sectionsElem.find("input[type=checkbox]:checked");
+      $sectionCheckboxes.each(function() {
+        var $checkbox = $(this);
+        sectionNames.push($checkbox.attr("value"));
+      });
+    }
+    
+    comment = $.trim($articleSurvey.find("textarea").val());
+    if (!articleHelpful == "unknown") {
+      return;
+    }
+    
+    if ('console' in window) {
+      console.log("Submitting survey feedback: ", articleHelpful, 
+          sectionNames, comment);
+
+      /** @var {string} - The request path, without query strings or fragments.
+       *
+       *    Ex: "lists/create-a-list-tutorial"
+       */
+      var articlePath = window.location.pathname.replace(window.Paths.SITE_ROOT_PATH, '');
+      sectionNames.unshift(articleHelpful);
+
+      hideResultTextBoxes();
+      if(!comment)
+        comment = " ";
+      var $jqXHR = $.ajax({
+        url: "/restservices/survey/send",
+        method: "POST",
+        data: JSON.stringify({
+          "comment": comment,
+          "articlePath": articlePath,
+          "categories": sectionNames
+        }),
+        processData: false,
+        contentType: "application/json; charset=utf-8",
+        beforeSend: function( xhr ) {
+          xhr.overrideMimeType("application/json; charset=utf-8");
+        }
+      }).done(function(data) {
+        if ('console' in window) {
+          console.info("Data received:");
+          console.debug(data);
+          console.log($jqXHR.statusCode().status);
+          console.log($jqXHR.statusCode().statusText);
+          console.log($jqXHR.getAllResponseHeaders());
+          
+        }
+      }).fail(function(data) {
+        if ('console' in window) {
+          console.error("Data received:");
+          console.debug(data);
+          console.warn($jqXHR.statusCode());
+          console.warn($jqXHR.statusText);
+          console.warn($jqXHR.getAllResponseHeaders());
+        }
+      }).always(function(data) {
+        if ('console' in window) {
+          console.info('AJAX POST finished.');
+        }
+        
+        var httpStatusCode = $jqXHR.statusCode().status;
+        if (httpStatusCode === 200) {
+          hideSurveyForm();
+          success();
+        } else {
+          fail("Failed; got HTTP "+httpStatusCode+" "
+            +$jqXHR.statusCode().statusText+" from server.\n\n"
+            +"<pre>"+$jqXHR.getAllResponseHeaders+"</pre>");
+        }
+      });
+    }
+  }
+
+</script></div>
+
+	<input type="hidden" id="h_docTitle" value="All the Segmenting Options" style="display:none;"/>
+
+	</article>
+
+<script type="text/javascript" src="/scripts/fixed-nav.js?v=2.0.4"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.mobile-top-nav').click(function(e) {
+
+	        e.preventDefault();
+            e.stopPropagation();
+
+            $(this).toggleClass("active");
+	    });
+	});
+</script></div>
+
+    <div class="lastUnit size1of4 mid-size1of2 mid-centered hide-print">       
+        <div class="below48">
+		<p class='fwb'>Tagged</p>
+		<ul class="tag-list">
+			<li><a href="/tag/segments">segments</a></li>
+                    </ul>
+	</div>
+<div class="below48">
+        <p class="fwb">Related Articles</p>
+        <ul class="disc">
+
+            <li><a href='/segments/how-to-use-saved-segments'
+                            >How to Use Saved Segments</a></li>
+                    <li><a href='/segments/hide-groups-on-signup-forms'
+                            >Hide Groups on Signup Forms</a></li>
+                    </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="section">
+
+        
+        
+            
+            
+                <p class='fwb'>Technical Support</p>
+            
+        
+
+        
+        
+        
+        
+            
+            
+            
+                <div class="feedback-block warning">
+                    <div class="pad-lv3 pad-tb0">
+                        
+                            
+                            
+                                <p>Don&#39;t see what you&#39;re looking for? Please
+                                <a data-redirect="true" href="https://login.mailchimp.com/">log in</a>&nbsp;to see the
+                                <a href="http://kb.mailchimp.com/accounts/management/mailchimp-support-options">Support Options</a>&nbsp;available.</p>
+                            
+                        
+                    </div>
+                </div>
+            
+        
+
+    </div>
+</div>
+
+</div><footer class="alignc dim-el pad-lv6 pad-lr0" >
+    
+    <div class="line">
+        <div class="lastUnit size1of1>">
+            <a href="http://mailchimp.com" target="_blank" tabindex="-1"> 
+                <img class="inline-block" src="/images/logo-dark.svg" height="32">
+            </a>
+        </div> 
+    </div>
+    <div class="line relative">
+        <div class="unit size1of2 centered">
+            <p class="hide-mobile absolute right0 pad-lv2 pad-tb0 pad-l0 hide-print"><a href="#top" class="noborder"><span class="freddicon menu-up"></span> Back to top</a></p>
+            <p class="small-meta below18">©2001-2015 All Rights Reserved. MailChimp® is a registered trademark of The Rocket Science Group.</p>
+        </div>
+        <div class="lastUnit size1of2 centered hide-print">
+
+            <p class="small-meta nomargin">
+                <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="http://mailchimp.com">
+                    MailChimp
+                </a>
+                <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="http://mailchimp.com/resources/">
+                    Resource guides</a>
+                <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="http://docmakers.mailchimp.com/">
+                    KB Blog</a>
+                <a class="pad-lv2 pad-tb0 pad-l0 noborder fwb" href="http://mailchimp.com/contact">
+                    Contact</a>
+            </p>
+
+            <p class="show-mobile pad-lv4 nomargin pad-b0"><a href="#top" class="noborder"><span class="freddicon menu-up"></span> Back to top</a></p>
+        </div>
+    </div>
+
+</footer></div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

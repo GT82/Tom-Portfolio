@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Here are some tips for getting off the ground quickly and making WordPress theme&#039;s. Here to make Creating your first WordPress theme &#039;from scratch&#039; easy"/>
+<link rel="canonical" href="https://timbdesign.com/creating-first-wordpress-theme-scratch/" />
+<link rel="publisher" href="https://plus.google.com/+TimothyBrowndesign/"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Creating your first WordPress theme &#039;from scratch&#039;" />
+<meta property="og:description" content="Here are some tips for getting off the ground quickly and making WordPress theme&#039;s. Here to make Creating your first WordPress theme &#039;from scratch&#039; easy" />
+<meta property="og:url" content="https://timbdesign.com/creating-first-wordpress-theme-scratch/" />
+<meta property="og:site_name" content="Tim Brown" />
+<meta property="article:publisher" content="http://facebook.com/timbdesignmpls" />
+<meta property="article:author" content="https://www.facebook.com/invigorated" />
+<meta property="article:section" content="WordPress Development for Noobs" />
+<meta property="article:published_time" content="2015-09-02T23:09:27+00:00" />
+<meta property="article:modified_time" content="2015-09-21T18:45:03+00:00" />
+<meta property="og:updated_time" content="2015-09-21T18:45:03+00:00" />
+<meta property="og:image" content="https://timbdesign.com/wp-content/uploads/2015/09/creating-your-first-wordpress-theme-from-scratch.jpg" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="Here are some tips for getting off the ground quickly and making WordPress theme&#039;s. Here to make Creating your first WordPress theme &#039;from scratch&#039; easy"/>
+<meta name="twitter:title" content="Creating your first WordPress theme &#039;from scratch&#039;"/>
+<meta name="twitter:site" content="@timbdesignmpls"/>
+<meta name="twitter:domain" content="Tim Brown"/>
+<meta name="twitter:image:src" content="https://timbdesign.com/wp-content/uploads/2015/09/creating-your-first-wordpress-theme-from-scratch.jpg"/>
+<meta name="twitter:creator" content="@timbdesignmpls"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Tim Brown &raquo; Feed" href="https://timbdesign.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Tim Brown &raquo; Comments Feed" href="https://timbdesign.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Tim Brown &raquo; Creating your first WordPress theme &#8216;from scratch&#8217; Comments Feed" href="https://timbdesign.com/creating-first-wordpress-theme-scratch/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/timbdesign.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://timbdesign.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='//timbdesign.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='//timbdesign.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=2.3.7' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='//timbdesign.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=2.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='tim-brown-style-css'  href='https://timbdesign.com/wp-content/themes/tim-brown/style.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='main-style-css'  href='https://timbdesign.com/wp-content/themes/tim-brown/css/main.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-style-css'  href='https://timbdesign.com/wp-content/themes/tim-brown/css/style.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='component-style-css'  href='https://timbdesign.com/wp-content/themes/tim-brown/css/component.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-style-css'  href='https://timbdesign.com/wp-content/themes/tim-brown/magnific-popup/magnific-popup.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-style-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A700&#038;ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_image_widget-css'  href='https://timbdesign.com/wp-content/plugins/jetpack/modules/widgets/image-widget/style.css?ver=20140808' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://timbdesign.com/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://timbdesign.com/wp-content/plugins/jetpack/css/jetpack.css?ver=3.4.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://timbdesign.com/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20141201'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/themes/tim-brown/js/retina.js?ver=1'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/themes/tim-brown/js/modernizr.custom.js?ver=1'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/themes/tim-brown/js/script.js?ver=1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://timbdesign.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://timbdesign.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.2.2" />
+<meta name="generator" content="WooCommerce 2.3.7" />
+<link rel='shortlink' href='https://wp.me/p3oKqe-VU' />
+
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style>			<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://timbdesign.com/?custom-css=1&#038;csblog=1&#038;cscache=6&#038;csrev=412" />
+			
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'image', 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* Inline */
+	jQuery('a.fancybox-inline, area.fancybox-inline, li.fancybox-inline a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'inline', 'autoDimensions' : true, 'scrolling' : 'no', 'easingIn' : 'easeOutBack', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+<!-- WooCommerce Colors -->
+<style type="text/css">
+p.demo_store{background-color:#027891;color:#9ee5f4;}.woocommerce small.note{color:#777;}.woocommerce .woocommerce-breadcrumb{color:#777;}.woocommerce .woocommerce-breadcrumb a{color:#777;}.woocommerce div.product span.price,.woocommerce div.product p.price{color:#85ad74;}.woocommerce div.product .stock{color:#85ad74;}.woocommerce span.onsale{background-color:#85ad74;color:#fff;}.woocommerce ul.products li.product .price{color:#85ad74;}.woocommerce ul.products li.product .price .from{color:rgba(145, 145, 145, 0.5);}.woocommerce nav.woocommerce-pagination ul{border:1px solid #dfdbdf;}.woocommerce nav.woocommerce-pagination ul li{border-right:1px solid #dfdbdf;}.woocommerce nav.woocommerce-pagination ul li span.current,.woocommerce nav.woocommerce-pagination ul li a:hover,.woocommerce nav.woocommerce-pagination ul li a:focus{background:#f7f6f7;color:#978a97;}.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce #respond input#submit{color:#5e5e5e;background-color:#f7f6f7;}.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,.woocommerce #respond input#submit:hover{background-color:#e6e5e6;color:#5e5e5e;}.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit.alt{background-color:#027891;color:#9ee5f4;}.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce #respond input#submit.alt:hover{background-color:#006780;color:#9ee5f4;}.woocommerce a.button.alt.disabled,.woocommerce button.button.alt.disabled,.woocommerce input.button.alt.disabled,.woocommerce #respond input#submit.alt.disabled,.woocommerce a.button.alt:disabled,.woocommerce button.button.alt:disabled,.woocommerce input.button.alt:disabled,.woocommerce #respond input#submit.alt:disabled,.woocommerce a.button.alt:disabled[disabled],.woocommerce button.button.alt:disabled[disabled],.woocommerce input.button.alt:disabled[disabled],.woocommerce #respond input#submit.alt:disabled[disabled],.woocommerce a.button.alt.disabled:hover,.woocommerce button.button.alt.disabled:hover,.woocommerce input.button.alt.disabled:hover,.woocommerce #respond input#submit.alt.disabled:hover,.woocommerce a.button.alt:disabled:hover,.woocommerce button.button.alt:disabled:hover,.woocommerce input.button.alt:disabled:hover,.woocommerce #respond input#submit.alt:disabled:hover,.woocommerce a.button.alt:disabled[disabled]:hover,.woocommerce button.button.alt:disabled[disabled]:hover,.woocommerce input.button.alt:disabled[disabled]:hover,.woocommerce #respond input#submit.alt:disabled[disabled]:hover{background-color:#027891;color:#9ee5f4;}.woocommerce a.button:disabled:hover,.woocommerce button.button:disabled:hover,.woocommerce input.button:disabled:hover,.woocommerce #respond input#submit:disabled:hover,.woocommerce a.button.disabled:hover,.woocommerce button.button.disabled:hover,.woocommerce input.button.disabled:hover,.woocommerce #respond input#submit.disabled:hover,.woocommerce a.button:disabled[disabled]:hover,.woocommerce button.button:disabled[disabled]:hover,.woocommerce input.button:disabled[disabled]:hover,.woocommerce #respond input#submit:disabled[disabled]:hover{background-color:#f7f6f7;}.woocommerce #reviews h2 small{color:#777;}.woocommerce #reviews h2 small a{color:#777;}.woocommerce #reviews #comments ol.commentlist li .meta{color:#777;}.woocommerce #reviews #comments ol.commentlist li img.avatar{background:#f7f6f7;border:1px solid #f0eef0;}.woocommerce #reviews #comments ol.commentlist li .comment-text{border:1px solid #f0eef0;}.woocommerce #reviews #comments ol.commentlist #respond{border:1px solid #f0eef0;}.woocommerce .star-rating:before{color:#dfdbdf;}.woocommerce.widget_shopping_cart .total,.woocommerce .widget_shopping_cart .total{border-top:3px double #f7f6f7;}.woocommerce form.login,.woocommerce form.checkout_coupon,.woocommerce form.register{border:1px solid #dfdbdf;}.woocommerce .order_details li{border-right:1px dashed #dfdbdf;}.woocommerce .widget_price_filter .ui-slider .ui-slider-handle{background-color:#027891;}.woocommerce .widget_price_filter .ui-slider .ui-slider-range{background-color:#027891;}.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content{background-color:#00344d;}.woocommerce-cart table.cart td.actions .coupon .input-text{border:1px solid #dfdbdf;}.woocommerce-cart .cart-collaterals .cart_totals p small{color:#777;}.woocommerce-cart .cart-collaterals .cart_totals table small{color:#777;}.woocommerce-cart .cart-collaterals .cart_totals .discount td{color:#85ad74;}.woocommerce-cart .cart-collaterals .cart_totals tr td,.woocommerce-cart .cart-collaterals .cart_totals tr th{border-top:1px solid #f7f6f7;}.woocommerce-checkout .checkout .create-account small{color:#777;}.woocommerce-checkout #payment{background:#f7f6f7;}.woocommerce-checkout #payment ul.payment_methods{border-bottom:1px solid #dfdbdf;}.woocommerce-checkout #payment div.payment_box{background-color:#ebe9eb;color:#5e5e5e;}.woocommerce-checkout #payment div.payment_box input.input-text,.woocommerce-checkout #payment div.payment_box textarea{border-color:#d3ced3;border-top-color:#c7c0c7;}.woocommerce-checkout #payment div.payment_box ::-webkit-input-placeholder{color:#c7c0c7;}.woocommerce-checkout #payment div.payment_box :-moz-placeholder{color:#c7c0c7;}.woocommerce-checkout #payment div.payment_box :-ms-input-placeholder{color:#c7c0c7;}.woocommerce-checkout #payment div.payment_box span.help{color:#777;}.woocommerce-checkout #payment div.payment_box:after{content:"";display:block;border:8px solid #ebe9eb;border-right-color:transparent;border-left-color:transparent;border-top-color:transparent;position:absolute;top:-3px;left:0;margin:-1em 0 0 2em;}
+</style>
+<!--/WooCommerce Colors-->
+<head>
+
+<meta charset="UTF-8">
+
+<title>Creating your first WordPress theme &#039;from scratch&#039;</title>
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport" />
+
+<link href="https://timbdesign.com/" rel="canonical" />
+<link rel="shortcut icon" href="https://timbdesign.com/wp-content/themes/tim-brown/images/favicon.ico?v=2">
+
+<link rel="author" href="https://plus.google.com/u/0/+TimothyBrowndesign"/>
+<meta name="p:domain_verify" content="1bf30e41476faa0ff9356664d8d6798e"/>
+
+
+<script type="text/javascript" src="//use.typekit.net/cee4xpl.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:900,400italic' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lte IE 7]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js" type="text/javascript"></script><![endif]-->
+<!--[if lt IE 7]>
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37337986-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body class="single single-post postid-3590 single-format-standard group-blog">
+
+<div class="header">
+<div class="head-wrapper">
+<a href="https://timbdesign.com"><img id="logo" src="https://timbdesign.com/wp-content/themes/tim-brown/images/logo.png" alt="Tim Brown, Digital Designer"></a>
+<nav><ul class="navigation">
+    <li><a href="https://timbdesign.com/web-design/">Web Design</a></li>
+    <li><a href="https://timbdesign.com/branding-and-logo-design-minneapolis/">Branding</a></li>
+<li><a href="https://timbdesign.com/process/">Process</a></li>
+    <li><a href="https://timbdesign.com/bio">About</a></li>
+     <li><a href="https://timbdesign.com/blog">Blog</a></li>
+    <li><a href="#contact-form">Contact</a></li>
+
+</ul></nav>
+<div class="mobile-menu">
+<div class="main clearfix">
+				<div class="column">
+				</div>
+				<div class="column">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+
+						<ul class="dl-menu">
+							<li>
+								<a href="https://timbdesign.com/web-design/">Web Design</a>
+							</li>
+							<li>
+								<a href="https://timbdesign.com/branding-and-logo-design-minneapolis/">Branding</a>
+							</li>
+<li>
+								<a href="https://timbdesign.com/process">Process</a>
+							</li>
+							<li>
+								<a href="https://timbdesign.com/bio">About Me</a>
+							</li>
+							<li>
+								<a href="https://timbdesign.com/blog">Blog</a>
+							</li>
+							<li>
+								<a href="#contact-form">Contact</a>
+							</li>
+
+						</ul>
+
+					</div><!-- /dl-menuwrapper -->
+
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://timbdesign.com/wp-content/themes/tim-brown/js/jquery.dlmenu.js"></script>
+		<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=1.6.5.1'></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>
+</div>
+</div>
+	
+<section class="inner-wpdev">
+
+<div class="wrapper-inner-title" >
+
+<div id="project-title">
+
+<p class="ruggedly-handsome"><strong>Chapter Five</strong> | WordPress Development for Noobs </p>
+<h1 id="inner-project-title2">Creating your first WordPress theme &#8216;from scratch&#8217;</h1>
+<img class="float-title" src="/wp-content/themes/tim-brown/images/wordpress-development-for-noobs@2x.png"
+</div>
+</div>
+
+</section>
+
+<div class="wrapper">
+
+<div class="main">
+<img width="1052" height="1078" src="https://timbdesign.com/wp-content/uploads/2015/09/creating-your-first-wordpress-theme-from-scratch.jpg" class="attachment-full wp-post-image" alt="Creating your first WordPress Theme from Scratch" />			
+<article id="post-3590" class="post-3590 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress-development-for-noobs">
+	<header class="entry-header">
+		<h1 class="entry-title">Creating your first WordPress theme &#8216;from scratch&#8217;</h1>
+		<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://timbdesign.com/creating-first-wordpress-theme-scratch/" rel="bookmark"><time class="entry-date published" datetime="2015-09-02T23:09:27+00:00">September 2, 2015</time><time class="updated" datetime="2015-09-21T18:45:03+00:00">September 21, 2015</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://timbdesign.com">Tim Brown</a></span></span>		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><a href="https://timbdesign.com/when-to-use-theme-options/">&lt; Back to Chapter 4 &#8211; Modifying WordPress Themes Code, and some basics of slanging HTML and CSS within a WordPress Theme</a></p>
+<p><em><strong>WordPress Development for Noobs</strong> is  fun and exciting course that you can take online through these articles in how to build your own <a href="https://timbdesign.com/wordpress-custom-post-types-advanced-custom-fields/">WordPress sites</a>. I create value everyday as a <a title="Web Developer in Minneapolis" href="http://timbdesign.com">WordPress developer in Minneapolis</a>, and have now for a number of years now, and I think WordPress is a perfect web design solution for small to medium clients who need a website, or larger clients who&#8217;s websites are built around articles. (Every company should now be positioning themselves as a media company as Content Marketing has blown up, and most need some of it to survive.) This article will go over the first steps of Modifying WordPress Themes Code, and some basics of slanging HTML and CSS within a WordPress Theme.<br />
+</em></p>
+<p><strong>What you will learn in this article:</strong></p>
+<ul class="playfair lego-list">
+<li>Can&#8217;t I just use a theme? What are the benefits of creating a WordPress site from scratch?<a class="skip-to-it-daddy-o" href="#theme-options">Skip to It Daddy O</a></li>
+<li>What are some basic &#8220;naked&#8221; theme frameworks I can use to start off right in WordPress Development?<a class="get-to-it-sugar" style="line-height: 1.5;" href="#use-theme-options">Get To It, Sugar</a></li>
+<li>Here&#8217;s how you get started writing your theme from scratch, and the main things you&#8217;ll need to have in place for it to work<a class="come-on-and-give-it-to-me" style="line-height: 1.5;" href="#modify-theme">Come on and give it to me</a></li>
+</ul>
+<h2 id="theme-options">Can&#8217;t I just use a theme? What are the benefits of creating a WordPress site from scratch?</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>One of the biggest problems with just using a theme, is that you think of the problem in terms of what the theme let&#8217;s you do, instead of what&#8217;s best for the client, the website, or what&#8217;s best to help the visitors do what they want to or you want them to do. </strong></p>
+<p>I started making websites for clients by modifying themes. I tried not to be hemmed in by the theme, but in the end if there&#8217;s a theme option that&#8217;s 80% as good as what I had intended, I&#8217;d use it, because hey, who wouldn&#8217;t? The idea of creating a theme from scratch, to match the visual design that you made where you didn&#8217;t even have a theme in mind means that you can design with the client and their customer in mind, instead of designing from some one-size-fits-all template.</p>
+<p>&nbsp;</p>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>By creating from scratch around a visual design that&#8217;s intended to serve the client and their customer&#8217;s needs, rather than fit a pre-built template, you&#8217;re setting your services up as a custom, high-value solution, rather than a run-of-the-mill commodity. </strong></p>
+<p>If all you do is implement content and a couple tweaks on to something that already existed, you may not be able to share your hard work as the custom high end solution that you are trying to sell your work as. I find developing from &#8216;scratch&#8217; (I usually use a responsive, naked framework as a starting point,) reminds me to relentlessly seek the best solution, not the easiest.</p>
+<h2 id="use-theme-options" class="yellow-pt">What are some basic &#8220;naked&#8221; theme frameworks I can use to start off right in WordPress Development?</h2>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong><a href="http://themekraft.com/tk-wordpress-bootstrap-starter-theme/">_TK</a> is a solid naked theme based on bootstrap (a CSS framework for responsive design structure) and Underscores (the maker&#8217;s of WordPress&#8217; naked theme with the PHP loops set up) to get get started on.</strong></p>
+<p>With <a href="http://getbootstrap.com/">Bootstrap</a>&#8216;s out of the gate responsive design features, mobile menu, and many bits and pieces of functionality like dropdowns, show/hides, and some basic styles built in you have a tool that gets projects up off the ground quickly, but doesn&#8217;t impose to intense of initial style on your project.</p>
+<p>With <a href="http://underscores.me/">_Underscores</a> pleasant start-up kit of your basic PHP loops like <!--?php the_header() ?-->, <!--?php the _footer() ?--> and so on, you can get into theming without having all this stuff memorized or consulting WordPress documentation for every tiny thing. </p>
+<p>Combine them together and you have <a href="http://themekraft.com/tk-wordpress-bootstrap-starter-theme/">_tk</a>. I have been on a project using this framework and it did it&#8217;s job beautifully. WordPress developers would do well to become acquainted with this base theme for the obvious reasons. Quick start time on projects, and of course the loose restrictions that a very basic theme will give you. Of course knowing this, it&#8217;s important to note you will have to write a good amount of CSS overlaying on what bootstrap&#8217;s styles. It would be a very boring site indeed that used out of the box styles without modification to create a compelling design. <a href="http://themekraft.com/tk-wordpress-bootstrap-starter-theme/">Get the _tk Starter Theme Here.</a></p>
+<p>This is in the end, why someone would want to use a tool like this though. The very basic styling that comes with Bootstrap is intended to be helpful without being obtrusive, for developers and designers to bring their own flare to the table and adjust things without the things being overly designed to begin with.</p>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>Understrapper is another tool of this variety with a styled version available, and a more naked version as well.</strong></p>
+<p>I actually created this as a base theme for my projects, and I&#8217;ve used in in a number of them now. I created as well as a compliment to this series and you can check out what it has to offer at <a href="http://understrapper.com">Understrapper.com</a></p>
+<p><a class="clicktotweet" href="http://understrapper.com/understrapper.zip"> Download free Starter Theme Now</a></p>
+<h2 id="modify-theme" class="blue-pt">Here&#8217;s how you get started writing your theme from scratch, and the main things you&#8217;ll need to have in place for it to work</h2>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>With a new theme the key things to have in place first is a Style.css file with the name of theme up at the top, a page.php, header.php, and footer.php files with proper PHP loops.</strong></p>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>An example of a CSS file for WordPress, which will define the theme</strong></p>
+<p>In chapter two I showed you how to do this for a child theme, but the header of your CSS file for the parent theme should look like this, and it the file has to be named &#8216;style.css&#8217; and be in the root folder of the theme.</p>
+<pre><code>
+/*
+ Theme Name:     Theme Name
+ Theme URI:      http://www.timbdesign.com/theme-page
+ Description:    The theme for "Theme Name"
+ Author:         Tim B Design
+ Author URI:     http://www.timbdesign.com
+ Template:       theme_name
+ Version:        1.0.0
+*/
+
+ 
+/* ----------All your styles can be below here ----------------- */
+
+
+</code></pre>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>Here is some code that you might use as a very basic header</strong></p>
+<p>It first defines the doctype, displays the title for browsers to read using a WordPress PHP loop, and get&#8217;s the favicon for the site if you have it dropped in the theme folder. The &#8216;body class&#8217; is applied to thetag so that page templates and id&#8217;s are automatically added for easy targeting with CSS classes. Clearly a basic header structure is included here, and the menu is called, so that whatever menu you are referring to in the WordPress admin as the &#8216;primary&#8217; it will show up in the admin bar. Of course, if you are working in a blank theme, none of this will be styled yet, but it will just be raw elements that you can get ready to shape once we have the bones in place.</p>
+<pre><code>
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the &lt;head&gt; section, header and top navigation areas
+ *
+ * @package theme_name
+ *
+ */
+?&gt;&lt;!DOCTYPE html&gt;
+&lt;html &lt;?php language_attributes(); ?&gt;&gt;
+	&lt;head&gt;
+	&lt;meta charset="&lt;?php bloginfo( 'charset' ); ?&gt;" /&gt;
+	&lt;title&gt;&lt;?php wp_title(); ?&gt;&lt;/title&gt;
+	&lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+	&lt;link rel="pingback" href="&lt;?php bloginfo( 'pingback_url' ); ?&gt;" /&gt;
+	&lt;link rel="shortcut icon" href="&lt;?php echo get_template_directory_uri(); ?&gt;/favicon.ico" /&gt;
+
+&lt;?php wp_head(); ?&gt;
+&lt;/head&gt;
+&lt;body &lt;?php body_class(); ?&gt;&gt;
+	
+&lt;div id="wrap"&gt;
+	
+	&lt;header id="branding"&gt;
+		&lt;div id="logo"&gt;&lt;a href="&lt;?php echo home_url() ?&gt;/"&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/a&gt;&lt;/div&gt;
+		&lt;div id="tagline"&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/div&gt;
+	&lt;/header&gt;
+	
+	&lt;nav id="top-nav"&gt;
+		&lt;?php wp_nav_menu( array( 'container_class' =&gt; 'menu-header', 'theme_location' =&gt; 'primary' ) ); ?&gt;
+	&lt;/nav&gt;</code></pre>
+<p>&nbsp;</p>
+<p><img class="alignleft size-full wp-image-2796" src="https://timbdesign.com/wp-content/uploads/2015/04/small-blue-lego.png" alt="small-blue-lego" width="40" height="40" /><strong>Here is some code that you might use as a very basic footer</strong></p>
+<p>Included is a simple footer with the current year, a copyright, and the end tags for the page. The &lt;?php wp_footer(); ?&gt; is needed to recognize this file as the footer and is used as well to call in files like some javascript files and so on when we add those via the functions.php file.</p>
+<pre><code>&lt;?php
+/**
+ * The template for displaying the footer.
+ * 
+ * @package theme_name
+ */
+?&gt;
+	&lt;footer&gt;
+		&lt;p&gt;&amp;copy; &lt;?php echo date( 'Y' ); ?&gt; &lt;?php bloginfo( 'name' ); ?&gt;&lt;/p&gt;
+	&lt;/footer&gt;
+	
+&lt;/div&gt;&lt;!-- end of wrapper --&gt;
+&lt;?php wp_footer(); ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+<p>Of course if you&#8217;ve downloaded one of the starter theme&#8217;s above you&#8217;ll already have these things in place, plus some divs and structure that will be used for quickly shaping the responsive aspects of the site.<strong> In the next chapter I will share how to get some basic responsive structure in place if you are working from complete scratch, and how to start manipulating the design if you are using a responsive framework, like one of those above.<br />
+</strong></p>
+<p><strong>Thanks for reading &#8216;WordPress Development for Noobs: When to Use Theme Options and when to code!&#8217; If you found this useful, please tweet this so others can check it out too. </strong></p>
+<p><a class="clicktotweet" href="http://ctt.ec/P0Ube">Tweet this!</a></p>
+<p>I enjoy creating some of the <a href="https://timbdesign.com/web-design">best web design on WordPress in Minneapolis</a> and sharing the things I learn. I do it because I know it&#8217;s something people need and I like being of use. If I can help you with <a href="https://timbdesign.com">WordPress design and development</a>, let me know, that is my specialty.</p>
+<p><a class="next-tutorial tut-inactive"><img class="alignleft size-full wp-image-2794" src="https://timbdesign.com/wp-content/uploads/2015/04/green-lego.png" alt="Green Lego" width="70" height="62" />Working with responsive design in a WordPress Theme</a><br />
+<span class="coming-soon">(Coming Soon)</span></p>
+
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		This entry was posted in <a href="https://timbdesign.com/category/wordpress-development-for-noobs/" rel="category tag">WordPress Development for Noobs</a>. Bookmark the <a href="https://timbdesign.com/creating-first-wordpress-theme-scratch/" rel="bookmark">permalink</a>.
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+
+				<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="https://timbdesign.com/modifying-wordpress-themes/" rel="prev"><span class="meta-nav">&larr;</span>&nbsp;Modifying WordPress Themes Code: some basics of slanging HTML, CSS and PHP within WordPress</a></div><div class="nav-next"><a href="https://timbdesign.com/podcast-4/" rel="next">It&#8217;s a Code World &#8211; Ep. 4 &#8211;  How to Pitch Anything and Build Rapport with Clients&nbsp;<span class="meta-nav">&rarr;</span></a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+			
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-263">
+        <div id="dsq-comment-header-263" class="dsq-comment-header">
+            <cite id="dsq-cite-263">
+                <span id="dsq-author-user-263">Jonathan Perez</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-263" class="dsq-comment-body">
+            <div id="dsq-comment-message-263" class="dsq-comment-message"><p>Thanks for the clear info man</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-264">
+        <div id="dsq-comment-header-264" class="dsq-comment-header">
+            <cite id="dsq-cite-264">
+                <span id="dsq-author-user-264">Tim Brown</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-264" class="dsq-comment-body">
+            <div id="dsq-comment-message-264" class="dsq-comment-message"><p>You&#8217;re very welcome, thank you!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+var disqus_url = 'https://timbdesign.com/creating-first-wordpress-theme-scratch/';
+var disqus_identifier = '3590 https://timbdesign.com/?p=3590';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'timbdesign';
+var disqus_title = "Creating your first WordPress theme &#8216;from scratch&#8217;";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=3590';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+
+		
+</div>
+<div class="clear-on-tablet"></div>
+<div class="sidebar">
+
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="text-3" class="widget widget_text">			<div class="textwidget"><div class="about-pic">
+<img src="/test/wp-content/themes/tim-b-design-minneapolis-ux-and-marketing-web-design/images/tim-brown-designer.png">
+</div>
+<div class="about">Hi! My name is Tim Brown, and I am a particularly driven web designer out of Minneapolis focused on Marketing and User Experience design and testing.  <a href="http://timbdesign.com/bio">Read More</a></div>
+</div>
+		</aside><aside id="text-2" class="widget widget_text">			<div class="textwidget"><div class="sidebar-cta">
+<h2>Have a freelance design need?</h2>
+<p>I specialize in <strong>designing and building beautiful websites</strong> that are easy to use, and easy to edit. I am also open to <strong>branding and lettering</strong> requests.</p>
+<a class="button" href="#contact-form">Send me a message</a>
+</div></div>
+		</aside></div><!-- #secondary -->
+</div>
+</div>
+<div class="clearfix"></div>
+
+
+<footer>
+<div class="wrapper">
+<div class="footer-wrapper">
+<div class="contact-text">
+<p>
+Nothing is more important to me than
+personal connection. I believe that in
+business and collaboration people are
+the most valuable resource.</p>
+<br>
+<br>
+<p>
+Phone: 763-221-5525<br>
+E-mail: <a href="mailto:tim@timbdesign.com" style="
+color:white">tim@timbdesign.com</a>
+<br><br>
+© Copyright 2014 Tim Brown</p>
+<br>
+
+<div class="social-icons">
+<a href="http://twitter.com/timbdesignmpls"><img src="https://timbdesign.com/wp-content/themes/tim-brown/images/twitter-tim-brown-digital-designer.png" alt="Connect with me on Twitter"></a>
+<a href="http://www.linkedin.com/pub/tim-brown/35/bb/316/"><img src="https://timbdesign.com/wp-content/themes/tim-brown/images/linked-in-tim-brown-digital-designer.png" alt="Connect with me on LinkedIn"></a>
+<a href="http://www.pinterest.com/timbdesign/"><img src="https://timbdesign.com/wp-content/themes/tim-brown/images/pinterest-tim-brown-digital-designer.png" alt="Check out my style on Pinterest"></a>
+<a href="http://www.behance.net/timbdesign"><img src="https://timbdesign.com/wp-content/themes/tim-brown/images/behance-tim-brown-digital-designer.png" alt="View my portfolio on Behance"></a>
+<a href="http://www.dribbble.com/timbdesign"><img src="https://timbdesign.com/wp-content/themes/tim-brown/images/dribbble-tim-brown-digital-designer.png" alt="Connect with me on Dribbble"></a>
+<a href="http://www.github.com/timbdesign"><img src="https://timbdesign.com/wp-content/themes/tim-brown/images/github-tim-brown-digital-designer.png" alt="Connect with me on Github"></a>
+<br><br>
+</div>
+    </div>
+<div id="contact-form">
+
+<legend><h2>CONTACT</h2></legend>
+
+                <div class='gf_browser_gecko gform_wrapper' id='gform_wrapper_3' ><a id='gf_3' class='gform_anchor' ></a><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_3' id='gform_3'  action='/creating-first-wordpress-theme-scratch/?utm_content=buffera1878&#038;utm_medium=social&#038;utm_source=twitter.com&#038;utm_campaign=buffer#gf_3'>
+                        <div class='gform_body'><ul id='gform_fields_3' class='gform_fields top_label form_sublabel_below description_below'><li id='field_3_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_3_1' ></label><div class='ginput_container'><input name='input_1' id='input_3_1' type='text' value='' class='large'  tabindex='1'  placeholder='Name' /></div></li><li id='field_3_2' class='gfield gfield_contains_required field_sublabel_below field_description_below' ><label class='gfield_label' for='input_3_2' ><span class='gfield_required'>*</span></label><div class='ginput_container'>
+                            <input name='input_2' id='input_3_2' type='text' value='' class='large' tabindex='2'   placeholder='E-mail'/>
+                        </div></li><li id='field_3_3' class='gfield gfield_contains_required field_sublabel_below field_description_below' ><label class='gfield_label' for='input_3_3' ><span class='gfield_required'>*</span></label><div class='ginput_container'>
+					<textarea name='input_3' id='input_3_3' class='textarea medium' tabindex='3'  placeholder='Your Message'  rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_3' class='gform_button button' value='Submit' tabindex='4' onclick='if(window["gf_submitting_3"]){return false;}  window["gf_submitting_3"]=true;  ' /> <input type='hidden' name='gform_ajax' value='form_id=3&amp;title=&amp;description=&amp;tabindex=1' />
+            <input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='3' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_3' value='WyJbXSIsIjYyMzExOGFkNWU4N2Y1OWE0ZWVmMjQ4ZDEwYjkwOTQ4Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_3' id='gform_ajax_frame_3'></iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 3, 'https://timbdesign.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_3').load( function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;if(is_form){jQuery('#gform_wrapper_3').html(form_content.html());setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_3').val();gformInitSpinner( 3, 'https://timbdesign.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('#gforms_confirmation_message_3').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_3').replaceWith('<' + 'div id=\'gforms_confirmation_message_3\' class=\'gform_confirmation_message_3 gforms_confirmation_message\'' + '>' + confirmation_content + '<' + '/div' + '>');jQuery(document).scrollTop(jQuery('#gforms_confirmation_message_3').offset().top);jQuery(document).trigger('gform_confirmation_loaded', [3]);window['gf_submitting_3'] = false;}, 50);}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [3, current_page]);} );} );</script><script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/timbdesign.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/timbdesign.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 3) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [3, 1]) } ); </script></div>
+
+</div>
+</div>
+
+
+
+
+</footer>
+        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'timbdesign';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        	<div style="display:none">
+	</div>
+<link rel='stylesheet' id='gforms_reset_css-css'  href='https://timbdesign.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://timbdesign.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://timbdesign.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://timbdesign.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=1.9.13' type='text/css' media='all' />
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/timbdesign.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","i18n_view_cart":"View Cart","cart_url":"https:\/\/timbdesign.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//timbdesign.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=2.3.7'></script>
+<script type='text/javascript' src='//timbdesign.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.60'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//timbdesign.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.3.7'></script>
+<script type='text/javascript' src='//timbdesign.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//timbdesign.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.3.7'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201541'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2015Octaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.2.2'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/themes/tim-brown/js/navigation.js?ver=20120206'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/themes/tim-brown/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-includes/js/comment-reply.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js?ver=1.0'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/gravityforms/js/jquery.json-1.3.js?ver=1.9.13'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=1.9.13'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=1.9.13'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.js?ver=1.5.7'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+<script type='text/javascript' src='https://timbdesign.com/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201541.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.4.3',blog:'50227330',post:'3590',tz:'-5'} ]);
+	_stq.push([ 'clickTrackerInit', '50227330', '3590' ]);
+</script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+</body>
+</html>

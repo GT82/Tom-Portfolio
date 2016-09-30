@@ -1,0 +1,1537 @@
+<style type="text/css">
+		div,p,a,li,td{
+			-webkit-text-size-adjust:none;
+		}
+		.ReadMsgBody{
+			width:100%;
+			background-color:#ffffff;
+		}
+		.ExternalClass{
+			width:100%;
+			background-color:#ffffff;
+		}
+	@font-face {font-family: 'proxima_novalight';src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-light-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-light-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+	@font-face {font-family: 'proxima_nova_rgregular'; src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-regular-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-regular-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+	@font-face {font-family: 'proxima_novasemibold';src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-semibold-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-semibold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+	@font-face {font-family: 'proxima_nova_rgbold';src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-bold-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/gear/font/proximanova-bold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+	@font-face {font-family: 'proxima_novathin';src: url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+	@font-face {font-family: 'proxima_nova_rgbold_italic';src: url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-boldit-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-boldit-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-boldit-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+		body{
+			width:100%;
+			height:100%;
+			background-color:#f3f3f3;
+			margin:0;
+			padding:0;
+			-webkit-font-smoothing:antialiased;
+		}
+		html{
+			width:100%;
+			background-color:#f3f3f3;
+		}
+		p{
+			padding:0!important;
+			margin-top:0!important;
+			margin-right:0!important;
+			margin-bottom:0!important;
+			margin-left:0!important;
+		}
+		.hover:hover{
+			opacity:0.85;
+			filter:alpha(opacity=85);
+
+
+		}
+		#box1{
+			-webkit-animation:bounceInLeftFast 1s;
+			-moz-animation:bounceInLeftFast 1s;
+			-o-animation:bounceInLeftFast 1s;
+			animation:bounceInLeftFast 1s;
+		}
+		-webkit-transform translateX2000pxtransform translateX2000px100{
+			-webkit-transform:translateX(0);
+			transform:translateX(0);
+		}
+		-webkit-transform translateX2000pxtransform translateX2000px100{
+			-webkit-transform:translateX(0);
+			transform:translateX(0);
+		}
+		-webkit-transform translateX2000pxtransform translateX2000px100{
+			-webkit-transform:translateX(0);
+			transform:translateX(0);
+		}
+		-webkit-transform translateX2000pxtransform translateX2000px100{
+			-webkit-transform:translateX(0);
+			transform:translateX(0);
+		}
+		#box2{
+			-webkit-animation:bounceInRight 1s;
+			-moz-animation:bounceInRight 1s;
+			-o-animation:bounceInRight 1s;
+			animation:bounceInRight 1s;
+		}
+		-webkit-transform translateX-2000px-ms-transform translateX-2000pxtransform translateX-2000px100{
+			-webkit-transform:translateX(0);
+			-ms-transform:translateX(0);
+			transform:translateX(0);
+		}
+		-webkit-transform translateX-2000px-ms-transform translateX-2000pxtransform translateX-2000px100{
+			-webkit-transform:translateX(0);
+			-ms-transform:translateX(0);
+			transform:translateX(0);
+		}
+		-webkit-transform translateX-2000px-ms-transform translateX-2000pxtransform translateX-2000px100{
+			-webkit-transform:translateX(0);
+			-ms-transform:translateX(0);
+			transform:translateX(0);
+		}
+		-webkit-transform translateX-2000px-ms-transform translateX-2000pxtransform translateX-2000px100{
+			-webkit-transform:translateX(0);
+			-ms-transform:translateX(0);
+			transform:translateX(0);
+		}
+		.image292 img{
+			width:292px;
+			height:auto;
+			text-align:center;
+		}
+		.image142 img{
+			width:142px!important;
+			height:142px!important;
+			border-top-right-radius:100%!important;
+			border-top-left-radius:100%!important;
+			border-bottom-right-radius:100%!important;
+		}
+		.image189 img{
+			width:189px!important;
+			height:189px!important;
+			border-top-right-radius:100%!important;
+			border-top-left-radius:100%!important;
+			border-bottom-right-radius:100%!important;
+		}
+		.image246 img{
+			width:246px;
+			height:auto;
+		}
+		.image298 img{
+			width:298px;
+			height:auto;
+		}
+		.image198 img{
+			width:198px;
+			height:auto;
+		}
+		.image146 img{
+			width:146px;
+			height:auto;
+		}
+		.image600 img{
+			width:600px;
+			height:auto;
+		}
+		.image596 img{
+			width:596px;
+			height:auto;
+		}
+		.image290 img{
+			width:290px;
+			height:auto;
+		}
+		.socialIcons img{
+			width:14px!important;
+			height:auto;
+		}
+		.icon17 img{
+			width:17px;
+			height:auto;
+		}
+	@media only screen and (max-width: 640px){
+		body{
+			width:auto!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=full]{
+			width:100%!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=mobile]{
+			width:100%!important;
+			padding-left:20px;
+			padding-right:20px;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=fullCenter]{
+			width:100%!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 640px){
+		td[class=fullCenter]{
+			width:100%!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.erase{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=image292]{
+			width:100%!important;
+			height:auto!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=image600]{
+			width:100%!important;
+			height:auto!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.floatCenter{
+			text-align:center!important;
+			float:center!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=image142]{
+			width:100%!important;
+			text-align:center!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=image189]{
+			width:100%!important;
+			text-align:center!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		table[class=image290]{
+			width:100%!important;
+			text-align:center!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.image600 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.image246 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.image298 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.image146 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		.image198 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		td[class=h15]{
+			height:15px!important;
+		}
+
+}	@media only screen and (max-width: 640px){
+		td[class=w30]{
+			width:20%!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		body{
+			width:auto!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=full]{
+			width:100%!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=mobile]{
+			width:100%!important;
+			padding-left:20px;
+			padding-right:20px;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=fullCenter]{
+			width:100%!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		td[class=fullCenter]{
+			width:100%!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.erase{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.floatCenter{
+			text-align:center!important;
+			float:center!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=image292]{
+			width:100%!important;
+			height:auto!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=image290]{
+			width:100%!important;
+			height:auto!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=image142]{
+			width:100%!important;
+			text-align:center!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=image189]{
+			width:100%!important;
+			text-align:center!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=image600]{
+			width:100%!important;
+			height:auto!important;
+			text-align:center!important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image292 img{
+			width:100%!important;
+			height:auto;
+			text-align:center;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image290 img{
+			width:100%!important;
+			height:auto;
+			text-align:center;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image246 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image600 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image298 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image146 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image198 img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		td[class=h15]{
+			height:15px!important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		td[class=w30]{
+			width:20%!important;
+		}
+
+}		body{
+			background:none !important;
+		}
+</style><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<title>Compass App | revUp 184</title>
+
+
+
+
+<!-- @media only screen and (max-width: 640px) 
+		   {*/
+		   -->
+
+<!--
+
+@media only screen and (max-width: 479px) 
+		   {
+		   -->
+
+
+
+
+<!-- Wrapper 1 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1" style="-webkit-animation: bounceInLeftFast 1s;-moz-animation: bounceInLeftFast 1s;-o-animation: bounceInLeftFast 1s;animation: bounceInLeftFast 1s;">
+	<tbody><tr mc:repeatable="repeat_1" mc:repeatindex="0" mc:hideable="hideable_repeat_1_1" mchideable="hideable_repeat_1_1">
+		<td width="100%" valign="top" style="background-color: #ba232d;-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_1_2" mchideable="hideable_repeat_1_2" style="-webkit-text-size-adjust: none;">
+		
+			<!-- Nav Mobile Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td width="100%" style="-webkit-text-size-adjust: none;">
+					
+						<!-- Start Nav -->
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tbody><tr>
+								<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+							<tr>
+								<td width="100%" valign="middle" class="logo" style="-webkit-text-size-adjust: none;">
+									
+									<!-- Logo -->
+									<table width="150" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+										<tbody><tr>
+											<td height="60" valign="middle" width="100%" style="text-align: left;-webkit-text-size-adjust: none;" class="fullCenter">
+												<a href="http://newsletters.livecode.com/january/issue184/" style="-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/7baf5edc-153d-4464-b6bc-d22dc36eb6ae.png" alt="" border="0" style="margin: 0; padding: 0;"></a>
+											</td>
+										</tr>
+									</tbody></table>
+									
+									<!-- Nav --> 
+									<table width="400" border="0" cellpadding="0" cellspacing="0" align="right" style="text-align: right; font-size: 14px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">	
+											<tbody><tr>
+											  <td height="60" width="100%" valign="middle" style="font-family: Helvetica, Arial, sans-serif;color: rgb(56, 56, 56);line-height: 22px;-webkit-text-size-adjust: none;" class="icon17"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgbold', Helvetica;"><!--<![endif]--><a href="http://livecode.com/blog/" style="text-decoration: none;color: #ffffff;-webkit-text-size-adjust: none;">Visit our blog</a><!--[if !mso]><!--></span><!--<![endif]-->
+											</td>
+										</tr>
+									</tbody></table>
+																	
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+						</tbody></table><!-- End Nav -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Nav Mobile Wrapper -->
+			
+		</div>	
+		</td>
+	</tr>
+</tbody></table><!-- End Wrapper 1 -->
+
+<!-- Wrapper 2 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2" style="-webkit-animation: bounceInRight 1s;-moz-animation: bounceInRight 1s;-o-animation: bounceInRight 1s;animation: bounceInRight 1s;">
+	<tbody>
+</tbody></table><!-- Wrapper 2 -->
+
+<!-- Wrapper 5 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody><tr mc:repeatable="repeat_3" mc:repeatindex="0" mc:hideable="hideable_repeat_3_1" mchideable="hideable_repeat_3_1">
+		<td width="100%" valign="top" style="-webkit-text-size-adjust: none;">
+
+		<div mc:hideable="hideable_repeat_3_2" mchideable="hideable_repeat_3_2" style="-webkit-text-size-adjust: none;">
+		
+			
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td style="-webkit-text-size-adjust: none;">
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tbody><tr>
+								<td width="100%" style="-webkit-text-size-adjust: none;">
+									
+									<!-- Text -->
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+										<tbody><tr>
+											<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 44px;color: rgb(56, 56, 56);text-align: center;font-family: Helvetica, Arial, sans-serif;line-height: 48px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;" class="fullCenter"><!--[if !mso]><!--><span style="font-family:proxima_novathin,helvetica; font-weight:normal"><!--<![endif]--><span class="article-title">Compass App</span><!--[if !mso]><!--></span><!--<![endif]--></td>
+										</tr>
+										<tr>
+											<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+									</tbody></table>
+									
+								</td>
+							</tr>
+						</tbody></table><!-- End Wrapper 2 -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+		
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- Wrapper 5 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 19 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- End Wrapper 19 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 15 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody><tr mc:repeatable="repeat_9" mc:repeatindex="0" mc:hideable="hideable_repeat_9_1" mchideable="hideable_repeat_9_1">
+		<td width="100%" valign="top" style="background-color: rgb(255, 255, 255);-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_9_2" mchideable="hideable_repeat_9_2" style="-webkit-text-size-adjust: none;">
+			
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td style="-webkit-text-size-adjust: none;">
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tbody><tr>
+								<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" class="fullCenter" style="text-align: center;line-height: 1px;-webkit-text-size-adjust: none;"><img src="compasstop.jpg" width="600" height="600" style="margin: 0; padding: 0;width: 600px; height: auto;" class="hover" /></td>
+										</tr>
+										<tr>
+											<td width="100%" height="30" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 24px;color: rgb(56, 56, 56);text-align: center;font-family: Helvetica, Arial, sans-serif;line-height: 28px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;">	
+												<!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]--><strong>Compass App</strong><!--[if !mso]><!--></span><!--<![endif]-->
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 14px;color: rgb(56, 56, 56);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;">	
+												<!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+												<div data-step-uuid="e75b144d-f87d-4c88-b59e-cdbf8500f46a" id="div">
+												  <div>
+												    <div></div>
+												    <div>
+												      <b>What we do here</b>
+												      <p>This page attempts to show how easy it is to make a mobile app with LiveCode.</p>
+												      <p>Be warned:  you will not see an award-winning design!  The idea is to demonstrate how little you need to get something working.  From there you can go on to make a visually-dazzling app if you wish, but that is not my goal.</p>
+												      <p>&nbsp;</p>
+												      <b>What we need</b>
+												      <ul>
+												        <li>Obviously we need a mobile device, and one that has a built-in magnetometer.  In my case I have a Samsung Galaxy Note:<br />
+												          <p align="center"><img src="SamsungGalaxyNote.jpeg" width="620" height="452" hspace="10" style="margin: 10; padding: 0;width: 300px; height: auto;"/></p>
+												          This implies we will work with Android, but the same code would run just as well on iOS.</li>
+												        <li>We need a computer for writing the app; in my case I have an Apple MacbookPro.</li>
+												        <li>We need a USB cable to connect the two.</li>
+												        <li>We need a LiveCode installation.  That is a single application file.</li>
+												        <li>We need to use the Android program libraries, those are free and easily downloaded from Google.  Unfortunately that is a folder full of weird stuff, but all we need to do is put it somewhere in our filesystem and tell LiveCode where it sits.</li>
+												        <li>Finally we need to imagine what we want the app to do.</li>
+											          </ul>
+												      <b>Imagination</b>
+												      <p>Let's be modest:  imagine an arrow on the screen, and the arrow points to the magnetic North.  Something like this:<br />
+												        <p align="center"><img src="Imagination.jpeg" width="205" height="399" alt="Imagination" style="margin: 0; padding: 0;width: 205px; height: auto;" /></p>
+											          </p>
+												      <p>Not an award-winning app, as I said, but we can always improve, and it is wise to start simple.</p>
+												      <p>Perhaps we can add a field (text box if you like) to show the heading (direction) in which the device points:<br />
+											          <p align="center"> <img src="ImaginationWithField.jpeg" width="210" height="400" style="margin: 0; padding: 0;width: 205px; height: auto;"/></p>
+											          </p>
+												      <b>Mathematics</b>
+												      <p>There is no way to avoid looking at the hard part of the problem.</p>
+												      <p>Suppose we hold our mobile device horizontally, and it points at a magnetic heading of 29º (somewhat to the East from North): <br />
+											          <p align="center"> <img src="Maths.jpeg" width="256" height="473" alt="Maths" style="margin: 10; padding: 0;width: 205px; height: auto;" /></p>
+												        LiveCode has a polygon object, and it can be drawn with or without arrows at the end points.  For the needle we will use a polygon with just two points and an arrowhead at the end.  While that is a ready-made object, we still have to position it on the screen correctly.</p>
+												      <p>I should first say something about LiveCode polygons:  they are specified by the list of points of their vertices.  For example, the points of a square of size 20 with its centre at the coordinate origin might be given as:</p>
+												      <p>&nbsp;</p>
+												      <p>10,10 10,-10 -10,-10 -10,10</p>
+												      <p>&nbsp;</p>
+												      <p>A point in LiveCode is a pair of expressions separated by a comma, such as 400,700 or 400-x,y+100.  The list of points of a LiveCode polygon is a piece of text with each point on a line by itself.</p>
+												      <p>&nbsp;</p>
+												      <p>Suppose the arrow should have a length L.  One point is always fixed near the centre of the screen.  The other point is at L*sin29º to the left and L*cos29º higher up.</p>
+												      <p>&nbsp;</p>
+												      <p>The screen of the Galaxy Note is 800 pixels wide and 1280 pixels high.  I'm going to make the arrow 300 pixels long.  I'll put the fixed end at 400 (=800/2) pixels from the left and 700 pixels down (that's a bit lower than the middle, but we need some space for the heading field anyway).</p>
+												      <p>The start of the arrow then has coordinates 400,700.</p>
+												      <p>&nbsp;</p>
+												      <p>The tip or end of the arrow has coordinates 400-300*sin(29º),700-300*cos(29º) (remember that screen coordinates have the y axis pointing down!).</p>
+												      <p>&nbsp;</p>
+												      <p>Of course this should work for any angle R, not just for 29º, so the set of points defining our simplistic polygon are:<br />
+												        <br />
+											          400,700 400-300*sin(R),700-300*cos(R)</p>
+												      <p>&nbsp;</p>
+												      <p>We will have to make this into text by putting a return character between the two lines, but that is for the section below on coding.</p>
+												      <p>&nbsp;</p>
+												      <b>The Interface</b>
+												      <p>We begin by asking LiveCode for a new stack (its term for app):<br />
+											          <p align="center"> <img src="NewStack.jpeg" width="904" height="726" alt="New Stack" style="margin: 10; padding: 0;width: 400px; height: auto;" /></p>
+												        <p>We call up the stack inspector and set the width and height (and the location so we can see all of it).
+												        </p>
+												        </p>
+											          <p>&nbsp; </p>
+											          <p>Then from the tools palette we drag a field onto the stack's window, make it large and set its properties to remove the border and display text in a large font, centred:<br />
+											          <p align="center"> <img src="HeadingField.jpeg" width="813" height="1312" style="margin: 10; padding: 0;width: 400px; height: auto;"/></p>
+												        (the actual stack window is much larger; I have reduced it here to save space)<br />
+											          <p align="center"><img src="FieldInspector.jpeg" width="250" height="637" alt="Properties Palette"  style="margin: 10; padding: 0;width: 205px; height: auto;"/></p>
+											          It is crucial to give a name to the field; I called it &quot;Heading&quot;.  It is also crucial to uncheck the &quot;traversalOn property:  traversalOn means it is possible to type text into the field, and that means Android will pop up the keyboard as soon as you touch the field, which is not desired in this case.</p>
+												      <p>Next we select the polygon tool on the palette and click twice in the stack window to draw a line.  using the inspector we set the line width comfortably thick, give the line a red colour, tick the box for an arrow at the end etc.:<br />
+											          <p align="center"><img src="Needle.jpeg" width="508" height="611" style="margin: 10; padding: 0;width: 400px; height: auto;"/></p>
+											          <p>Crucial again to give the object a meaningful name: &quot;Needle&quot;.  Never mind what the points are that define it, we will set those by program code anyway.</p>
+											          </p>
+											          <p>&nbsp; </p>
+											          <p>We might at this stage also think of saving our work, say in a file called &quot;Compass.livecode&quot; (what else?).</p>
+											          <p>&nbsp;</p>
+												      <b>Code !</b>
+												      <p>Important observation:  so far we have not written a single line of code.  All we have done is to create a basic canvas (the stack and its window), and placed two objects on it (a text field and a polygon with two points.  We have been careful enough to give the objects meaningful names: Heading and Needle.</p>
+												      <p>&nbsp;</p>
+												      <p>How is this app going to work?  All it needs to do is periodically to obtain the heading from the built-in hardware magnetometer and set the points of the needle to the values we determined in the maths section above.</p>
+												      <p>&nbsp;</p>
+												      <p>The classic way to do that is to start a routine when the app itself starts up, and the routine then schedules another call to itself before it ends.  An obvious name for the routine that does the work is IndicateNorth.</p>
+												      <p>&nbsp;</p>
+												      <p>Our app then looks roughly like:												      </p>
+												      <div class="code">
+  <pre>
+<b><span class="normal">on</span></b><span class="normal"> OpenStack</span>
+<span class="normal">   IndicateNorth</span>
+<b><span class="normal">end</span></b><span class="normal"> OpenStack</span>
+
+<b><span class="normal">command</span></b><span class="normal"> IndicateNorth</span>
+<span class="normal">   (</span><b>do</span></b><span class="normal"> something here </span>to</span><span class="normal"> </span><b>move</span></b><span class="normal"> </span>the</span><span class="normal"> needle)</span>
+<span class="normal">   </span><b>send</span></b><span class="normal"> IndicateNorth </span>to</span><span class="normal"> </span>me</span><span class="normal"> </span>in</span><span class="normal"> </span>200</span><span class="normal"> </span>milliseconds</span>
+<b><span class="normal">end</span></b><span class="normal"> IndicateNorth</span></pre></div>
+												      <p>&nbsp;</p>
+												      <p>These are two handlers, residing in the script of the app (stack) itself.  Strictly speaking the OpenStack bit is the handler for the event that occurs when the app begins, and theIndicateNorth bit is a routine (the name of which we invented).  IndicateNorth is called once when the app launches, but just before its end it sends itself as a command to the app with a time delay of 200 milliseconds (this can be changed at will, but 200 milliseconds seems to work fine).</p>
+												      <p>&nbsp;</p>
+												      <p>Now we need to fill in the stuff that shows us where North is.  First we should activate the magnetometer;  that is one extra line in the OpenStack handler:</p>
+												   <div class="code">
+<pre>
+<b><span class="normal">on</span></b><span class="normal"> OpenStack</span>
+<span class="normal">   mobileStartTrackingSensor </span>"Heading"</span>
+<span class="normal">   IndicateNorth</span>
+<b><span class="normal">end</span></b><span class="normal"> OpenStack</span></pre>
+</div>
+												      <p>Other sensors are called acceleration, location (GPS) and so on.</p>
+												      <p>We could now add to the IndicateNorth command a line:</p>
+												     <div class="code">
+<pre>
+<b><span class="normal">command</span></b><span class="normal"> IndicateNorth</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> mobileSensorReading(</span>"heading"</span><span class="normal">) </span>into</span><span class="normal"> </span>field</span><span class="normal"> </span>"Heading"</span>
+<span class="normal">   </span><b>send</span></b><span class="normal"> IndicateNorth </span>to</span><span class="normal"> </span>me</span><span class="normal"> </span>in</span><span class="normal"> </span>200</span><span class="normal"> </span>milliseconds</span>
+<b><span class="normal">end</span></b><span class="normal"> IndicateNorth</span>
+</pre>
+</div>
+												      <p>and that would in fact display and update the heading of our mobile every 200 milliseconds.  But it's no good for two reasons:  one is that Android gives us the heading with far more decimals than is good for us, and the other is that we also want to use the heading for moving the needle.  So it is better to round the heading to a whole number and to store it temporarily in a local variable before putting it in the heading field:</p>
+												      <div class="code">
+<pre>
+<b><span class="normal">command</span></b><span class="normal"> IndicateNorth</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> </span>round</span><span class="normal">( mobileSensorReading(</span>"heading"</span><span class="normal">,</span>false</span><span class="normal">), </span>0</span><span class="normal">) </span>>into</span><span class="normal"> \</span>
+<span class="normal">         lHeading</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> lHeading </span>into</span><span class="normal"> </span>field</span><span class="normal"> </span>>"Heading"</span>
+<span class="normal">   </span><b>send</span></b><span class="normal"> IndicateNorth </span>to</span><span class="normal"> </span>me</span><span class="normal"> </span>in</span><span class="normal"> </span>200</span><span class="normal"> </span>milliseconds</span>
+<b><span class="normal">end</span></b><span class="normal"> IndicateNorth</span>
+</pre>
+</div>
+												      <p>Everyone has their conventions about variable names.  I always start mine with a capital letter and prefix a lower case letter to indicate the type of thing it is, here I use l for local variable Heading, therefore its name is lHeading.</p>
+												      <p>&nbsp;</p>
+												      <p>Mathematicians and most math function libraries use radians as angle units instead of degrees.  We need to convert the heading to radians before we can use it in the sine and cosine functions.  At last we can set the points of the needle graphic to the result of the formulae we derived earlier.  Note that again we need to round the results of the trigonometric expressions in order to get whole numbers for the pixel position values:</p>
+												   <div class="code">
+<pre>
+<b><span class="normal">command</span></b><span class="normal"> IndicateNorth</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> </span>round</span><span class="normal">( mobileSensorReading(</span>"heading"</span><span class="normal">,</span>false</span><span class="normal">), </span>0</span><span class="normal">) </span>into</span><span class="normal"> \</span>
+<span class="normal">         lHeading</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> lHeading </span>into</span><span class="normal"> </span>field</span><span class="normal"> </span>"Heading"</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> lHeading*</span>pi</span><span class="normal">/</span>180</span><span class="normal"> </span>into</span><span class="normal"> lRadians</span>
+<span class="normal">   </span><b>>set</span></b><span class="normal"> </span>the</span><span class="normal"> </span>points</span><span class="normal"> </span>of</span><span class="normal"> </span>graphic</span><span class="normal"> </span>"Needle"</span><span class="normal"> </span>to</span><span class="normal"> \</span>
+<span class="normal">         </span>>400</span><span class="normal">,</span>700</span><span class="normal">&amp;</span><b>>return</span></b><span class="normal">&amp;</span>400</span><span class="normal">-round(</span>300</span><span class="normal">*</span>sin</span><span class="normal">(lRadians)),</span>700</span><span class="normal">-round(</span>300</span><span class="normal">*</span>cos</span><span class="normal">(lRadians))</span>
+<span class="normal">   </span><b>send</span></b><span class="normal"> IndicateNorth </span>to</span><span class="normal"> </span>>me</span><span class="normal"> </span>in</span><span class="normal"> </span>200</span><span class="normal"> </span>milliseconds</span>
+<b><span class="normal">end</span></b><span class="normal"> IndicateNorth</span>
+</pre>
+</div>
+												      <p>Remember that the points of a polygon are specified each point on a line by itself.</p>
+												      <p>We only have two points here, so there is only one return character.  The ampersand signs are the character string concatenation operator.</p>
+												      <h2>The Final App…</h2>
+												      <p>Here is the final code:</p>
+												     <div class="code">
+<pre>
+<b><span class="normal">on</span></b><span class="normal"> OpenStack</span>
+<span class="normal">   mobileStartTrackingSensor </span>"heading"</span>
+<span class="normal">   IndicateNorth</span>
+<b><span class="normal">end</span></b><span class="normal"> OpenStack</span>
+
+<b><span class="normal">command</span></b><span class="normal"> IndicateNorth</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> </span>round</span><span class="normal">( mobileSensorReading(</span>"heading"</span><span class="normal">,</span>false</span><span class="normal">), </span>0</span><span class="normal">) </span>into</span><span class="normal"> \</span>
+<span class="normal">         lHeading</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> lHeading </span>into</span><span class="normal"> </span>field</span><span class="normal"> </span>"Heading"</span>
+<span class="normal">   </span><b>put</span></b><span class="normal"> lHeading*</span>pi</span><span class="normal">/</span>180</span><span class="normal"> </span>into</span><span class="normal"> lRadians</span>
+<span class="normal">   </span><b>set</span></b><span class="normal"> </span>the</span><span class="normal"> </span>points</span><span class="normal"> </span>of</span><span class="normal"> </span>graphic</span><span class="normal"> </span>"Needle"</span><span class="normal"> </span>to</span><span class="normal"> \</span>
+<span class="normal">         </span>>400</span><span class="normal">,</span>700</span><span class="normal">&amp;</span>cr</span><span class="normal">&amp;</span>400</span><span class="normal">-round(</span>300</span><span class="normal">*</span>sin</span><span class="normal">(lRadians)),</span>700</span><span class="normal">-round(</span>300</span><span class="normal">*</span>cos</span><span class="normal">(lRadians))</span>
+<span class="normal">   </span><b>send</span></b><span class="normal"> IndicateNorth </span>to</span><span class="normal"> </span>me</span><span class="normal"> </span>in</span><span class="normal"> </span>200</span><span class="normal"> </span>milliseconds</span>
+<b><span class="normal">end</span></b><span class="normal"> IndicateNorth</span>
+</pre>
+</div>
+												      <p>And that really is all there is to it.</p>
+												      <p>&nbsp;</p>
+												      <b>Testing</b>
+												      <p>To test our compass we must combine the LiveCode code with the Andriod code libraries.  LiveCode has a menu item Standalone Application Settings:<br />
+											          <p align="center"><img src="StandAloneSettings.jpeg" width="687" height="675" alt="Standalone Setting" style="margin: 10; padding: 0;width: 500px; height: auto;"/></p>
+												        <p>For the test we only need to check the Coarse Location permission.  This is somewhat silly, because a compass does not need access to your geographical location.  Unfortunately in the current Android libraries the code to access to the magnetometer is lumped with the code to access the wifi and GSM signals (coarse location).  As we are not calling upon either of those, our app will function even if wifi or gsm are off.
+												        </p>
+												        </p>
+											          <p>&nbsp; </p>
+											          <p>Once the standalone application settings have been given, all we need to do is connect our mobile to the laptop with the USB cable and press the &quot;Test&quot; button in LiveCode.  A few seconds are needed for LiveCode to put everyting together and upload it, then the result is:<br />
+												        <p align="center"><img src="WorkingTest.jpeg" width="289" height="493" alt="Working Test" style="margin: 0; padding: 0;width: 289px; height: auto;"/></p>
+											          </p>
+												      <p>This app is guaranteed not to leak any personal information to the network and not to disturb you with advertising.</p>
+												      <p>&nbsp;</p>
+												      <p>I have made a much more complete app, which does adapt itself to the screensize of the mobile it runs on, shows the cardinal points, and uses vector graphics.  You can <a href="http://www.robertcailliau.eu/Alphabetical/L/LiveCode/Compass%20App/Compass.apk">download it free</a>. But you will have to trust me and you will have to set your android device to accept installation of non-market apps (in the security section of the settings).</p>
+												      <p>&nbsp;</p>
+												      <p>Alternatively, you could <a href="http://www.robertcailliau.eu/Alphabetical/L/LiveCode/Compass%20App/Compass.livecode.zip">download the source stack</a> and look at the code.  You will have some slight trouble with that, since the calls to the heading routines will not work.  You will also only be able to compile it to a stand-alone and transfer it on your Android device if you install the Android Development Kit alongside the LiveCode program.</p>
+												      <p>&nbsp;</p>
+												      <p>Again:  much can be improved, but the point is that you get results fast using LiveCode.</p>
+												      <p>Suggestions for improving the vector-graphics compass:  to make it smoother we can avoid recalculating all the vector points for each change of heading by pre-computing them in an arrayPointsFor[] of 1 to 360 degree headings, then setting the points to PointsFor[lHeading] which would be much faster.  It would make a bigger app, since the entire precomputed array must be included with the app, but it is at most a few hundred kilobytes.</p>
+												      <p>&nbsp;</p>
+												      <b>Conclusion</b>
+												      <p>Conclusion 1:  not an award-winning app.</p>
+												      <p>Conclusion 2:  LiveCode let us make a working, useful app in a few minutes.</p>
+												      <p>Conclusion 3:  Since I wrote it, I trust it <a href="http://www.robertcailliau.eu/Alphabetical/L/LiveCode/Compass%20App/#fn1">1</a>.</p>
+												      <p>&nbsp;</p>
+												      <p>There are many obvious improvements:  if ever we want to sell or give away this app, we must write code to make it adapt to the various screen sizes of mobile devices.  We might introduce a choice of colours, a wheel with degrees on it, etc. etc.</p>
+												      <p>&nbsp;</p>
+												      <p>All of this can be done, and easily too.  The point of this page was to show how incredibly fast LiveCode let us get something working that was actually usable.</p>
+												      <p>&nbsp;</p>
+												      <p>We spent far more time on the design of the interface and the mathematics of the needle than on the code or debugging.</p>
+												      <p>&nbsp;</p>
+												      <p>And that is the main advantage, to me, of using LiveCode: I can concentrate on the problem instead of having to battle with coding.</p>
+												      <hr />
+												      <p><a name="fn1" id="fn1">1</a>:  well, I trust my code, but I still have to trust the LiveCode compiler, the Android OS and the Samsung hardware.  Any of these might include something that abuses my privacy, identity and so on.  However, all the &quot;free&quot; compass apps I downloaded for trials included access to one or more of:  my contacts, the GSM phone network, the internet, the GPS location, advertising, and so on.  Perhaps some apps did not actually use them, just like Android will tell you my app uses coarse location when in fact it only uses the magnetometer part of that code library.  But I cannot be certain.<br />
+											      </p>
+									      <p>&nbsp;</p></div></div></div><div data-step-uuid="80a1fb38-43ff-44fa-bcd0-25b4ee35fb57" id="div"><div><div>
+											        </div>
+											      </div>
+											  </div>
+												<p>&nbsp;</p></td>
+										</tr>
+						  </tbody></table>
+									
+				  </td>
+							</tr>
+			  </tbody></table><!-- End Wrapper 2 -->
+						
+						<!-- Space -->
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+							<tbody><tr>
+								<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+						</tbody></table><!-- End Space -->
+						
+	  </td>
+				</tr>
+  </tbody></table><!-- End Wrapper -->
+		</td>
+	</tr>
+</tbody></table><!-- Wrapper 15 -->
+
+<!-- Wrapper 2 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- Wrapper 2 -->
+
+<!-- Wrapper 5 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- Wrapper 5 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 19 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- End Wrapper 19 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody><tr mc:repeatable="repeat_20" mc:repeatindex="0" mc:hideable="hideable_repeat_20_1" mchideable="hideable_repeat_20_1">
+		<td width="100%" style="background-color: #ba232d;-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_20_2" mchideable="hideable_repeat_20_2" style="-webkit-text-size-adjust: none;">
+		
+			<!-- Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td width="100%" style="-webkit-text-size-adjust: none;">
+					
+						<!-- Headline --> 
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+							<tbody><tr>
+								<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+							<tr>
+								<td valign="middle" width="100%" style="text-align: center;font-family: Helvetica, Arial, sans-serif;font-size: 44px;color: rgb(56, 56, 56);line-height: 52px;font-weight: 100;-webkit-text-size-adjust: none;" class="fullCenter"><!--[if !mso]><!--><span style="font-family:proxima_novathin,helvetica; font-weight:normal"><!--<![endif]-->About The Author<!--[if !mso]><!--></span><!--<![endif]--></td>
+							</tr>
+							<tr>
+								<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+						</tbody></table>
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullCenter">
+							<tbody><tr>
+								<td width="100%" style="-webkit-text-size-adjust: none;">
+									
+									<!-- Image 142 - 4 -->
+									<table width="142" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="image142">
+										<tbody><tr>
+											<td width="100%" class="fullCenter" style="text-align: center;line-height: 1px;-webkit-text-size-adjust: none;"><a href="http://www.robertcailliau.eu/Welcome-en.html" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="robert2.jpg" alt="Robert Cailliau" border="0" style="margin: 0; padding: 0;width: 142px; height: 142px; border-top-right-radius: 100%; border-top-left-radius: 100%; border-bottom-right-radius: 100%;" class="hover"></a>
+											</td>
+										</tr>
+									</tbody></table>
+									
+									<!-- Space -->
+									<table width="1" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+										<tbody><tr>
+											<td width="100%" height="30" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+									</tbody></table><!-- End Space -->
+									
+									<!-- Text -->
+									<table width="430" border="0" cellpadding="0" cellspacing="0" align="right" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="image142">
+										<tbody><tr>
+											<td width="100%" style="font-size: 24px;color: rgb(255, 255, 255);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 28px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;" class="fullCenter"><!--[if !mso]><!--><span style="font-family:proxima_novalight,helvetica"><!--<![endif]-->Robert Cailliau<!--[if !mso]><!--></span><!--<![endif]--></td>
+										</tr>
+										<tr>
+											<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 14px;color: rgb(56, 56, 56);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;" class="fullCenter">	
+												<!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]--><strong>Robert Cailliau</strong> (born 26 January 1947) is a Belgian <a href="http://en.wikipedia.org/wiki/Informatics_(academic_field)" title="Informatics (academic field)">informatics engineer</a> and <a href="http://en.wikipedia.org/wiki/Computer_science" title="Computer science">computer scientist</a>. Cailliau helped <a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee" title="Tim Berners-Lee">Tim Berners-Lee</a> develop the <a href="http://en.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a><!--[if !mso]><!--></span><!--<![endif]-->
+								
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<!-- Button -->
+										<tr>
+											<td valign="middle" width="100%" class="fullCenter" style="-webkit-text-size-adjust: none;">
+												<table border="0" cellpadding="0" cellspacing="0" align="center" style="float: left;" class="floatCenter">
+													<tbody><tr>
+														<td align="center" valign="middle" style="color: rgb(255, 255, 255);font-family: Helvetica, Arial, sans-serif;font-size: 13px;display: block;padding: 6px 16px;line-height: 22px;vertical-align: middle;border: 1px solid rgb(255, 255, 255);text-transform: uppercase;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family:proxima_nova_rgregular,helvetica"><!--<![endif]--><a href="http://www.robertcailliau.eu/Welcome-en.html" target="_blank" class="hover" style="color: rgb(255, 255, 255);font-size: 13px;text-decoration: none;line-height: 20px;-webkit-text-size-adjust: none;">Read Robert's Blog</a><!--[if !mso]><!--></span><!--<![endif]--></td> 
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="8" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+									</tbody></table>
+																
+								</td>
+							</tr>
+						</tbody></table><!-- End Wrapper 2 -->
+									
+						<!-- Space -->
+						<table width="100%" bgcolor="" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+							<tbody><tr>
+								<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+						</tbody></table><!-- End Space -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+			
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- End Wrapper 13 -->
+
+<!-- Wrapper 19 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- End Wrapper 19 -->
+
+<!-- Wrapper 5 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody><tr mc:repeatable="repeat_24" mc:repeatindex="0" mc:hideable="hideable_repeat_24_1" mchideable="hideable_repeat_24_1">
+		<td width="100%" valign="top" style="-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_24_2" mchideable="hideable_repeat_24_2" style="-webkit-text-size-adjust: none;">
+		
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td style="-webkit-text-size-adjust: none;">
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tbody><tr>
+								<td width="100%" style="-webkit-text-size-adjust: none;">
+									
+									<!-- Text -->
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+										<tbody><tr>
+											<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 44px;color: rgb(56, 56, 56);text-align: center;font-family: Helvetica, Arial, sans-serif;line-height: 48px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;" class="fullCenter"><!--[if !mso]><!--><span style="font-family:proxima_novathin,helvetica; font-weight:normal"><!--<![endif]-->Other Articles<!--[if !mso]><!--></span><!--<![endif]--></td>
+										</tr>
+										<tr>
+											<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+									</tbody></table>
+									
+								</td>
+							</tr>
+						</tbody></table><!-- End Wrapper 2 -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+		
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- Wrapper 5 -->
+
+<!-- Wrapper 11 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody><tr mc:repeatable="repeat_25" mc:repeatindex="0" mc:hideable="hideable_repeat_25_1" mchideable="hideable_repeat_25_1">
+		<td width="100%" valign="top" style="-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_25_2" mchideable="hideable_repeat_25_2" style="-webkit-text-size-adjust: none;">
+			
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td style="-webkit-text-size-adjust: none;">
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+					      <tr class="mobile">
+					        <td style="-webkit-text-size-adjust: none;"><!-- Wrapper -->
+					          <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+					            <tr>
+					              <td style="-webkit-text-size-adjust: none;"><!-- Left Column -->
+					                <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                  <tbody>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse: collapse; background-color: rgb(255, 255, 255);" class="full">
+					                        <tbody>
+					                          <tr>
+					                            <td width="27" style="-webkit-text-size-adjust: none;"></td>
+					                            <td style="-webkit-text-size-adjust: none;"><!-- Masonry Text -->
+					                              <table width="144" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                                <tbody>
+					                                  <tr>
+					                                    <td width="100%" height="30" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td style="font-size: 24px;color: rgb(56, 56, 56);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 26px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->
+					                                      Happy New Year!
+					                                      <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td height="15" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td valign="middle" style="font-size: 12px;color: rgb(56, 56, 56);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><a href="#" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/8a219eab-81ee-4588-a4eb-bd5796d2071e.png" width="16" alt="" border="0" align="left" style="padding-top: 2px;" /></a> &nbsp;&nbsp; <span>
+					                                      <!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]-->
+					                                      09.01.2015<!--[if !mso]><!--></span><!--<![endif]-->
+					                                      </span></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td height="20" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td valign="top" style="font-size: 14px;color: rgb(56, 56, 56);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                      <p >i can barely believe its been a year. Our first full year as an Open Source tool, and it was packed with milestones. </p>
+                                                          <p >&nbsp;</p>
+                                                          <p ><strong>One better than Mr Heinz</strong></p>
+                                                          <p >We delivered no fewer than 58 <a href="http://downloads.livecode.com/livecode/" target="_blank">releases</a> over the course of 2014...</p></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td height="25" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td valign="middle" class="fullCenter" style="-webkit-text-size-adjust: none;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="float: left;">
+					                                      <tbody>
+					                                        <tr>
+					                                          <td align="center" valign="middle" style="color: #ba232d;font-family: Helvetica, Arial, sans-serif;font-size: 13px;display: block;padding: 6px 16px;line-height: 22px;vertical-align: middle;border: 1px solid #ba232d;text-transform: uppercase;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                            <a href="../issue184/newsletter1.html" style="color: #ba232d;font-size: 13px;text-decoration: none;line-height: 20px;-webkit-text-size-adjust: none;" class="hover">Read more</a>
+					                                            <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                            </tr>
+				                                          </tbody>
+					                                      </table></td>
+				                                      </tr>
+					                                  <!-- Button -->
+					                                  <tr>
+					                                    <td width="100%" height="35" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+				                                    </tbody>
+				                                  </table></td>
+					                            <td width="27" style="-webkit-text-size-adjust: none;"></td>
+				                              </tr>
+				                            </tbody>
+					                        </table                                                
+></td>
+				                        </tr>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><!-- Masonry Image 198 - 1 -->
+					                        <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                          <tbody>
+					                            <tr>
+					                              <td width="100%" valign="middle" style="line-height: 1px;-webkit-text-size-adjust: none;" class="image198">&nbsp;</td>
+				                                </tr>
+				                              </tbody>
+				                            </table></td>
+				                        </tr>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><!-- Masonry Image 198 - 2 -->
+					                        <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse: collapse; background-color: rgb(56, 56, 56);" class="full">
+					                          <tbody>
+					                            <tr>
+					                              <td width="27" style="-webkit-text-size-adjust: none;"></td>
+					                              <td style="-webkit-text-size-adjust: none;"><!-- Masonry Text -->
+					                                <table width="144" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                                  <tbody>
+					                                    <tr>
+					                                      <td width="100%" height="30" style="-webkit-text-size-adjust: none;"></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td style="font-size: 24px;color: #ffffff;text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 26px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;"><a href="../issue184/newsletter2.html" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="resourcesheader.jpg" alt="" border="0" style="margin: 0; padding: 0;width: 146px; height: auto;" class="hover" /></a></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td style="font-size: 24px;color: #ffffff;text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 26px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;">&nbsp;</td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" style="font-size: 24px;color: #ffffff;text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 26px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->
+					                                        LC Resources
+					                                        <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" height="15" style="-webkit-text-size-adjust: none;"></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" valign="middle" style="font-size: 12px;color: #ffffff;text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><a href="#" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/8a219eab-81ee-4588-a4eb-bd5796d2071e.png" width="16" alt="" border="0" align="left" style="padding-top: 2px;" /></a> &nbsp;&nbsp; <span>
+					                                        <!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]-->
+					                                        09.01.2015<!--[if !mso]><!--></span><!--<![endif]-->
+					                                        </span></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" height="20" style="-webkit-text-size-adjust: none;"></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" valign="top" style="font-size: 14px;color:#ffffff;text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->From time to time I take a look around the web to see what new and exciting resources may have previously escaped my notice. The start of a new year is a good time to have a fresh hunt around to see what's new! There are some &quot;Goto&quot; sites I always look at, such as...</td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+				                                        </tr>
+					                                    <!-- Button -->
+					                                    <tr>
+					                                      <td valign="middle" width="100%" class="fullCenter" style="-webkit-text-size-adjust: none;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="float: left;">
+					                                        <tbody>
+					                                          <tr>
+					                                            <td align="center" valign="middle" style="color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-size: 13px;display: block;padding: 6px 16px;line-height: 22px;vertical-align: middle;border: 1px solid #ffffff;text-transform: uppercase;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                              <a href="../issue184/newsletter2.html" style="color: #ffffff;font-size: 13px;text-decoration: none;line-height: 20px;-webkit-text-size-adjust: none;" class="hover">Read more</a>
+					                                              <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                              </tr>
+				                                            </tbody>
+					                                        </table></td>
+				                                        </tr>
+					                                    <tr>
+					                                      <td width="100%" height="35" style="-webkit-text-size-adjust: none;"></td>
+				                                        </tr>
+				                                      </tbody>
+				                                    </table></td>
+					                              <td width="27" style="-webkit-text-size-adjust: none;"></td>
+				                                </tr>
+				                              </tbody>
+				                            </table                                                
+></td>
+				                        </tr>
+				                      </tbody>
+				                    </table>
+					                <!-- Middle Column -->
+					                <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                  <tbody>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><!-- Masonry Image 198 - 3 -->
+					                        <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                          <tbody>
+					                            <tr>
+					                              <td width="100%" valign="middle" style="line-height: 1px;-webkit-text-size-adjust: none;" class="image198"><a href="../issue184/newsletter1.html" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="Searchlight.png" alt="" border="0" style="margin: 0; padding: 0;width: 198px; height: auto;" class="hover" /></a></td>
+				                                </tr>
+				                              </tbody>
+				                            </table></td>
+				                        </tr>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse: collapse; background-color: #ba232d;" class="full">
+					                        <tbody>
+					                          <tr>
+					                            <td width="27" style="-webkit-text-size-adjust: none;"></td>
+					                            <td style="-webkit-text-size-adjust: none;"><!-- Masonry Text -->
+					                              <table width="144" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                                <tbody>
+					                                  <tr>
+					                                    <td width="100%" height="30" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" valign="middle" style="line-height: 1px;-webkit-text-size-adjust: none;" class="image146"><a href="../issue184/newsletter3.html" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="tweetchart.jpg" alt="" border="0" style="margin: 0; padding: 0;width: 146px; height: auto;" class="hover" /></a></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" height="30" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" style="font-size: 24px;color: rgb(255, 255, 255);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 26px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->
+					                                      <p>99 Languages, Your Tweet</p>
+					                                      <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" height="15" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" valign="middle" style="font-size: 12px;color: rgb(255, 255, 255);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><a href="#" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/520313f6-83a2-4709-b666-fd3dfa4d3532.png" width="16" alt="" border="0" align="left" style="padding-top: 2px;" /></a> &nbsp;&nbsp; <span>
+					                                      <!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]-->
+					                                      09.01.2015<!--[if !mso]><!--></span><!--<![endif]-->
+					                                      </span></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" height="20" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" valign="top" style="font-size: 14px;color: rgb(255, 255, 255);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                      <p>Does anyone care about what we tweet? Yes, they do! In fact, Twitter is often used to take polls, surveys, and distribute prizes. It's particularly valuable to the coding community this week as The <a href="http://hybridgroup.com/blog/2015/01/02/what-is-code2014.html" target="_blank">Hybrid Group's</a> #code2014 tracks and analyzes our <a href="http://www.code2014.com/" target="_blank">preferred programming languages</a> via our tweets. </p></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+					                                  <!-- Button -->
+					                                  <tr>
+					                                    <td valign="middle" width="100%" class="fullCenter" style="-webkit-text-size-adjust: none;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="float: left;">
+					                                      <tbody>
+					                                        <tr>
+					                                          <td align="center" valign="middle" style="color: rgb(255, 255, 255);font-family: Helvetica, Arial, sans-serif;font-size: 13px;display: block;padding: 6px 16px;line-height: 22px;vertical-align: middle;border: 1px solid rgb(255, 255, 255);text-transform: uppercase;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                            <a href="../issue184/newsletter3.html" style="color: rgb(255, 255, 255);font-size: 13px;text-decoration: none;line-height: 20px;-webkit-text-size-adjust: none;" class="hover">Read more</a>
+					                                            <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                            </tr>
+				                                          </tbody>
+					                                      </table></td>
+				                                      </tr>
+					                                  <tr>
+					                                    <td width="100%" height="35" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+				                                    </tbody>
+				                                  </table></td>
+					                            <td width="27" style="-webkit-text-size-adjust: none;"></td>
+				                              </tr>
+				                            </tbody>
+					                        </table></td>
+				                        </tr>
+				                      </tbody>
+				                    </table>
+					                <!-- Right Column -->
+					                <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                  <tbody>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse: collapse; background-color: rgb(56, 56, 56);" class="full">
+					                        <tbody>
+					                          <tr>
+					                            <td width="27" style="-webkit-text-size-adjust: none;"></td>
+					                            <td style="-webkit-text-size-adjust: none;"><!-- Masonry Text -->
+					                              <table width="144" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                                <tr>
+					                                  <td height="30" style="-webkit-text-size-adjust: none;"></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td valign="middle" style="line-height: 1px;-webkit-text-size-adjust: none;" class="image146"><a href="../issue184/newsletter4.html" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="compasstop.jpg" alt="" border="0" style="margin: 0; padding: 0;width: 146px; height: auto;" class="hover" /></a></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td height="30" style="-webkit-text-size-adjust: none;"></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td style="font-size: 24px;color: rgb(255, 255, 255);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 26px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->
+					                                    Compass App
+					                                    <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td height="15" style="-webkit-text-size-adjust: none;"></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td valign="middle" style="font-size: 12px;color: #ffffff;text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><a href="#" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/8a219eab-81ee-4588-a4eb-bd5796d2071e.png" width="16" alt="" border="0" align="left" style="padding-top: 2px;" /></a> &nbsp;&nbsp; <span>
+					                                    <!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]-->
+					                                    09.01.2015<!--[if !mso]><!--></span><!--<![endif]-->
+					                                    </span></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td height="20" style="-webkit-text-size-adjust: none;"></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td valign="top" style="font-size: 14px;color: rgb(255, 255, 255);text-align: left;font-family: Helvetica, Arial, sans-serif;line-height: 22px;vertical-align: top;font-weight: normal;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                    <p>Write your own Compass app, with this step by step tutorial written by Robert Cailliau. <!--[if !mso]><!--></span><!--<![endif]-->See how easy it is to make a mobile app with LiveCode.</p>
+<p>The idea is to demonstrate how little you need to get something working.  From there you can go on to make a visually-dazzling app if you wish, but that is not my goal...</p></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td height="25" style="-webkit-text-size-adjust: none;"></td>
+				                                    </tr>
+					                                <tr>
+					                                  <td valign="middle" class="fullCenter" style="-webkit-text-size-adjust: none;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="float: left;">
+					                                    <tbody>
+					                                      <tr>
+					                                        <td align="center" valign="middle" style="color: #ba232d;font-family: Helvetica, Arial, sans-serif;font-size: 13px;display: block;padding: 6px 16px;line-height: 22px;vertical-align: middle;border: 1px solid #ba232d;text-transform: uppercase;-webkit-text-size-adjust: none;"><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->
+					                                          <a href="../issue184/newsletter4.html" style="color: #ffffff;font-size: 13px;text-decoration: none;line-height: 20px;-webkit-text-size-adjust: none;" class="hover">Read more</a>
+					                                          <!--[if !mso]><!--></span><!--<![endif]--></td>
+				                                          </tr>
+				                                        </tbody>
+					                                    </table></td>
+				                                    </tr>
+					                                <tbody>
+					                                  <!-- Button -->
+					                                  <tr>
+					                                    <td width="100%" height="35" style="-webkit-text-size-adjust: none;"></td>
+				                                      </tr>
+				                                    </tbody>
+				                                  </table></td>
+					                            <td width="27" style="-webkit-text-size-adjust: none;"></td>
+				                              </tr>
+				                            </tbody>
+					                        </table></td>
+				                        </tr>
+					                    <tr>
+					                      <td style="-webkit-text-size-adjust: none;"><!-- Masonry Image 198 - 4 -->
+					                        <table width="198" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					                          <tbody>
+					                            <tr>
+					                              <td width="100%" valign="middle" style="line-height: 1px;-webkit-text-size-adjust: none;" class="image198">&nbsp;</td>
+				                                </tr>
+				                              </tbody>
+				                            </table></td>
+				                        </tr>
+				                      </tbody>
+				                    </table></td>
+				                </tr>
+					            <tbody>
+				                </tbody>
+				              </table>					          <!-- End Wrapper 2 -->
+					          <!-- Space -->
+					          <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+					            <tbody>
+					              <tr>
+					                <td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+				                  </tr>
+				                </tbody>
+				              </table>
+					          <!-- End Space --></td>
+					      </tr>
+							<tbody>
+					    </tbody></table><!-- End Wrapper 2 -->
+						
+						
+						<!-- Space -->
+				  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+							<tbody><tr>
+								<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+						</tbody></table><!-- End Space -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+		
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- Wrapper 11 -->
+
+<!-- Wrapper 19 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- End Wrapper 19 -->
+
+<!-- Wrapper 5 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- Wrapper 5 -->
+
+<!-- Wrapper 28 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- Wrapper 28 -->
+
+<!-- Wrapper 28 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody>
+</tbody></table><!-- Wrapper 28 -->
+
+<!-- Wrapper 15 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody><tr mc:repeatable="repeat_30" mc:repeatindex="0" mc:hideable="hideable_repeat_30_1" mchideable="hideable_repeat_30_1">
+		<td width="100%" valign="top" style="background-color: rgb(255, 255, 255);-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_30_2" mchideable="hideable_repeat_30_2" style="-webkit-text-size-adjust: none;">
+			
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td style="-webkit-text-size-adjust: none;">
+					
+						<!-- Space -->
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+							<tbody><tr>
+								<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+							</tr>
+						</tbody></table><!-- End Space -->
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tbody><tr>
+								<td width="100%" style="-webkit-text-size-adjust: none;">
+									
+									<!-- Image_600 - 2 -->
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="left" style="display:none;">
+										<tbody><tr>
+											<td width="100%" class="fullCenter" style="text-align: center;line-height: 1px;-webkit-text-size-adjust: none;"><a href="http://livecode.com/livecode-to-html5/" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/9b8a3a92-68be-46b4-8c47-77bbfc9fbdb9.png" alt="" border="0" style="margin: 0; padding: 0;width: 600px; height: auto;" class="hover"></a>
+											</td>
+										</tr>
+									</tbody></table>
+									
+								</td>
+							</tr>
+						</tbody></table><!-- End Wrapper 2 -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+		
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- Wrapper 15 -->
+
+<!-- Wrapper 5 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody><tr mc:repeatable="repeat_31" mc:repeatindex="0" mc:hideable="hideable_repeat_31_1" mchideable="hideable_repeat_31_1">
+		<td width="100%" valign="top" style="background-color: rgb(56, 56, 56);-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_31_2" mchideable="hideable_repeat_31_2" style="-webkit-text-size-adjust: none;">
+		
+			
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td style="-webkit-text-size-adjust: none;">
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tbody><tr>
+								<td width="100%" style="-webkit-text-size-adjust: none;">
+									
+									<!-- Text -->
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+										<tbody><tr>
+											<td width="100%" height="50" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 44px;color: rgb(255, 255, 255);text-align: center;font-family: Helvetica, Arial, sans-serif;line-height: 48px;vertical-align: top;font-weight: 100;-webkit-text-size-adjust: none;" class="fullCenter">	
+												<!--[if !mso]><!--><span style="font-family: 'proxima_novathin', Helvetica; font-weight: normal;"><!--<![endif]-->Thank you for your time.<!--[if !mso]><!--></span><!--<![endif]--> 
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="25" style="-webkit-text-size-adjust: none;"></td>
+										</tr>
+									</tbody></table>
+									
+								</td>
+							</tr>
+						</tbody></table><!-- End Wrapper 2 -->
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+		
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- Wrapper 5 -->
+
+<!-- Wrapper 19 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody>
+</tbody></table><!-- End Wrapper 19 -->
+
+<!-- Wrapper 34 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1" style="background-color: rgb(56, 56, 56);">
+	<tbody><tr mc:repeatable="repeat_33" mc:repeatindex="0" mc:hideable="hideable_repeat_33_1" mchideable="hideable_repeat_33_1">
+		<td width="100%" valign="top" style="-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_33_2" mchideable="hideable_repeat_33_2" style="-webkit-text-size-adjust: none;">
+		
+			<!-- Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td width="100%" style="-webkit-text-size-adjust: none;">
+						
+						<!-- Mail Icon --> 
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center;" class="fullCenter">
+							<tbody><tr>
+								<td style="vertical-align: middle;text-align: center;-webkit-text-size-adjust: none;" class="mailIcon">
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullCenter">
+										<tbody><tr>
+											<td width="22" align="center" style="-webkit-text-size-adjust: none;"><p><a href="mailto:support@livecode.com" style="text-decoration: none;-webkit-text-size-adjust: none;"><img src="http://gallery.mailchimp.com/8404b344b09103bf489dd8a9a/images/684a516b-8476-4f3f-a6bb-7269199cb5c7.png" alt="" border="0" style="margin: 0; padding: 0;"></a></p>
+										    <p>&nbsp;</p>
+										    <p><span class="fullCenter" style="text-align: left;font-family: Helvetica, Arial, sans-serif;font-size: 12px;color: rgb(255, 255, 255);line-height: 20px;-webkit-text-size-adjust: none;">&copy; LiveCode 2015</span></p>
+										    <p>&nbsp;</p></td>
+										</tr>
+									</tbody></table>						
+								</td>
+							</tr>
+						</tbody></table>
+						
+					</td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+			
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- End Wrapper 34 -->
+
+<!-- Wrapper 34 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box2">
+	<tbody><tr mc:repeatable="repeat_34" mc:repeatindex="0" mc:hideable="hideable_repeat_34_1" mchideable="hideable_repeat_34_1">
+		<td width="100%" valign="top" style="background-color: rgb(56, 56, 56);-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_34_2" mchideable="hideable_repeat_34_2" style="-webkit-text-size-adjust: none;">
+		
+			<!-- Wrapper --><!-- End Wrapper -->
+			
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- End Wrapper 34 -->
+
+<!-- Wrapper 13 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" id="box1">
+	<tbody><tr mc:repeatable="repeat_35" mc:repeatindex="0" mc:hideable="hideable_repeat_35_1" mchideable="hideable_repeat_35_1">
+		<td width="100%" style="background-color: rgb(56, 56, 56);-webkit-text-size-adjust: none;">
+		<div mc:hideable="hideable_repeat_35_2" mchideable="hideable_repeat_35_2" style="-webkit-text-size-adjust: none;">
+		
+			<!-- Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tbody><tr>
+					<td width="100%" style="-webkit-text-size-adjust: none;">
+									
+					<!-- Space --></td>
+				</tr>
+			</tbody></table><!-- End Wrapper -->
+			
+		</div>
+		</td>
+	</tr>
+</tbody></table><!-- End Wrapper 13 -->
+<center>
+</center>

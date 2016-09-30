@@ -1,0 +1,827 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# skillshare: http://ogp.me/ns/fb/skillshare#">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgUPU1RRGwEEUlNVAAM="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+    <meta name="language" content="en" />
+    <meta name="description" content="Skillshare is a learning community for creators. Anyone can take an online class, watch video lessons, create projects, and even teach a class themselves." />
+    <meta name="keywords" content="learn, learning, class, classes, teach, education, how to, online learning, collaborative learning" />
+
+    <!--  meta OG tags -->
+    <meta property="og:site_name" content="Skillshare"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="fb:app_id" content="169419436428655"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@skillshare"/><meta name="twitter:site:id" content="171613435"/>
+    
+    <!-- require config object -->
+    <script>var require = { baseUrl: '/js', waitSeconds: 0 };</script>
+    <script>var SSDependencies = { url: "https://static.skillshare.com/assets/js/dependencies/skillshare/ss-dependencies.js" };</script>
+
+    <!--  Links -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="//static.skillshare.com/assets/css/main.css?34e5803" media="screen, projection, print" />    <link rel="stylesheet" type="text/css" href="//static.skillshare.com/assets/css/pages/tutorials/show.css?34e5803" media="screen, projection, print" />
+                        <link rel="stylesheet" type="text/css" href="//static.skillshare.com/assets/css/pages/tutorials/show.css?34e5803" media="screen, projection, print" />                
+    <!-- requirejs file (Only if not an admin page) -->
+            <script data-main="//static.skillshare.com/assets/js/build/build-cd24b95a.js" src="https://static.skillshare.com/assets/js/dependencies/requirejs/require-2.1.16.min.js" async defer></script>
+    
+    <!-- conditional libs -->
+    
+    
+    <title>(3) Designing a Logotype with Mackey Saturday - Skillshare</title>
+
+    
+    <!-- Async GA -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18525577-1']);
+            _gaq.push(['_setCustomVar', 2, 'session-type', 'logged-in', 2]);      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- Optimizely -->
+        <!-- Fullstory -->
+            <script>
+            window['_fs_debug'] = false;
+            window['_fs_host'] = 'www.fullstory.com';
+            window['_fs_org'] = '15Hk';
+            (function(m,n,e,t,l,o,g,y){
+              g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+              o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+              y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+              g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){FS(l,v)};
+              g.clearUserCookie=function(d,i){d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+              ';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}
+            })(window,document,'FS','script','user');
+            FS.identify('1507f288d95689-0b986aa40e73ef-46632c42-1fa400-1507f288d96a0c', {"displayName":"Tom Roecker","email":"tomroecker@hotmail.com","uid":"819750","username":"1597585","isPremiumMember":false});
+        </script>
+    </head>
+<body id="tutorials-show" class="">
+    <!-- Async FB -->
+    <div id="fb-root"></div>
+    <input id="fb-id" type="hidden" value="169419436428655" />
+
+    <!-- Handle legacy site alerts (triggered by BE on page load) -->
+    
+    <noscript>
+        <div class="notice"><span>Warning</span>: Skillshare uses Javascript for some of its core functionality. It is highly recommended that you turn on Javascript in your preferences and reload the page.</div>
+    </noscript>
+
+    <!-- Overlay for popups -->
+    <div id="click-off-overlay">
+        <!-- <div id="popup-container"></div> -->
+    </div>
+
+    
+    <div id="site-content" >
+
+        <!-- Our wrapper ensures we can center align the alerts within the flow of the DOM -->
+        <div id="alerts-wrapper" class="center-page">
+            <!-- Our holder is what we use to determine vertical position and css position in the flow -->
+            <div id="alerts-holder"></div>
+        </div>
+
+                        <!-- Announcement Banner -->
+    <div id="site-banner" class="clear">
+                    <a class="banner-content" href="https://www.skillshare.com/membership/checkout?via=student-referral-class-details" data-ss-restrict="signup" data-ss-redirect="https://www.skillshare.com/membership/checkout?via=student-referral-class-details">
+                <div class='user-img-30 left user-referral-image'><img src='https://static.skillshare.com/uploads/users/8072916/user-image-small.png?357991207'/></div> Jake has given you a free month of Skillshare Membership. Start your Membership for unlimited access to hundreds of classes.            </a>
+                <a class="close-link icon-delete" data-ss-cookie-name="ss_hide_student_referral_banner" data-ss-cookie-value="" href="javascript:;"></a>
+    </div>
+        
+        <!-- Header -->
+                    
+<div class="site-header ">
+    <div class="navigation clear">
+                    <div class="right-navigation right">
+                                <div class="secondary left">
+                            <ul class="user-navigation clear">
+                    <li class="nav-item teach-nav-item">
+                <a href="https://www.skillshare.com/teach?via=header" class="link-main no-bold menu-button">Become a Teacher</a>
+            </li>
+            <li class="nav-item notifications-nav-item right-dropdown">
+                <div class="notifications">
+                    <div class="notifications-button menu-button">
+                        <div class="notification-holder ss-icon-bell">
+                                                            <span class="notification-count red">3</span>
+                                                    </div>
+                    </div>
+                    <div class="popover shadow">
+                        <div class="inner-popover">
+                            <div class="arrow right"></div>
+                            <div class="content">
+                                <div class="notifications-module dropdown">
+                                    <div class="notifications-toggle-container"></div>
+                                    <div class="notifications-container">
+                                        <ul class="notification-list hidden"></ul>
+                                        <ul class="activity-list hidden"></ul>
+                                    </div>
+                                    <a href="https://www.skillshare.com/notifications?via=notifications-dropdown" class="see-all primary bolded">See All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                <li class="nav-item right-dropdown">
+            <div class="user-menu">
+                <div class="menu-button user-menu-button clear">
+                        <div class="user-photo user-img-28 left">
+        <img src="https://static.skillshare.com/assets/images/default-profile-sm.jpg" alt="Tom Roecker" />    </div>
+                </div>
+                <div class="popover shadow">
+                    <div class="inner-popover">
+                        <div class="arrow right"></div>
+                        <div class="content">
+                            <div class="split-menu">
+    <ul class="top-menu menu-list">
+                <li><a href="https://www.skillshare.com/my-classes?via=header" class="link-main no-bold">My Classes</a></li>
+        <li><a href="https://www.skillshare.com/profile/Tom-Roecker/1597585" class="link-main no-bold ss-icon-attention">Profile</a></li>
+            </ul>
+    <div class="delimiter"></div>
+    <ul class="bottom-menu menu-list">
+        <li><a href="https://www.skillshare.com/settings?via=header" class="secondary no-underline">Settings</a></li>
+        <li><a href="https://www.skillshare.com/settings/referrals?via=header" class="secondary no-underline">Refer a Friend</a></li>
+        <li><a href="https://www.skillshare.com/logout" class="secondary no-underline">Sign Out</a></li>
+    </ul>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+                </div>
+                                                                                        <div class="upgrade-button left">
+                                <a href="https://www.skillshare.com/membership?via=header-upgrade" class="btn small green">Upgrade</a>
+                            </div>
+                                                <div class="tertiary-menu nav-item right-dropdown">
+                            <div class="menu-button tertiary-menu-button clear">
+                                <div class="ss-icon-ellipsis-outline"></div>
+                            </div>
+                            <div class="popover shadow">
+                                <div class="inner-popover">
+                                    <div class="arrow right"></div>
+                                    <div class="content">
+                                        <div class="split-menu">
+    <ul class="top-menu menu-list">
+        <li><a href="https://www.skillshare.com/about?via=header" class="link-main no-bold">About</a></li>
+        <li><a href="https://www.skillshare.com/careers?via=header" class="link-main no-bold">Careers</a></li>
+        <li><a href="https://www.skillshare.com/press?via=header" class="link-main no-bold">Press</a></li>
+        <li><a href="http://blog.skillshare.com" class="link-main no-bold">Blog</a></li>
+        <li><a href="https://www.skillshare.com/mobile?via=header" class="link-main no-bold">Mobile</a></li>
+    </ul>
+    <div class="delimiter"></div>
+    <ul class="bottom-menu menu-list">
+        <li><a href="http://help.skillshare.com" class="secondary no-underline">Help</a></li>
+        <li><a href="https://www.skillshare.com/ss/privacy?via=header" class="secondary no-underline">Privacy</a></li>
+        <li><a href="https://www.skillshare.com/ss/terms?via=header" class="secondary no-underline">Terms</a></li>
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                               </div>
+            <div class="logo left">
+                                    <a class="logo-image" href="https://www.skillshare.com/?via=header"></a>
+                            </div>
+                            <div class="primary-navigation left">
+                    <ul class="clear">
+            <li class="nav-item first">
+            <a class="link-main no-bold menu-button" href="https://www.skillshare.com/home?via=header">Home</a>
+        </li>
+        <li class="classes-link nav-item">
+        <a class="link-main no-bold menu-button" href="/classes?via=dropdown">Classes</a>
+    </li>
+        <li class="nav-item right-dropdown">
+        <div class="live-menu">
+            <div class="menu-button live-menu-button clear">
+                <a class="link-main no-bold menu-button" href="https://www.skillshare.com/live-sessions?via=header">
+                    <span>Live</span>
+                    <span class="ss-icon-arrow-down"></span>
+                </a>
+            </div>
+            <div class="popover shadow">
+                <div class="inner-popover">
+                    <div class="arrow middle"></div>
+                    <div class="content">
+                        <ul class="top-menu menu-list">
+                            <li><a href="https://www.skillshare.com/live-sessions?via=header" class="link-main no-bold">Sessions</a></li>
+                            <li><a href="https://www.skillshare.com/amas?via=header" class="link-main no-bold">AMAs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="nav-item">
+        <a class="link-main no-bold menu-button" href="https://www.skillshare.com/projects">Projects</a>
+    </li>
+    <li class="nav-item active">
+        <a class="link-main no-bold menu-button" href="https://www.skillshare.com/tutorials?via=header">Tutorials</a>
+    </li>
+            <li class="nav-item">
+            <div class="search left">
+        <form class="search-form" id="yw0" action="/search" method="get">        <div class="header-search-bar">
+            <div class="ss-icon-search search-btn"></div>
+            <fieldset>
+                <input name="query" value="" placeholder="Search" class="header-search-input" id="query" type="text" />            </fieldset>
+            <input class="type-hidden" type="submit" value="Search" />        </div>
+    </form></div>
+
+        </li>
+    </ul>
+                </div>
+                        </div>
+    </div>
+            <div class="site-header-mobile clear">
+            <div class="primary-drawer-button drawer-button ss-icon-hamburger left"></div>
+                <div class="search-overlay-btn left">
+            <div class="ss-icon-search"></div>
+        </div>
+        <div class="tablet-search-bar left">
+            <div class="search left">
+        <form class="search-form collapsible" id="yw1" action="/search" method="get">        <div class="header-search-bar">
+            <div class="ss-icon-search search-btn"></div>
+            <fieldset>
+                <input name="query" value="" placeholder="Search" class="header-search-input closed" id="query" type="text" />            </fieldset>
+            <input class="type-hidden" type="submit" value="Search" />        </div>
+    </form></div>
+
+        </div>
+                <div class="right">
+            <div class="tertiary-drawer-button drawer-button ss-icon-ellipsis-outline"></div>
+        </div>
+        <div class="user-drawer-button drawer-button right">
+            <div class="user-drawer-button-wrapper clear">
+                                                    <span class="notification-dot"></span>
+                                    <div class="user-photo user-img-28 left">
+        <img src="https://static.skillshare.com/assets/images/default-profile-sm.jpg" alt="Tom Roecker" />    </div>
+            </div>
+        </div>
+        <a href="https://www.skillshare.com/" title="Skillshare" class="logo">
+        <img class="logo-image" src="https://static.skillshare.com/assets/images/logo-header.svg?_=0" data-svg-fallback="/logo-header.png" alt="Skillshare">
+    </a>
+            <div class="primary drawer popover bottom shadow">
+            <div class="inner-popover">
+                <div class="arrow"></div>
+                <div class="content">
+                    <ul class="clear">
+            <li class="nav-item first">
+            <a class="link-main no-bold menu-button" href="https://www.skillshare.com/home?via=header">Home</a>
+        </li>
+        <li class="classes-link nav-item">
+        <a class="link-main no-bold menu-button" href="/classes?via=dropdown">Classes</a>
+    </li>
+     
+        <li class="nav-item">
+            <a class="link-main no-bold menu-button" href="https://www.skillshare.com/live-sessions?via=header">Sessions</a>
+        </li>
+        <li class="nav-item">
+            <a class="link-main no-bold menu-button" href="https://www.skillshare.com/amas?via=header">AMAs</a>
+        </li>
+        <li class="nav-item">
+        <a class="link-main no-bold menu-button" href="https://www.skillshare.com/projects">Projects</a>
+    </li>
+    <li class="nav-item active">
+        <a class="link-main no-bold menu-button" href="https://www.skillshare.com/tutorials?via=header">Tutorials</a>
+    </li>
+            <li class="nav-item">
+            <div class="search left">
+        <form class="search-form" id="yw2" action="/search" method="get">        <div class="header-search-bar">
+            <div class="ss-icon-search search-btn"></div>
+            <fieldset>
+                <input name="query" value="" placeholder="Search" class="header-search-input" id="query" type="text" />            </fieldset>
+            <input class="type-hidden" type="submit" value="Search" />        </div>
+    </form></div>
+
+        </li>
+    </ul>
+                    <div class="split-menu">
+                        <div class="delimiter"></div>
+                        <ul class="bottom-menu menu-list">
+                            <li><a class="secondary no-underline" href="https://www.skillshare.com/teach?via=header ">Become a Teacher</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                     <div class="user drawer popover bottom shadow">
+            <div class="inner-popover">
+                <div class="arrow"></div>
+                <div class="content">
+                    <div class="split-menu">
+    <ul class="top-menu menu-list">
+                                <li><a href="https://www.skillshare.com/notifications?via=header" class="link-main no-bold notifications-link">Notifications  <span class="notification-count red right">3</span></a></li>
+                <li><a href="https://www.skillshare.com/my-classes?via=header" class="link-main no-bold">My Classes</a></li>
+        <li><a href="https://www.skillshare.com/profile/Tom-Roecker/1597585" class="link-main no-bold ss-icon-attention">Profile</a></li>
+                    <li><a href="https://www.skillshare.com/membership?via=header-mobile-upgrade" class="link-main no-bold">Upgrade to Premium</a></li>
+            </ul>
+    <div class="delimiter"></div>
+    <ul class="bottom-menu menu-list">
+        <li><a href="https://www.skillshare.com/settings?via=header" class="secondary no-underline">Settings</a></li>
+        <li><a href="https://www.skillshare.com/settings/referrals?via=header" class="secondary no-underline">Refer a Friend</a></li>
+        <li><a href="https://www.skillshare.com/logout" class="secondary no-underline">Sign Out</a></li>
+    </ul>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="tertiary drawer popover bottom shadow">
+            <div class="inner-popover">
+                <div class="arrow"></div>
+                <div class="content">
+                    <div class="split-menu">
+    <ul class="top-menu menu-list">
+        <li><a href="https://www.skillshare.com/about?via=header" class="link-main no-bold">About</a></li>
+        <li><a href="https://www.skillshare.com/careers?via=header" class="link-main no-bold">Careers</a></li>
+        <li><a href="https://www.skillshare.com/press?via=header" class="link-main no-bold">Press</a></li>
+        <li><a href="http://blog.skillshare.com" class="link-main no-bold">Blog</a></li>
+        <li><a href="https://www.skillshare.com/mobile?via=header" class="link-main no-bold">Mobile</a></li>
+    </ul>
+    <div class="delimiter"></div>
+    <ul class="bottom-menu menu-list">
+        <li><a href="http://help.skillshare.com" class="secondary no-underline">Help</a></li>
+        <li><a href="https://www.skillshare.com/ss/privacy?via=header" class="secondary no-underline">Privacy</a></li>
+        <li><a href="https://www.skillshare.com/ss/terms?via=header" class="secondary no-underline">Terms</a></li>
+    </ul>
+</div>
+                </div>
+            </div>
+        </div>
+                <div class="search-overlay clear">
+            <div class="cancel-btn right">Cancel</div>
+            <div class="search left">
+        <form class="search-form" id="yw3" action="/search" method="get">        <div class="header-search-bar">
+            <div class="ss-icon-search search-btn"></div>
+            <fieldset>
+                <input name="query" value="" placeholder="Search" class="header-search-input" id="query" type="text" />            </fieldset>
+            <input class="type-hidden" type="submit" value="Search" />        </div>
+    </form></div>
+
+        </div>
+    </div>
+                <!-- Page -->
+        <div id="page-wrapper">
+            <input id="user-status" type="hidden" value="1" />
+            <!-- Page Content -->
+            <div class="tutorial-wrapper">
+    <div class="grid">
+        <div id="content-region">
+            <div class="row">
+    <div class="col-8">
+            <span class="section-header-back"><a href="/tutorials/">All Tutorials
+               <span class="icon ss-icon-breadcrumb"></span>
+            </a></span>
+            <h2 class="section-header">Designing a Logotype with Mackey Saturday</h2>
+            <h4 class="section-header mobile">Designing a Logotype with Mackey Saturday</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <span class="sub-header">Design</span>
+                <div class="like-btn-wrapper right tutorial-like header-like"></div>
+            <div class="description rich-content-wrapper">
+                <div id="social-sidebar"></div>
+                <p><em><span style="font-weight: 400;"><a href="https://www.facebook.com/skillshare/videos/1280763715282395/" class="embedded-data"><iframe src="https://www.facebook.com/video/embed?video_id=1280763715282395" height="360" width="640"></iframe></a></span></em></p>
+<p><em><span style="font-weight: 400;">Mackey Saturday is the designer behind Instagram's "scripted" logo and countless other logos for cool brands. In this tutorial, he shares his essential process for creating a great logotype: a type-only treatment of a brand or company name.</span></em></p>
+<p><em><span style="font-weight: 400;">Read his process below, then join Mackey's full class on Skillshare: </span><a href="https://www.skillshare.com/classes/design/Logo-Design-Craft-Type-Based-Wordmarks/2045916919?via=tutorial"><span style="font-weight: 400;">Logo Design: Craft Type-Based Wordmarks</span></a><span style="font-weight: 400;">.</span></em></p>
+<p><strong><br>1. Generate ideas by repeatedly sketching the brand name.</strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/5bbe9049" width="495" height="276" class="zoomable rounded-image-wrapper"></p>
+<p>A logotype is a type-only treatment of a brand or company name, so start by identifying the name of your brand.</p>
+<p>Get out sketch paper and repeatedly draw, sketch, and write the name to test different logotype concepts. Let your hand move freely, and just keep drawing until you see something you like. Then, draw that version a few times until you (again) like how it looks. Graph paper can be helpful to get your lines right.</p>
+<p><strong><br>2. Refine your sketch on tracing paper.</strong><strong><strong><br></strong></strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/9b93ab6c" class="zoomable rounded-image-wrapper"></p>
+<p>Grab some tracing paper, and place it over your brainstorm sketch. Using a pencil, trace over your sketch with more detailed lines and a bit more polish.</p>
+<p><strong><br>3. Take a photo of your sketch, and bring it into Illustrator.</strong><strong><strong><br></strong></strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/f280cfd5" width="501" height="280" class="zoomable rounded-image-wrapper"></p>
+<p>Using your phone, take a cropped in photo of your drawing on tracing paper. Bring the image into Photoshop. Set your guides for consistency, and make sure your art board is cropped on the word, leaving just a bit of room on the edges.</p>
+<p><strong><br>4. Trace your sketch with the pen tool in Illustrator, using minimal anchor points.</strong><strong><strong><br></strong></strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/567eed47" width="503" height="284" class="zoomable rounded-image-wrapper"></p>
+<p>Go over the lines of your drawing using as few anchor points as possible, focusing on each individual letter at a time. This will ensure your curves are smooth and solid. It doesn't have to be perfect, you just want to set up the groundwork for the form!</p>
+<p>Make lines that go right through your paths, just like a stroke. Tip: If you're using the same letter multiple times, you might want to use the same shape for all of them instead of re-drawing the letter.</p>
+<p><strong><br>5. Compare your letterforms for consistency.</strong><strong><strong><br></strong></strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/69496536" width="506" height="285" class="zoomable rounded-image-wrapper"></p>
+<p>In Illustrator, compare your forms next to (or on top of) one another to make sure their strokes, heights, and widths are consistent.</p>
+<p><strong><br>6. Flip vertically to fine-tune spacing.</strong><strong><strong><br></strong></strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/efed89c4" width="505" height="284" class="zoomable rounded-image-wrapper"></p>
+<p>To double-ensure consistency, flip your wordmark upside down so you can see the spacing from another side. Make adjustments to fix any issues.</p>
+<p><strong><br>7. Present your final logotype!</strong><strong><strong><br></strong></strong></p>
+<p><img src="https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/791113d9" class="zoomable rounded-image-wrapper"></p>
+<p>Once you have your final design, use it everywhere you want a logo! Online, in the real world, and anywhere that you want to create brand consistency.</p>
+<p><span style="font-weight: 400;"><br><em>Like this tutorial? Check&nbsp;out Mackey Saturday's full class on Skillshare: </em></span><em><a href="https://www.skillshare.com/classes/design/Logo-Design-Craft-Type-Based-Wordmarks/2045916919?via=tutorial"><span style="font-weight: 400;">Logo Design: Craft Type-Based Wordmarks</span></a><span style="font-weight: 400;">!</span></em></p>
+            </div>
+                <div class="like-wrapper clear">
+                    <div class="left"><strong>Isn't this tutorial awesome?</strong></div>
+                    <div class="like-btn-wrapper tutorial-like left"></div>
+                    <div class="tutorial-like-count left"></div>
+                </div>
+            <div class="author-section">
+                <div class="author-image user-img-50 left" data-ss-username="3630607">
+                    <a href="https://www.skillshare.com/profile/Mackey-Saturday/3630607"><img src=https://static.skillshare.com/uploads/users/3630607/user-image-large.jpg?762263369></a>
+                </div>
+                <div class="follow-button-wrapper right"></div>
+                <div class="author-bio">
+                    <h4 data-ss-username="3630607"  data-ss-placement="bottom"><a href="https://www.skillshare.com/profile/Mackey-Saturday/3630607" class="link-main no-bold">Mackey Saturday</a> </h4>
+                    <p class="author-headline ellipsis">Graphic Designer</p>
+                    <div>Mackey Saturday is an independent designer based in Denver, Colorado.  Through strategy, inquest, and design implementations he creates and advances steadfast identities.</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="tutorial-author sidebar-section clear">
+                <div class="author-image user-img-75 left" data-ss-username="3630607" data-ss-placement="bottom">
+                    <a href="https://www.skillshare.com/profile/Mackey-Saturday/3630607"><img src="https://static.skillshare.com/uploads/users/3630607/user-image-large.jpg?762263369" /></a>
+                </div>
+                <div class="tutorial-author-detail left">
+                    <h4 data-ss-username="3630607"  data-ss-placement="bottom"><a href="https://www.skillshare.com/profile/Mackey-Saturday/3630607" class="link-main no-bold">Mackey Saturday</a> </h4>
+                    <p class="author-headline ellipsis">Graphic Designer</p>
+                    <div class="follow-button-wrapper"></div>
+                </div>
+            </div>
+
+            <div class="stats-column sidebar-section clear">
+                <div class="stat left">
+                    <p class="class-count number ss-icon-empty-preview">
+                        
+                        3035
+                    </p>
+                    <p class="label">Views</p>
+                </div>
+                <div class="stat left">
+                    <p class="class-count number like-count tutorial-like-count-num ss-icon-empty-heart">
+                        
+                        43
+                    </p>
+                    <p class="label like-label">Likes</p>
+                </div>
+            </div>
+            <div id="related-classes" class="Section">
+                <div class="section-header">
+                    <h5 class="title"> Related Skillshare Classes</h5>
+                </div>
+                <div class="class-list">
+    <div class="class-list-row">
+        <p class="title-link">
+            <a href="https://www.skillshare.com/classes/design/Logo-Design-Craft-Type-Based-Wordmarks/2045916919">Logo Design: Craft Type-Based Wordmarks</a>
+        </p>
+            <a href="https://www.skillshare.com/profile/Mackey-Saturday/3630607" class="link-main no-bold teacher-link" data-ss-username="3630607" data-ss-teacher-card="1">Mackey Saturday</a>
+    <div class="class-stats clear">
+        <span class="review ss-icon-thumbs-up left" data-container="container" rel="tooltip" data-placement="bottom" data-html="true">
+                    100%
+            <div class="tooltip-content">
+                    <span class="review ss-icon-thumbs-up"></span><strong>256</strong> of <strong>256</strong> total reviews
+            </div>
+        </span>
+            <span class="left middot">&middot;</span>
+            <span class="ss-icon-user num-students left">
+                4,391
+            </span>
+            <span class="left middot">&middot;</span>
+            <span class="left tags">
+                <a href="/classes/design?" data-ss-name="Design" data-ss-value="design" class="link-main no-bold category left">Design</a>
+            </span>
+    </div>
+    </div>
+    <div class="class-list-row">
+        <p class="title-link">
+            <a href="https://www.skillshare.com/classes/design/Making-Animated-GIFs-UX-Interactions-More/926540632">Making Animated GIFs: UX Interactions &amp; More</a>
+        </p>
+            <a href="https://www.skillshare.com/nlevin" class="link-main no-bold teacher-link" data-ss-username="2000948" data-ss-teacher-card="1">Noah Levin</a>
+                    <a href="https://www.skillshare.com/membership?via=badge" title="Premium Member" class="ss-icon-premium-badge" rel="tooltip" data-toggle="tooltip"></a>
+    <div class="class-stats clear">
+        <span class="review ss-icon-thumbs-up left" data-container="container" rel="tooltip" data-placement="bottom" data-html="true">
+                    95%
+            <div class="tooltip-content">
+                    <span class="review ss-icon-thumbs-up"></span><strong>21</strong> of <strong>22</strong> total reviews
+            </div>
+        </span>
+            <span class="left middot">&middot;</span>
+            <span class="ss-icon-user num-students left">
+                698
+            </span>
+            <span class="left middot">&middot;</span>
+            <span class="left tags">
+                <a href="/classes/design?" data-ss-name="Design" data-ss-value="design" class="link-main no-bold category left">Design</a>
+            </span>
+    </div>
+    </div>
+    <div class="class-list-row">
+        <p class="title-link">
+            <a href="https://www.skillshare.com/classes/design/Calligraphy-for-Beginners-The-Foundational-Styles-of-Calligraphy/413180109">Calligraphy for Beginners: The Foundational Styles of Calligraphy</a>
+        </p>
+            <a href="https://www.skillshare.com/jacksonalves" class="link-main no-bold teacher-link" data-ss-username="9534561" data-ss-teacher-card="1">Jackson Alves</a>
+                    <a href="https://www.skillshare.com/membership?via=badge" title="Premium Member" class="ss-icon-premium-badge" rel="tooltip" data-toggle="tooltip"></a>
+    <div class="class-stats clear">
+        <span class="review ss-icon-thumbs-up left" data-container="container" rel="tooltip" data-placement="bottom" data-html="true">
+                    100%
+            <div class="tooltip-content">
+                    <span class="review ss-icon-thumbs-up"></span><strong>20</strong> of <strong>20</strong> total reviews
+            </div>
+        </span>
+            <span class="left middot">&middot;</span>
+            <span class="ss-icon-user num-students left">
+                1,009
+            </span>
+            <span class="left middot">&middot;</span>
+            <span class="left tags">
+                <a href="/classes/design?" data-ss-name="Design" data-ss-value="design" class="link-main no-bold category left">Design</a>
+            </span>
+    </div>
+    </div>
+    <div class="class-list-row">
+        <p class="title-link">
+            <a href="https://www.skillshare.com/classes/design/Designing-Repeat-Patterns-From-Icons-to-Apparel-and-Beyond/357137191">Designing Repeat Patterns: From Icons to Apparel and Beyond</a>
+        </p>
+            <a href="https://www.skillshare.com/kimilewis" class="link-main no-bold teacher-link" data-ss-username="7207603" data-ss-teacher-card="1">Kimi Lewis</a>
+                    <a href="https://www.skillshare.com/membership?via=badge" title="Premium Member" class="ss-icon-premium-badge" rel="tooltip" data-toggle="tooltip"></a>
+    <div class="class-stats clear">
+        <span class="review ss-icon-thumbs-up left" data-container="container" rel="tooltip" data-placement="bottom" data-html="true">
+                    97%
+            <div class="tooltip-content">
+                    <span class="review ss-icon-thumbs-up"></span><strong>122</strong> of <strong>126</strong> total reviews
+            </div>
+        </span>
+            <span class="left middot">&middot;</span>
+            <span class="ss-icon-user num-students left">
+                2,205
+            </span>
+            <span class="left middot">&middot;</span>
+            <span class="left tags">
+                <a href="/classes/design?" data-ss-name="Design" data-ss-value="design" class="link-main no-bold category left">Design</a>
+            </span>
+    </div>
+    </div>
+    <div class="class-list-row">
+        <p class="title-link">
+            <a href="https://www.skillshare.com/classes/design/Transform-Watercolor-Illustrations-into-Intricate-Patterns/1291197326">Transform Watercolor Illustrations into Intricate Patterns </a>
+        </p>
+            <a href="https://www.skillshare.com/sandrabowersart" class="link-main no-bold teacher-link" data-ss-username="4879786" data-ss-teacher-card="1">Sandra Bowers</a>
+                <a href="https://skillsharenyc.wufoo.com/forms/become-a-skillshare-ta/" title="Teacher's Assistant" class="ss-icon-ta" rel="tooltip" data-toggle="tooltip"></a>
+    <div class="class-stats clear">
+        <span class="review ss-icon-thumbs-up left" data-container="container" rel="tooltip" data-placement="bottom" data-html="true">
+                    94%
+            <div class="tooltip-content">
+                    <span class="review ss-icon-thumbs-up"></span><strong>66</strong> of <strong>70</strong> total reviews
+            </div>
+        </span>
+            <span class="left middot">&middot;</span>
+            <span class="ss-icon-user num-students left">
+                948
+            </span>
+            <span class="left middot">&middot;</span>
+            <span class="left tags">
+                <a href="/classes/design?" data-ss-name="Design" data-ss-value="design" class="link-main no-bold category left">Design</a>
+            </span>
+    </div>
+    </div>
+                </div>
+            </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+                                    <div class="site-footer clear">
+    <div class="left nav">
+        &copy; Skillshare, Inc. 2015<span class="middot">&middot;</span>
+        <a href="http://help.skillshare.com/">Help</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/membership">Membership</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/teach">Become a Teacher</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/careers">Careers</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/ss/privacy">Privacy</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/ss/terms">Terms</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/about">About</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/mobile">Mobile</a>    </div>
+</div>
+                <div class="site-footer site-footer-mobile">
+    <div class="nav">
+        <a href="http://help.skillshare.com">Help</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/ss/privacy">Privacy</a><span class="middot">&middot;</span>
+        <a href="https://www.skillshare.com/ss/terms">Terms</a>    </div>
+    &copy; Skillshare, Inc. 2015    <div class="nav download-mobile-app-small-container">
+        <a class="download-mobile-app-small iconed ss-icon-iphone" target="_blank" href="https://itunes.apple.com/app/apple-store/id916819843?pt=96247807&amp;ct=site-footer&amp;mt=8">Download Skillshare for iOS</a>        <a class="download-mobile-app-small iconed ss-icon-iphone" target="_blank" href="https://itunes.apple.com/app/apple-store/id916819843?pt=96247807&amp;ct=site-footer&amp;mt=8">Download Skillshare Android</a>    </div>
+</div>
+                    
+    </div>
+
+    
+    <!-- server bootstrap and mixpanel include -->
+    <script>
+        (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+        b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+        '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+        d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+        var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+        Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+        f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+        'track_forms','register','register_once','unregister','identify','alias','name_tag','set_config',
+        'people.set','people.set_once','people.increment','people.track_charge','people.append'];
+        for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+
+        var SS = {
+            config: {
+                debug: false            },
+            serverBootstrap: {"userData":{"id":819750,"isAdmin":0,"isEligibleForFreeTrial":1,"picture":"<img src=\"https://static.skillshare.com/assets/images/default-profile-sm.jpg\" alt=\"Tom Roecker\" />","images":{"small":"https://static.skillshare.com/assets/images/default-profile-sm.jpg","medium":"https://static.skillshare.com/assets/images/default-profile-lrg.jpg","large":"https://static.skillshare.com/assets/images/default-profile-lrg.jpg"},"username":1597585,"numFollowing":2,"numFollowers":0,"isMember":1,"isPremiumMember":0,"vanityUsername":null,"onsiteNotificationDetails":{"notification":2,"activity":1,"total":3,"hasUnread":true}},"membershipData":{"monthlyPrice":9.95,"annualPricePerMonth":8,"numAvailableClasses":"2,420","numFreeDays":30},"staticAssetData":{"cdnHost":"static.skillshare.com"},"classReviewLessonsThreshold":0.5,"videoThumbnailsBaseUrl":"https://static.skillshare.com/skillshare/uploads","deviceDownloadCardData":[],"pageData":{"sectionHeaderData":{"title":"Designing a Logotype with Mackey Saturday"},"sectionData":{"tutorialData":{"id":424,"title":"Designing a Logotype with Mackey Saturday","body":"<p><em><span style=\"font-weight: 400;\"><a href=\"https://www.facebook.com/skillshare/videos/1280763715282395/\" class=\"embedded-data\"><iframe src=\"https://www.facebook.com/video/embed?video_id=1280763715282395\" height=\"360\" width=\"640\"></iframe></a></span></em></p>\r\n<p><em><span style=\"font-weight: 400;\">Mackey Saturday is the designer behind Instagram's \"scripted\" logo and countless other logos for cool brands. In this tutorial, he shares his essential process for creating a great logotype: a type-only treatment of a brand or company name.</span></em></p>\r\n<p><em><span style=\"font-weight: 400;\">Read his process below, then join Mackey's full class on Skillshare: </span><a href=\"https://www.skillshare.com/classes/design/Logo-Design-Craft-Type-Based-Wordmarks/2045916919?via=tutorial\"><span style=\"font-weight: 400;\">Logo Design: Craft Type-Based Wordmarks</span></a><span style=\"font-weight: 400;\">.</span></em></p>\r\n<p><strong><br>1. Generate ideas by repeatedly sketching the brand name.</strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/5bbe9049\" width=\"495\" height=\"276\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>A logotype is a type-only treatment of a brand or company name, so start by identifying the name of your brand.</p>\r\n<p>Get out sketch paper and repeatedly draw, sketch, and write the name to test different logotype concepts. Let your hand move freely, and just keep drawing until you see something you like. Then, draw that version a few times until you (again) like how it looks. Graph paper can be helpful to get your lines right.</p>\r\n<p><strong><br>2. Refine your sketch on tracing paper.</strong><strong><strong><br></strong></strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/9b93ab6c\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>Grab some tracing paper, and place it over your brainstorm sketch. Using a pencil, trace over your sketch with more detailed lines and a bit more polish.</p>\r\n<p><strong><br>3. Take a photo of your sketch, and bring it into Illustrator.</strong><strong><strong><br></strong></strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/f280cfd5\" width=\"501\" height=\"280\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>Using your phone, take a cropped in photo of your drawing on tracing paper. Bring the image into Photoshop. Set your guides for consistency, and make sure your art board is cropped on the word, leaving just a bit of room on the edges.</p>\r\n<p><strong><br>4. Trace your sketch with the pen tool in Illustrator, using minimal anchor points.</strong><strong><strong><br></strong></strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/567eed47\" width=\"503\" height=\"284\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>Go over the lines of your drawing using as few anchor points as possible, focusing on each individual letter at a time. This will ensure your curves are smooth and solid. It doesn't have to be perfect, you just want to set up the groundwork for the form!</p>\r\n<p>Make lines that go right through your paths, just like a stroke. Tip: If you're using the same letter multiple times, you might want to use the same shape for all of them instead of re-drawing the letter.</p>\r\n<p><strong><br>5. Compare your letterforms for consistency.</strong><strong><strong><br></strong></strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/69496536\" width=\"506\" height=\"285\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>In Illustrator, compare your forms next to (or on top of) one another to make sure their strokes, heights, and widths are consistent.</p>\r\n<p><strong><br>6. Flip vertically to fine-tune spacing.</strong><strong><strong><br></strong></strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/efed89c4\" width=\"505\" height=\"284\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>To double-ensure consistency, flip your wordmark upside down so you can see the spacing from another side. Make adjustments to fix any issues.</p>\r\n<p><strong><br>7. Present your final logotype!</strong><strong><strong><br></strong></strong></p>\r\n<p><img src=\"https://static.skillshare.com/uploads/tutorial/6312e16ad7935461b38bc090ce194eae/791113d9\" class=\"zoomable rounded-image-wrapper\"></p>\r\n<p>Once you have your final design, use it everywhere you want a logo! Online, in the real world, and anywhere that you want to create brand consistency.</p>\r\n<p><span style=\"font-weight: 400;\"><br><em>Like this tutorial? Check&nbsp;out Mackey Saturday's full class on Skillshare: </em></span><em><a href=\"https://www.skillshare.com/classes/design/Logo-Design-Craft-Type-Based-Wordmarks/2045916919?via=tutorial\"><span style=\"font-weight: 400;\">Logo Design: Craft Type-Based Wordmarks</span></a><span style=\"font-weight: 400;\">!</span></em></p>","category":"Design","author":{"uid":475537,"image":"https://static.skillshare.com/uploads/users/3630607/user-image-large.jpg?762263369","username":3630607,"fullName":"Mackey Saturday","url":"https://www.skillshare.com/profile/Mackey-Saturday/3630607","isPremiumMember":false,"badgeUrl":"https://www.skillshare.com/membership?via=badge","teacherHoverCard":true,"isTa":false,"headline":"Graphic Designer","bio":"Mackey Saturday is an independent designer based in Denver, Colorado. \u00a0Through strategy, inquest, and design implementations he creates and advances steadfast identities.","profileUrl":"https://www.skillshare.com/profile/Mackey-Saturday/3630607"},"deleteUrl":"https://www.skillshare.com/tutorials/424/delete","editUrl":"https://www.skillshare.com/tutorials/424/edit","isAuthor":false,"canModify":false,"isGuest":false,"timestamp":1448928767,"shareLinks":{"id":424,"url":"https://www.skillshare.com/tutorials/Designing-a-Logotype-with-Mackey-Saturday/424","tweetText":"Designing a Logotype with Mackey Saturday a @Skillshare tutorial by Mackey Saturday http://skl.sh/1l3AvwT","urlEncodedTweetText":"Designing+a+Logotype+with+Mackey+Saturday+a+%40Skillshare+tutorial+by+Mackey+Saturday+http%3A%2F%2Fskl.sh%2F1l3AvwT","showEmail":false,"showEmbed":false},"numLikes":43,"views":3035,"userVote":null},"relatedClassesData":{"list":[{"sku":2045916919,"title":"Logo Design: Craft Type-Based Wordmarks","url":"https://www.skillshare.com/classes/design/Logo-Design-Craft-Type-Based-Wordmarks/2045916919","image":"https://static.skillshare.com/uploads/video/thumbnails/4134293984001/448-252","wishlistId":null,"numStudents":"4,391","numReviews":256,"numRecommendations":256,"percentPositiveReviews":"100%","totalSessionsDuration":"1h 20m","columnSize":4,"category":{"slug":"design","name":"Design","url":"/classes/design?"},"teacher":{"image":"https://static.skillshare.com/uploads/users/3630607/user-image-small.jpg?1819624975","username":3630607,"fullName":"Mackey Saturday","url":"https://www.skillshare.com/profile/Mackey-Saturday/3630607","isPremiumMember":false,"badgeUrl":"https://www.skillshare.com/membership?via=badge","teacherHoverCard":true,"isTa":false,"headline":"Graphic Designer"},"showStaticTeacher":false,"showStaticCategory":false,"showStaticClass":false,"wishlistPrimary":false},{"sku":926540632,"title":"Making Animated GIFs: UX Interactions & More","url":"https://www.skillshare.com/classes/design/Making-Animated-GIFs-UX-Interactions-More/926540632","image":"https://static.skillshare.com/uploads/video/thumbnails/4639759454001/448-252","wishlistId":null,"numStudents":698,"numReviews":22,"numRecommendations":21,"percentPositiveReviews":"95%","totalSessionsDuration":"33m","columnSize":4,"category":{"slug":"design","name":"Design","url":"/classes/design?"},"teacher":{"image":"https://static.skillshare.com/uploads/users/2000948/user-image-small.png?1702039864","username":2000948,"fullName":"Noah Levin","url":"https://www.skillshare.com/nlevin","isPremiumMember":true,"badgeUrl":"https://www.skillshare.com/membership?via=badge","teacherHoverCard":true,"isTa":false,"headline":"Product Designer / Prototyping Teacher"},"showStaticTeacher":false,"showStaticCategory":false,"showStaticClass":false,"wishlistPrimary":false},{"sku":413180109,"title":"Calligraphy for Beginners: The Foundational Styles of Calligraphy","url":"https://www.skillshare.com/classes/design/Calligraphy-for-Beginners-The-Foundational-Styles-of-Calligraphy/413180109","image":"https://static.skillshare.com/uploads/video/thumbnails/5e41254917904800e20576be679f5138/448-252","wishlistId":null,"numStudents":"1,009","numReviews":20,"numRecommendations":20,"percentPositiveReviews":"100%","totalSessionsDuration":"1h 41m","columnSize":4,"category":{"slug":"design","name":"Design","url":"/classes/design?"},"teacher":{"image":"https://static.skillshare.com/uploads/users/9534561/user-image-small.jpg?1431480858","username":9534561,"fullName":"Jackson Alves","url":"https://www.skillshare.com/jacksonalves","isPremiumMember":true,"badgeUrl":"https://www.skillshare.com/membership?via=badge","teacherHoverCard":true,"isTa":false,"headline":"Letterer, calligrapher and teacher, from Brazil"},"showStaticTeacher":false,"showStaticCategory":false,"showStaticClass":false,"wishlistPrimary":false},{"sku":357137191,"title":"Designing Repeat Patterns: From Icons to Apparel and Beyond","url":"https://www.skillshare.com/classes/design/Designing-Repeat-Patterns-From-Icons-to-Apparel-and-Beyond/357137191","image":"https://static.skillshare.com/uploads/video/thumbnails/aa0ad29112c4c099e5650b5498529f2e/448-252","wishlistId":null,"numStudents":"2,205","numReviews":126,"numRecommendations":122,"percentPositiveReviews":"97%","totalSessionsDuration":"29m","columnSize":4,"category":{"slug":"design","name":"Design","url":"/classes/design?"},"teacher":{"image":"https://static.skillshare.com/uploads/users/7207603/user-image-small.png?645130801","username":7207603,"fullName":"Kimi Lewis","url":"https://www.skillshare.com/kimilewis","isPremiumMember":true,"badgeUrl":"https://www.skillshare.com/membership?via=badge","teacherHoverCard":true,"isTa":false,"headline":"Product Designer, Noun Project"},"showStaticTeacher":false,"showStaticCategory":false,"showStaticClass":false,"wishlistPrimary":false},{"sku":1291197326,"title":"Transform Watercolor Illustrations into Intricate Patterns ","url":"https://www.skillshare.com/classes/design/Transform-Watercolor-Illustrations-into-Intricate-Patterns/1291197326","image":"https://static.skillshare.com/uploads/video/thumbnails/9dd7a45a3cbafb2997da6a8821a6d6f6/448-252","wishlistId":null,"numStudents":948,"numReviews":70,"numRecommendations":66,"percentPositiveReviews":"94%","totalSessionsDuration":"23m","columnSize":4,"category":{"slug":"design","name":"Design","url":"/classes/design?"},"teacher":{"image":"https://static.skillshare.com/uploads/users/4879786/user-image-small.jpg?1971182846","username":4879786,"fullName":"Sandra Bowers","url":"https://www.skillshare.com/sandrabowersart","isPremiumMember":false,"badgeUrl":"https://www.skillshare.com/membership?via=badge","teacherHoverCard":true,"isTa":true,"headline":"Freelance Illustrator+ Surface Pattern Designer"},"showStaticTeacher":false,"showStaticCategory":false,"showStaticClass":false,"wishlistPrimary":false}]}},"currentUserIsFollowing":false}},
+            mixpanel: {
+                token: "c0ffa2093d02e0d503db07fe142aab98",
+                distinctId: "1507f288d95689-0b986aa40e73ef-46632c42-1fa400-1507f288d96a0c"
+            }
+        };
+
+        
+        // Any additional js from layouts
+        
+        // an array of pages to be require'd (page-specific deps)
+        SS.pageDependencies = ['tutorials/show'];
+    </script>
+
+    <script type="text/javascript" id="on-page-load">
+
+        (function() {
+
+            if (!SS.serverBootstrap.pageData) {
+                return;
+            }
+
+            if (!SS.serverBootstrap.pageData.showFixedHeadersOnLoad) {
+                return;
+            }
+
+            // We're in < IE10 which doesn't support classList
+            if (!document.body.classList) {
+                document.body.style.visibility = 'visible';
+                return;
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                if (SS.serverBootstrap.pageData.isMobile) {
+                    var mobileHeader = document.getElementsByClassName('site-header-mobile')[0];
+                    var classDetailsHeader = document.getElementsByClassName('class-details-header')[0];
+                    var fullHeaderHeight = mobileHeader.offsetHeight + classDetailsHeader.offsetHeight;
+
+                    // We want to show 15px of the class details header
+                    var scrollTop = fullHeaderHeight - 15;
+
+                    // Scroll the page down
+                    document.documentElement.scrollTop = scrollTop;
+                    document.body.scrollTop = scrollTop;
+
+                    document.body.style.visibility = 'visible';
+
+                    return;
+                }
+
+                // Class Navigation
+                // Fetch DOM elements
+                var mainRegion = document.getElementById('main-region');
+                var navigationHeaderWrapper = document.getElementsByClassName('underline-tabs-wrapper')[0];
+                var navigationHeaderWrapperPlaceholder = document.getElementsByClassName('underline-tabs-wrapper-placeholder')[0];
+                var siteFooter = document.getElementsByClassName('site-footer')[0];
+
+                // Save heights of the navigation header and site footer
+                var navigationHeaderHeight = navigationHeaderWrapper.offsetHeight;
+                var siteFooterHeight = siteFooter.offsetHeight;
+
+                // Set the height of the navigation header onto it's placeholder
+                // (the placeholders are used to keep the page height exactly the same even when
+                // the main elements get changed to position: fixed and therefore come out of the
+                // normal document flow)
+                navigationHeaderWrapperPlaceholder.style.height = navigationHeaderHeight + 'px';
+
+                // Calculate where the page should be scrolled to, make sure to calculate this
+                // AFTER settings heights on the placeholders.
+                var scrollTop = mainRegion.offsetTop - 1;
+                var headersShown = false;
+
+                var hideHeaders = function() {
+                    navigationHeaderWrapper.classList.remove('fixed-header');
+                    navigationHeaderWrapperPlaceholder.classList.add('hidden');
+                    navigationHeaderWrapper.style.top = 0 + 'px';
+                    headersShown = false;
+                };
+
+                var showHeaders = function() {
+                    navigationHeaderWrapper.classList.add('fixed-header');
+                    navigationHeaderWrapperPlaceholder.classList.remove('hidden');
+                    headersShown = true;
+                };
+
+                // Adjust the minimum height of the main region so we're always guaranteed
+                // to see the fixed headers
+                mainRegion.style.minHeight = window.innerHeight - siteFooterHeight + 'px';
+
+                var toggleHeaders = function() {
+                    var documentScrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                    if (documentScrollTop < scrollTop) {
+                        hideHeaders();
+                    } else if (!headersShown) {
+                        showHeaders();
+                    }
+                };
+
+                // Storing this so that we're able to remove the event listener
+                // once we're able to handle all of this in our app code
+                SS.classDetailsHeaderFunction = toggleHeaders;
+                window.addEventListener('scroll', toggleHeaders);
+
+                // Scroll the page down
+                document.documentElement.scrollTop = scrollTop;
+                document.body.scrollTop = scrollTop;
+
+                // Finally display the page
+                document.body.style.visibility = 'visible';
+            });
+        })();
+    </script>
+
+    <!-- Intercom -->
+    <script id="IntercomSettingsScriptTag">
+        window.intercomSettings = {
+                            name: "Tom Roecker",
+                email: "tomroecker@hotmail.com",
+                user_id: 1597585,
+                created_at: 1423079858,
+                user_hash: "2aed7da8409fb398c7e0b365446c015ca86ffbc4a3cb7a8c6bc13df85f8dc3ce",
+                user_secret: "014d6fb96833705490ad6ea990d8a0fed9759b69ec3bbc9d0498a093a56ea650",
+                facebook_id: null,
+                freemium_video_usage_seconds_watched: null,
+                freemium_video_usage_month_at: null,
+                membership_expiration: null,
+                plan_type: "Free Membership",
+                        app_id: "85843adfdc4d9eaa4b6968994c8f741263f666df"
+        };
+    </script>
+    <script>
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}
+        else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;
+        function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;
+        s.src='https://widget.intercom.io/widget/' + intercomSettings.app_id;
+        var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}
+        else{w.addEventListener('load',l,false);}}})()
+    </script>
+    
+    
+    
+    
+            <!-- Facebook Remarketing Pixel -->
+    <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+            _fbq.push(['addPixelId', '619868948121290']);
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=619868948121290&amp;ev=NoScript" /></noscript>
+            <!-- Google Code for Remarketing Tag -->
+    <!--------------------------------------------------
+        Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories    . See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+    --------------------------------------------------->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 1012071701;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1012071701/?value=0&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
+            <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">twttr.conversion.trackPid('l6rir', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6rir&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+        <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6rir&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    </noscript>
+        <!-- Track New User Signup -->
+        
+        <!-- Track New Membership Signup -->
+        
+        <!-- Track Upgrade of Existing Membership with Credit Card -->
+        
+        <!-- Track New Email Signup -->
+        
+        <!-- Track new enrollment -->
+        
+        <!-- Nanigans Landing Pixel -->
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1822ff7365","applicationID":"2462772","transactionName":"YFFbY0ZXWhFYVEZdVlkbeFRAX1sMFmNHQFZFXVhbR3VbDE1FXVhVUkYWRFxZQw==","queueTime":0,"applicationTime":326,"atts":"TBZYFQ5NSR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script></body>
+</html>

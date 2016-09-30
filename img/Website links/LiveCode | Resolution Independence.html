@@ -1,0 +1,791 @@
+<style>
+.syntaxhighlighter {
+padding: 15px 15px 15px 15px;
+border: 0;
+background: #fff;
+box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+border-radius: 6px;
+font-size: 14px !important;
+}
+p{
+font-size: 16px !important;
+line-height: 1.5 !important;
+font-weight: normal !important;
+}
+div.main-content {
+	background-color:#f9f9f9;
+}
+div.main-content > div#page_content {
+	padding:35px;
+	width:800px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: normal;
+}
+div.main-content > div#page_content h2 {
+	font-weight: bold;
+	margin-top: 30px;
+	color:#4c4c4c
+}
+.header_banner {
+	margin: 0px auto;
+	width:100%;
+	padding:0px;
+	background-color:#0092bf;
+	/* background-image: url("https://livecode.com/wp-content/uploads/2014/10/bg11.jpg"); */
+	background-image: url("http://livecode.com/wp-content/uploads/2014/10/galaxy.png");
+	background-position-y: -140px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-shadow: inset 0 -10px 100px -30px #666666;
+}
+.header_banner > div#page_content {
+	height:275px;
+	margin: 0px auto;
+	border: 0px;
+	padding-top:30px;
+	font-color:#000;
+}
+div#header_banner_menu {
+	width:70%;
+	margin:0 auto;
+	text-align:center;
+	background-color:white;
+	margin-top:2px;
+	padding: 10px 15px 10px 15px;
+	border: 0;
+	background: #fff;
+	box-shadow: 0 4px 25px rgba(11,45,71,0.60);
+	border-radius: 6px;
+	background-image: linear-gradient(to bottom,#dddddd 0,#ffffff 15px);
+}
+h1.massive {
+font-size:50px;font-weight:700;margin-bottom: 0px;
+}
+a.massive{
+font-size:50px;
+font-weight:700;
+margin-bottom: 0px;
+color:#585858 !important;
+text-decoration:none;
+line-height: 70px;
+text-decoration:underline;
+}
+.banner_strapline {
+	/*background:#fff;*/
+	font-size:3.5em;
+	font-weight:500;
+	color:#ffffff;
+	display:inline;
+	padding: 0px 7px 0px 7px;
+	/*background-color: rgba(255, 255, 255, 0.9);*/
+}
+ul#nav_seven{
+padding:0 !important;
+}
+#nav_seven li{
+  list-style:none;
+  margin:.5em 0;
+  font-size:1.6em;
+}
+ul#nav_seven.horizontal {
+margin:2px 0px 0px 0px !important;
+}
+ul#nav_seven.horizontal li {
+display:inline;
+font-size:1.3em;
+font-weight:700;
+padding:2px 10px 2px 10px;
+margin-right:25px;
+margin-top:2px;
+margin-bottom:2px;
+}
+ul#nav_seven.horizontal li:hover {
+background-color:#383838;
+color:#ffffff !important;
+display:inline;
+border-radius: 2px;
+cursor:pointer;
+margin:0px 25px 0px 0px;
+}
+ul#nav_seven.horizontal li > a {
+/*text-decoration:underline;*/
+color:#2e6287;
+text-transform:uppercase;
+}
+ul#nav_seven.horizontal li > a:hover {
+text-decoration:none;
+color:#ffffff;
+}
+#nav_seven li > a{
+color:#91B321;
+}
+#nav_seven li > a:hover{
+color:#464646;
+text-decoration:underline;
+}
+
+/* Sections styling */
+.section h1{
+color:#4c4c4c;
+}
+.section_img {
+text-align:right;
+}
+div.section_img img{
+margin-top:30px;
+}
+#section_hello > div {
+border-bottom:none;
+margin: 0px auto;
+padding: 0px;
+}
+#section_unicode {
+	background-color:#f9f9f9;
+}
+#section_unicode > div {
+	/*background-image: url("http://livecode.com/wp-content/uploads/2014/10/unicode1.png");*/
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position: right bottom; /* moz */
+	background-position-y: bottom;
+	background-position-y: center;
+	background-size:45%;
+	margin-top: 0px;
+}
+#section_resolution-independence > div {
+	/*background-image: url("http://livecode.com/wp-content/uploads/2014/10/hidpi.png");*/
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;
+	background-position: right bottom;
+	background-size: 45%;
+	border:0px;
+}
+#section_embedded-web > div {
+	border:0px;
+}
+#section_raspberry-pi > div {
+	/* background-image: url("http://livecode.com/wp-content/uploads/2014/10/Raspi_Colour_R1.png"); */
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: center;
+	background-position: right bottom;
+	background-size: 20%;
+	border:0px;
+}
+#section_graphics,#section_cocoa,#section_64bit-linux,#section_academies,#section_summer2 {
+	background-color:#f9f9f9;
+}
+#section_graphics {
+	background-image: url("/wp-content/uploads/2014/10/pattern-lines-only1.png");
+	background-opacity:0.5;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position: center center; /* moz */
+	background-position-y: bottom;
+	background-position-y: center;
+	background-size:75%;
+}
+#section_graphics img{
+	padding-right: 50px;
+}
+#section_cocoa img {
+opacity : 0.7;
+padding-right: 30px;
+}
+#section_summer2 img {
+box-shadow: 0 4px 25px rgba(0,0,0,0.20);
+}
+#section_summer2 > div#page_content {
+	margin-bottom:0px;
+}
+#section_summer1 img{
+padding-right: 30px;
+}
+#section_whatelse {
+text-align:center;
+}
+h1.massive a {
+color:#585858;
+font-size:25px;
+border: 2px solid #989898;
+padding:5px 20px 5px 20px;
+border-radius:5px;
+}
+h1.massive a > i {
+color:#989898;
+}
+h1.massive a:hover {
+color:#fff;
+font-size:25px;
+border: 2px solid #91B321;
+background-color:#91B321;
+padding:5px 20px 5px 20px;
+border-radius:5px;
+}
+h1.massive a:hover > i {
+color:#ffffff;
+}
+.breadcrumb {
+font-size:14px;
+margin:7px 0px 30px 0px;
+
+}
+.breadcrumb a {
+color:#2e6287;
+margin:0px 7px 0px 7px;
+}
+.breadcrumb a:hover {
+text-decoration:underline;
+}
+
+/* form styling */
+div.container-form {
+	text-align:center;
+	background-color: #666666;
+	color: #f9f9f9;
+	padding: 30px;
+	font-weight:700 !important;
+	background-image: linear-gradient(to bottom,#3F3F3F 0,#464646 25px);
+}
+
+div.container-form select{
+font-size: 25px;
+background: #f9f9f9;
+text-align:center !important;
+margin-bottom:20px;
+}
+#section_home_strapline h2 {
+color:#125894;
+font-size:2.0em;
+margin-bottom:0px;
+font-weight: 600;
+}
+#section_home_strapline i {
+color:#d1d1d1;
+font-size: 40px;
+margin-bottom:20px;
+}
+#section_bottom_buy {
+background-color:#666;
+color:#fff;
+background-repeat: no-repeat;
+background-image: linear-gradient(to bottom,#3F3F3F 0,#464646 25px);
+background-image: linear-gradient(to top,#3F3F3F 0,#464646 25px);
+background-size: 100%;
+border:0px;
+}
+#section_bottom_buy > div{
+border:0px;
+}
+</style>
+
+ 
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+        <title>LiveCode |   Resolution Independence</title>
+
+<link rel="stylesheet" href="http://livecode.com/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css?v=2.9.3" type="text/css" media="all" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" /> -->
+        <link rel="shortcut icon" type="image/x-icon" href="http://livecode.com/wp-content/themes/livecode2013/ims/livecode_favicon.png">
+        <link rel="stylesheet" href="http://livecode.com/wp-content/themes/livecode2013/css/normalize.css">
+	<link rel="stylesheet" href="http://livecode.com/wp-content/themes/livecode2013/style.css">
+			<script type="text/javascript" src="http://livecode.com/wp-content/themes/livecode2013/libs/jwplayer.js"></script>
+        
+	<style type="text/css">
+		#fancybox-close{right:-15px;top:-15px}
+		div#fancybox-content{border-color:#FFFFFF}
+		div#fancybox-title{background-color:#FFFFFF}
+		div#fancybox-outer{background-color:#FFFFFF}
+		div#fancybox-title-inside{color:#333333}
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="LiveCode &raquo; Resolution Independence Comments Feed" href="http://livecode.com/livecode-7/resolution-independence/feed/" />
+<link rel='stylesheet' id='q-a-plus-css'  href='http://livecode.com/wp-content/plugins/q-and-a/css/q-a-plus.css?ver=1.0.6.2' type='text/css' media='screen' />
+<link rel='stylesheet' id='fancybox-css'  href='http://livecode.com/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=3.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='jrating_css-css'  href='http://livecode.com/wp-content/themes/livecode2013/css/jRating.jquery.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font_awesome_css-css'  href='http://livecode.com/wp-content/themes/livecode2013/css/font-awesome-4.0.1/css/font-awesome.min.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='emoticons-css'  href='http://livecode.com/wp-content/plugins/font-emoticons/emoticons.css?ver=3.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='core3.0-css'  href='http://livecode.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='core-Default3.0-css'  href='http://livecode.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCoreDefault.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-Default3.0-css'  href='http://livecode.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://livecode.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://livecode.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/plugins/google_event_tracking/google_event_tracking.js?ver=3.7.4'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/themes/livecode2013/livecode_to_html5/js/jquery.countdown.js?ver=1.0'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/themes/livecode2013/js/jquery-ui.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js?ver=2.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en":"http:\/\/livecode.com\/livecode-7\/resolution-independence\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"livecode.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://livecode.com/wp-content/plugins/sitepress-multilingual-cms/res/js/browser-redirect.js?ver=2.9.3'></script>
+<link rel='shortlink' href='http://livecode.com/?p=5117' />
+
+<!-- Fancybox for WordPress v3.0.2 -->
+<script type="text/javascript">
+jQuery(function(){
+
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+	var arr = jQuery("a.fancybox");
+	jQuery.each(arr, function() {
+		var title = jQuery(this).children("img").attr("title");
+		jQuery(this).attr('title',title);
+	})
+}
+
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+	'cyclic': false,
+	'autoScale': true,
+	'padding': 10,
+	'opacity': true,
+	'speedIn': 500,
+	'speedOut': 500,
+	'changeSpeed': 300,
+	'overlayShow': true,
+	'overlayOpacity': "0.3",
+	'overlayColor': "#666666",
+	'titleShow': true,
+	'titlePosition': 'inside',
+	'enableEscapeButton': true,
+	'showCloseButton': true,
+	'showNavArrows': true,
+	'hideOnOverlayClick': true,
+	'hideOnContentClick': false,
+	'width': 560,
+	'height': 340,
+	'transitionIn': "fade",
+	'transitionOut': "fade",
+	'centerOnScroll': true
+});
+
+
+})
+</script>
+<!-- END Fancybox for WordPress -->
+	    <script type="text/javascript">var ajaxurl = 'http://livecode.com/wp-admin/admin-ajax.php';</script>
+	    <script>
+	            jQuery(document).ready(function ($){
+	        
+	                $('#dictionary_search_filters').keyup(function() {
+					    delay(function(){
+					    	$("#search_filter_loader").show();
+					    	$.ajax({
+	                        	type: 'POST',
+	                        	url: ajaxurl,
+	                        	data: { action: "dictionary_search_filter", term: $('#dictionary_search_filters').val() },
+	                        	success: function(data) {
+	                            	$("#search_filter_loader").hide();
+	                            	$("#dictionary_container").html(data);
+	                        	}
+	                    	});
+					    }, 400 );
+					});
+
+	                $("#dictionary_filter_button").on("click", function(e){ e.preventDefault(); });
+	                
+	                $("#select_version").change(function() {
+	                    window.location = "/developers/api/"+$(this).find("option:selected").text()+"/";
+	                });
+	            });
+
+				var delay = (function(){
+					var timer = 0;
+				  	return function(callback, ms){
+					    clearTimeout (timer);
+					    timer = setTimeout(callback, ms);
+				  	};
+				})();
+	    </script>
+	    <!-- Q & A -->
+		<noscript><link rel="stylesheet" type="text/css" href="http://livecode.com/wp-content/plugins/q-and-a/css/q-a-plus-noscript.css?ver=1.0.6.2" /></noscript><!-- Q & A --><meta name="generator" content="WPML ver:2.9.3 stt:1,61;0" />
+<link rel="alternate" hreflang="en-US" href="http://livecode.com/livecode-7/resolution-independence/" />
+<!-- Open Graph Meta Data by WP-Open-Graph plugin-->
+<meta property="og:site_name" content="LiveCode" />
+<meta property="og:locale" content="en_us" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Resolution Independence" />
+<meta property="og:url" content="http://livecode.com/livecode-7/resolution-independence/" />
+<meta property="og:description" content="Any screen size, any resolution, anywhere. LiveCode now has full Resolution Independence. Your app will scale to fit any screen or device, whether it is a full size Mac Retina or a tiny Android phone. You don&#8217;t need to do &hellip; Continue reading &rarr;" />
+<!-- /Open Graph Meta Data -->
+       <script>
+        var mouse_is_inside = false;
+ 
+		jQuery(document).ready(function() {
+			jQuery("#account_pupup_link").click(function() {
+				var accountPopup = jQuery("#account_popup");
+				if (accountPopup.is(":visible"))
+					accountPopup.fadeOut("fast");
+				else
+					accountPopup.fadeIn("fast");
+				return false;
+			});
+		 
+			jQuery("#account_popup").hover(function(){ 
+				mouse_is_inside=true; 
+			}, function(){ 
+				mouse_is_inside=false; 
+			});
+		 
+			jQuery("body").click(function(){
+				if(! mouse_is_inside) jQuery("#account_popup").fadeOut("fast");
+			});
+			
+			
+		});
+		/*jQuery(function() {
+
+                        jQuery("#slideshow > div:gt(0)").hide();
+
+                        setInterval(function() {
+                          jQuery('#slideshow > div:first')
+                            .fadeOut(1700)
+                            .next()
+                            .fadeIn(1700)
+                            .end()
+                            .appendTo('#slideshow');
+                        },  9000);
+
+                });*/
+		</script>
+		
+		<!-- JS enables side bar to scroll while user is scrolling down the page using the scrollbar -->
+		<!-- <script type="text/javascript">
+		jQuery("document").ready(function($){
+			if (jQuery('#sidebar').height() < 400) {
+        		var nav = jQuery('#sidebar');
+			
+        		jQuery(window).scroll(function () {
+                		if (jQuery(this).scrollTop() > 136) {
+                        		nav.addClass("f-nav");
+               	 		} else {
+                        		nav.removeClass("f-nav");
+                		}
+        		});
+			}
+		});
+		</script> -->
+		<!-- Hack - some plugin prob multilingual trims out out searchform action from livecode.com/search to only livecode.com so this bellow fixes it -->
+		<script>
+			jQuery("document").ready(function(){
+				jQuery( "#s" ).focus(function() {
+					jQuery('#searchform').attr('action','http://www.livecode.com/search');
+  					return;
+				});
+			});
+		</script>
+
+    </head>
+    <body>
+    				<div id="topstripe">
+	    <div id="topstripe-inner">
+			<p style="text-align:center"> 
+			<span style="margin-left:70px"><img src="/wp-content/themes/livecode2013/ims/mini7logo30x30.png"/></span> <span>Say Hello to LiveCode 7</span>
+			<span style="text-align:right;float:right;margin-top:5px"><a href="/livecode-7">More Info ></a></span></p>
+			
+            </div>
+        </div>
+        <script>
+	jQuery("#topstripe").click(function() {
+		jQuery(this).slideUp({ duration: 800, easing: "easeOutCubic" });
+		//window.location.href = "/livecode-to-html5";
+		window.open("/livecode-7",'_self',false);
+	});
+	</script>
+	                
+    	    	<div id="basket">
+            <div id="store2010-basket">
+    			            </div>	
+        </div>
+                
+        		<script>
+		jQuery('#basket').hide();
+		</script>
+                
+        <div id="header">
+            <div id="header_content">
+				                <a href="/"><img src="http://livecode.com/wp-content/themes/livecode2013/ims/livecode_logo.png" class="logo" alt="LiveCode Logo" /></a>
+                <img src="http://livecode.com/wp-content/themes/livecode2013/ims/menu_icon.png" id="menu_icon" alt="Menu" />
+               	<ul id="nav_account">
+                	                    <li><a href="javascript:void(0)" id="account_pupup_link">Login</a></li>
+                                    </ul>
+                                <div id="nav_main">
+                <ul id="menu-main-menu"><li class="menu-item-1978"><a href="http://livecode.com/download/">Download</a></li><li class="menu-item-191"><a href="http://livecode.com/developers/">Developers</a></li><li class="menu-item-192"><a href="http://livecode.com/community/">Community</a></li><li class="menu-item-3085"><a href="http://livecode.com/learn/">Learn</a></li><li class="menu-item-5"><a href="http://livecode.com/store/">Store</a></li><li class="menu-item-265"><a href="http://livecode.com/support/">Support</a></li><li class="menu-item-271"><a href="http://livecode.com/about/">About</a></li><li class="menu-item-369"><a href="http://livecode.com/blog/">Blog</a></li></ul>                </div>
+                <form role="search" method="get" id="searchform" action="http://livecode.com/search">
+    <div>
+    	<input type="text" value="" name="q" id="s" />
+    </div>
+</form>
+	<!-- Hack - some plugin prob multilingual trims out out searchform action from livecode.com/search to only livecode.com so this bellow fixes it -->
+               	<script>
+                //jQuery(window).bind("load", function() {
+                //        jQuery('#searchform').attr('action','http://www.livecode.com/search');
+               	//});
+                //jQuery("document").ready(function(){
+                //       	jQuery('#searchform').attr('action','http://www.livecode.com/search');
+                //});
+                </script>
+
+                
+                <div id="account_popup" style="display:none">
+                    				                        <form name="login-form" id="login-form" method="post">
+                        	<input name="login" type="hidden" id="login" value="1" placeholder="Email" />
+                            <input name="redirect" type="hidden" id="redirect" value="/store/account/"   />
+                            <input name="email" type="text" class="validate formlogin" id="email" value="" placeholder="Email address" />
+                            <input name="password" type="password" class="validate formlogin" id="password" value="" placeholder="Password" />
+                            <input type="submit" value="Login" class="button orange" />
+                        </form>
+                        
+                        <p class="small"><a href="/store/account/get-password/">Forgot your password</a> <a href="/store/account/create/">Create Account</a></p>
+                                        </div>
+                
+                <br style="clear:both" />
+                
+            </div>
+        </div>
+                                                    <div id="page">
+	<script type="text/javascript" src="http://livecode.com/wp-content/themes/livecode2013/live_training_sessions/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/livecode_store/runrevstore/js/store-home.js"></script>
+<script language="javascript" type="text/javascript" src="/wp-content/plugins/livecode_store/runrevstore/js/jquery.listen.js"></script>
+            <!-- <h1></h1> -->
+    				
+						
+		    
+    <div id="section_toplogo" class="header_banner">
+	<!-- top red header banner -->
+	<div id="page_content">
+		<div style="width:100%;text-align:center">
+			<!-- <img src="http://livecode.com/wp-content/uploads/2014/10/livecode-7-brand.png" style="width:22%;height:auto" alt="LiveCode 7"> -->
+			<img src="http://livecode.com/wp-content/uploads/2014/10/livecode-7-brand2.png" style="width:22%;height:auto" alt="LiveCode 7">
+		</div>
+		<div id="header_banner_menu">	
+			<ul id="nav_seven" class="horizontal">
+				<li><a href="/livecode-7"><i class="fa fa-home"></i> 7 Benefits of 7</a>
+				<li><a href="http://livecode.com/blog/tag/livecode-7/" target="_BLANK">7 in the blog</a></li>
+				<li><a href="/livecode-7/story">The Story of 7</a></li>
+				<li><a href="/livecode-7/buy">Buy 7</a></li>
+			</ul>
+		</div>
+	</div>
+    </div>
+   
+    <div id="section_hello">
+	<div id="page_content">
+		<div style="width:100%;text-align:center">
+					<div id="breadcrumb" class="breadcrumb"><a href="/livecode-7">livecode 7</a> <i class="fa fa-angle-right"></i> <a href="/livecode-7/resolution-independence">Resolution Independence</a></div>
+					</div>
+		<div style="width:100%;text-align:center">
+		<ul id="nav_seven">
+			
+									<li><a href="/livecode-7/unicode#breadcrumb" class=" ">1- Unicode</li></a>
+											<li><a href="/livecode-7/resolution-independence#breadcrumb" class="massive ">2- Resolution Independence</li></a>
+											<li><a href="/livecode-7/graphics#breadcrumb" class=" ">3- Crisp Cross Platform Graphics</li></a>
+											<li><a href="/livecode-7/embedded-web#breadcrumb" class=" ">4- Embedded Web</li></a>
+											<li><a href="/livecode-7/cocoa#breadcrumb" class=" ">5- Cocoa Native</li></a>
+											<li><a href="/livecode-7/raspberry-pi#breadcrumb" class=" ">6- Raspberry Pi</li></a>
+											<li><a href="/livecode-7/64bit-linux#breadcrumb" class=" ">7- Native 64 Bit Linux</li></a>
+							</ul>
+		</div>
+	</div>
+    </div>
+    
+    		    <div class="main-content"><div id="page_content"> <p> Any screen size, any resolution, anywhere. </p> 
+<p align="center"><a href="http://livecode.com/wp-content/uploads/2014/10/deskhighdpi.png"><img class="aligncenter size-medium wp-image-5244" alt="deskhighdpi" src="http://livecode.com/wp-content/uploads/2014/10/deskhighdpi-300x213.png" width="300" height="213" /></a> </p> 
+ <p> LiveCode now has full Resolution Independence. Your app will scale to fit any screen or device, whether it is a full size Mac Retina or a tiny Android phone. You don&#8217;t need to do anything fancy to make this work, no more switching between sets of assets for different deployment options. LiveCode fully supports high density screens by upscaling text, vectors and automatically substituting in high quality images. To ensure your image and graphic displays are always pixel perfect we&#8217;ve added some clever coding in 7 &#8211; see the sections on 9 way stretch and icon gravity under &#8220;Crisp Cross Platform Graphics&#8221;. </p> 
+<h2><b>FullScreenMode</b></h2>
+ <p> <video id="unicodedemo" width="640" height="360" preload="" controls="controls"><source src="http://techsupport.on-rev.com/compressed%20heather/clip1.mp4" type="video/mp4" /><object id="unicodedemo" width="640" height="360" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://livecode.com/wp-includes/js/tinymce/plugins/media/moxieplayer.swf" /><param name="flashvars" value="url=http%3A//techsupport.on-rev.com/compressed%2520heather/clip1.mp4&amp;poster=/wp-admin/" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="true" /><embed id="unicodedemo" width="640" height="360" type="application/x-shockwave-flash" src="http://livecode.com/wp-includes/js/tinymce/plugins/media/moxieplayer.swf" flashvars="url=http%3A//techsupport.on-rev.com/compressed%2520heather/clip1.mp4&amp;poster=/wp-admin/" allowfullscreen="true" allowscriptaccess="true" /></object> </video> </p> 
+<address class="wp-caption">Full Screen Mode Demo (from RunRevLive.14 video available free with your <a href="http://livecode.com/livecode-7/buy">Lucky 7 Bundle</a>)</address>
+<p style="margin-top: 30px; text-align: left;"><a class="anchor button green" href="http://downloads.livecode.com/RunRevLive14/Day One/LiveCode_features_Ben_Beaumont.zip">Download the Sample Stack</a> </p> 
+ <p> This feature allows you to scale your app to fill the screen in a variety of ways. Its pretty simple to apply. In the stack script add the following code: </p> 
+<p class="brush: applescript; gutter: true">on preOpenStack </p> 
+<p class="brush: applescript; gutter: true">set the fullscreenmode of me to &#8220;exactFit&#8221; </p> 
+<p class="brush: applescript; gutter: true">end preOpenStack  </p> 
+<p align="center"><img class="aligncenter size-medium wp-image-5230" alt="fullscreenmodes" src="http://livecode.com/wp-content/uploads/2014/10/fullscreenmodes-300x134.png" width="300" height="134" /> </p> 
+<h2 class="brush: applescript; gutter: true">Density Mapped Images</h2>
+ <p> <video id="unicodedemo" width="640" height="360" preload="" controls="controls"><source src="http://techsupport.on-rev.com/compressed%20heather/clip2.mp4" type="video/mp4" /><object id="unicodedemo" width="640" height="360" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://livecode.com/wp-includes/js/tinymce/plugins/media/moxieplayer.swf" /><param name="flashvars" value="url=http%3A//techsupport.on-rev.com/compressed%2520heather/clip2.mp4&amp;poster=/wp-admin/" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="true" /><embed id="unicodedemo" width="640" height="360" type="application/x-shockwave-flash" src="http://livecode.com/wp-includes/js/tinymce/plugins/media/moxieplayer.swf" flashvars="url=http%3A//techsupport.on-rev.com/compressed%2520heather/clip2.mp4&amp;poster=/wp-admin/" allowfullscreen="true" allowscriptaccess="true" /></object> </video> </p> 
+<address class="wp-caption">Density Mapped Images Demo (from RunRevLive.14 video available free with your <a href="http://livecode.com/livecode-7/buy" target="_blank">Launch Bundle</a>)</address>
+<p style="margin-top: 30px; text-align: left;"><a class="anchor button green" href="http://downloads.livecode.com/RunRevLive14/Day One/LiveCode_features_Ben_Beaumont.zip">Download the Sample Stack</a> </p> 
+ <p> <span style="line-height: 18.2000007629395px;">If you don&#8217;t want the overhead of scaling, you can include a range of images from very small low density to very large high density images and LiveCode will automatically switch between them, depending on the screen they are being displayed on. This means you can effortlessly support a tiny, low powered Android device as well as a big full Retina Mac screen. </span> </p> 
+<p align="center"><a href="http://livecode.com/wp-content/uploads/2014/10/Density-Mapped.png"><img class="aligncenter size-medium wp-image-5246" alt="Density-Mapped" src="http://livecode.com/wp-content/uploads/2014/10/Density-Mapped-300x270.png" width="300" height="270" /></a> </p> 
+<h2><b>Multiple density image support for patterns</b></h2>
+ <p> This extends the existing image resolution independence features to any pattern using that image. When an object pattern is set to a multiple density image, that pattern will automatically use the best source image for the density at which it is drawn. </p> 
+ <p> Read more about Resolution Independence <a href="http://newsletters.livecode.com/september/issue157/newsletter1.php">here</a>.  </p> 
+<h2>What does Resolution Independence mean for you?</h2>
+ <p> We know all about the pain of catering for all the different shapes, sizes and resolutions of your customers or potential customers devices. Let&#8217;s face it, it has been a headache for designers and developers for years. With new devices coming to the market on what feels like a daily basis, can you really afford to spend the time and effort redeveloping your application to suit them? Can you afford not to? LiveCode 7 allows you to add just one of line of code to your application and you can rest easy knowing that your app will display perfectly on any screen size, any resolution, anywhere. Your welcome. </p> 
+ <p> Download LiveCode 7 <a href="http://downloads.livecode.com/livecode/">here</a>. </p> 
+</div></div>		     		    		    		    			<div id="section_bottom_buy">
+			      <div id="page_content" style="padding: 35px 10px 35px 10px;">
+				      <div style="width:100%;text-align:center">
+				      <!--<img src="/wp-content/uploads/2014/10/7comm-alpha.png"/>-->
+				      <h2>Buy Livecode 7 Commercial and get the Lucky 7 bundle for Free</h2>
+				      <a href="/livecode-7/buy" class="button green">Buy 7 ></a> 
+				      </div>
+			      </div>
+			  </div>
+		    		    
+
+<script>
+jQuery('.anchor').click(function(){
+    var top = jQuery('body').find(jQuery(this).attr('href')).offset().top;
+	
+    jQuery('html, body').animate({
+        scrollTop: top
+    },1000, 'easeOutExpo');
+
+    return false;
+});
+</script>
+			<br style="clear:both" />
+		</div>
+		</div>
+		<div id="footer">
+			
+			<div id="footer_content">
+							        			            <div class="panel">
+			                <h3>Use LiveCode</h3>
+			                <ul>
+				            				                <li><a href="/download">Download</a></li>  
+				            				                <li><a href="/developers">Developers</a></li>  
+				            				                <li><a href="/community">Community</a></li>  
+				            				                <li><a href="/support">Support</a></li>  
+				            				                <li><a href="/store">Store</a></li>  
+				            				                <li><a href="/academy">Academy</a></li>  
+				            				            </ul>
+			            </div>
+			        			    			        			            <div class="panel">
+			                <h3>About LiveCode</h3>
+			                <ul>
+				            				                <li><a href="/how-it-works">How it works</a></li>  
+				            				                <li><a href="/who-is-it-for">Who is it for</a></li>  
+				            				                <li><a href="/what-it-does">What it does</a></li>  
+				            				                <li><a href="/showcase">Showcase</a></li>  
+				            				                <li><a href="/get-started">Get started</a></li>  
+				            				                <li><a href="/about/contact">Contact</a></li>  
+				            				            </ul>
+			            </div>
+			        			    			        			            <div class="panel">
+			                <h3>LiveCode Site</h3>
+			                <ul>
+				            				                <li><a href="/site-map">Site Map</a></li>  
+				            				                <li><a href="/privacy-policy">Privacy Policy</a></li>  
+				            				                <li><a href="/LiveCode-EULA">LiveCode EULA</a></li>  
+				            				            </ul>
+			            </div>
+			        			    			    <br style="clear:both" />
+				<div id="social">
+                                                        <a href="/feed/rss2/" title="Latest LiveCode news" target="_blank" style="float:left;margin-right:5px"><div class="rss"></div></a>
+                                                        <a href="https://www.facebook.com/pages/LiveCode/121318328010780" title="LiveCode on Facebook" target="_blank" style="float:left;margin-right:5px"><div class="facebook"></div></a>
+                                                        <a href="http://twitter.com/runrev" title="LiveCode on Twitter" target="_blank" style="float:left;margin-right:5px"><div class="twitter"></div></a>
+	                <ul>
+	                	                </ul>
+	            </div>
+	            <div id="footer_content_right">Check our <a href="/about/blog/" title="Latest LiveCode news">LiveCode blog</a> or connect with us here: </div>
+	            <div id="footer_content_left">Brought to you by RunRev Ltd, Registered in Scotland, No. SC200728</div>
+			</div>
+		</div>
+        
+                <div id="lang_sel_footer">
+                    <ul>
+                        <li><a rel="alternate" hreflang="en" href="http://livecode.com/livecode-7/resolution-independence/" class="lang_sel_sel"><img src="http://livecode.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="English" class="iclflag" title="English"  />&nbsp;English</a></li>
+                        <li><a rel="alternate" hreflang="zh-hans" href="http://livecode.com/zh-hans/"><img src="http://livecode.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/zh-hans.png" alt="简体中文" class="iclflag" title="简体中文"  />&nbsp;简体中文</a></li>
+                    </ul>
+                </div><script type='text/javascript' src='http://livecode.com/wp-content/plugins/q-and-a/js/q-a-plus.js?ver=1.0.6.2'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/themes/livecode2013/js/jquery.throttledresize.js?ver=1.0'></script>
+<script type='text/javascript' src='http://livecode.com/wp-content/themes/livecode2013/js/equalize.min.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"http:\/\/livecode.com\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://livecode.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=3.7.4'></script>
+	       <script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		
+
+  		ga('create', 'UA-41842002-1', 'livecode.com');
+  		ga('send', 'pageview');
+		
+		google_client_id = "not_instanciated";
+		ga(function(tracker) {
+			google_client_id = tracker.get('clientId');
+		});
+		</script>
+
+		<!-- Google Code for Remarketing Tag -->
+		<!--------------------------------------------------
+		Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+		--------------------------------------------------->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 1072714739;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		var google_conversion_format = 3; /* this hides the iframe */
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072714739/?value=0&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+
+         <script type="text/javascript">
+			
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-41842002-1']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/982726040/?value=0&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+		<!-- Start WebsiteAlive Embedded Icon/Tracking Code -->
+		<script type="text/javascript">
+		function wsa_include_js(){
+			var wsa_host = (("https:" == document.location.protocol) ? "https://" : "http://");
+			var js = document.createElement("script");
+			js.setAttribute("language", "javascript");
+			js.setAttribute("type", "text/javascript");
+			js.setAttribute("src",wsa_host + "tracking.websitealive.com/vTracker_v2.asp?objectref=wsa7&groupid=7960&websiteid=0");
+			document.getElementsByTagName("head").item(0).appendChild(js);
+		}
+		if (window.attachEvent) {window.attachEvent("onload", wsa_include_js);}
+		else if (window.addEventListener) {window.addEventListener("load", wsa_include_js, false);}
+		else {document.addEventListener("load", wsa_include_js, false);}
+		</script>
+		<!-- End WebsiteAlive Embedded Icon/Tracking Code -->
+
+    	</body>
+</html>
